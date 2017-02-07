@@ -33,6 +33,7 @@
 
 html {
     font-family: 'Nanum Gothic', sans-serif;
+    min-width: 320px;
 }
 
 * {
@@ -41,19 +42,19 @@ html {
 
 @media (max-width:360px) {
     html {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
 @media (min-width:361px) and (max-width:480px) {
     html {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
 @media (min-width:481px) {
     html {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -82,6 +83,32 @@ html {
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 0;
+}
+
+.pagination {
+    display: inline-block;
+    width: 100%;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.pagination strong,
+.pagination a {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 0.625rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination strong {
+    border-color: transparent;
+    background: #0066cc;
+    color: #fff;
+}
+
+.pagination .arrow {
+    background: #efefef;
 }
 
 
@@ -562,7 +589,7 @@ html {
     }
     section.main li {
         position: relative;
-        display: inline-block;
+        display: block;
         float: left;
         width: 50%;
         padding-top: 50%;
@@ -778,8 +805,8 @@ html {
     }
     section.main .dummy {
         color: #333;
-        border: 3px solid #ccc;
-        background: #fff;
+        border: 3px solid #cecece;
+        background: #eee;
     }
     section.main .goods a {
         display: inline-block;
@@ -840,4 +867,1879 @@ html {
     section.main .goods a:hover p.count {
         display: inline-block;
     }
+}
+
+
+/*Mobile-sub*/
+
+@media (max-width:1023px) {
+    section.sub {
+        display: block;
+        width: 100%;
+        font-size: 0;
+    }
+    section.sub .sub_navigation {
+        display: none;
+    }
+    section.sub h3 {
+        margin: 0;
+        padding: 0.625rem 0;
+        font-size: 1.375rem;
+        text-align: center;
+        font-weight: 400;
+    }
+    section.sub div.tag {
+        font-size: 1rem;
+    }
+    section.sub .slider_outline {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+    }
+    section.sub .image_slider .bx {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    section.sub .image_slider .bx img {
+        width: 100%;
+        height: auto;
+    }
+    section.sub #bx-pager {
+        position: absolute;
+        z-index: 700;
+        width: 100%;
+        bottom: 1.25rem;
+        text-align: center;
+    }
+    section.sub #bx-pager img {
+        display: none;
+    }
+    section.sub #bx-pager a {
+        display: inline-block;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-radius: 50%;
+        margin: 0 0.188rem;
+        background: #fff;
+    }
+    section.sub #bx-pager a.active {
+        background: #ffcc33;
+    }
+    section.sub.detail div.title {
+        position: absolute;
+        z-index: 600;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        color: #fff;
+        padding: 0 0 3.125rem;
+        background: url(../images/img_gradient.png) no-repeat center / 100% 100%;
+    }
+    section.sub.detail div.title h3 {
+        display: inline-block;
+        padding: 1.375rem 0 0.625rem;
+        text-shadow: 0 0.125rem 0.063rem #000;
+        margin-bottom: 0.625rem;
+        font-weight: 600;
+        border-bottom: 0.125rem solid #fff;
+    }
+    section.sub.detail div.title p.tag i {
+        display: inline-block;
+        background: #0066cc;
+        color: #fff;
+        font-size: 0.875rem;
+        padding: 0.375rem;
+        border-radius: 0.313rem;
+        margin: 0 0.125rem;
+        font-style: normal;
+    }
+    section.sub.detail .ticket {
+        font-size: 1rem;
+    }
+    section.sub.detail .ticket .tel {
+        font-size: 1.25rem;
+        text-align: center;
+        color: #0066cc;
+    }
+    section.sub.detail .ticket .tel a {
+        text-decoration: none;
+    }
+    section.sub.detail .ticket h4 {
+        cursor: pointer;
+        display: block;
+        margin: 0 0.625rem;
+        position: relative;
+        border: 1px solid #ccc;
+        padding: 1.25rem;
+        font-size: 1rem;
+        color: #555;
+    }
+    section.sub.detail .ticket h4 i {
+        position: absolute;
+        right: 1.25rem;
+        font-size: 1.25rem;
+    }
+    section.sub.detail .ticket .lodge_div {
+        display: none;
+        position: relative;
+        background: #333;
+        margin: 1.25rem 0;
+        padding: 2.5rem 0.625rem 0.625rem;
+        width: 100%;
+    }
+    section.sub.detail .ticket .lodge_div::before {
+        content: "▲";
+        position: absolute;
+        font-size: 1.5rem;
+        left: calc(50% - 0.75rem);
+        top: -1.25rem;
+        color: #333;
+    }
+    section.sub.detail .ticket .lodge_div .table-cover {
+        display: inline-block;
+        width: 100%;
+        overflow-x: scroll;
+    }
+    section.sub.detail .ticket .close {
+        position: absolute;
+        right: 0.625rem;
+        top: 0.625rem;
+        color: #fff;
+        border: none;
+        background: none;
+        font-size: 0;
+        cursor: pointer;
+    }
+    section.sub.detail .ticket .close i {
+        font-size: 1.5rem;
+    }
+    section.sub.detail .ticket .tabs {
+        display: inline-block;
+        width: 100%;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 0;
+    }
+    section.sub.detail .ticket .tabs li {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+    }
+    section.sub.detail .ticket .tabs li a {
+        display: block;
+        padding: 1.25rem 0;
+        text-align: center;
+        color: #fff;
+        background: #0060c0;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    section.sub.detail .ticket .tab-data {
+        display: none;
+    }
+    section.sub.detail .ticket .tab-data.active {
+        display: block;
+    }
+    section.sub.detail .ticket .tabs li a.active {
+        background: #fff;
+        color: #0066cc;
+        font-weight: 600;
+    }
+    section.sub.detail .ticket .lodge_div h5 {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        background: #fff;
+        margin: 0;
+        padding: 1.25rem 0.625rem 0.625rem;
+        font-size: 28px;
+        font-weight: 400;
+    }
+    section.sub.detail .ticket .lodge_div h5 button {
+        background: none;
+        border: none;
+        font-size: 0;
+        cursor: pointer;
+    }
+    section.sub.detail .ticket .lodge_div h5 button i {
+        font-size: 1.75rem;
+    }
+    section.sub.detail .ticket .lodge_div h5 strong {
+        padding: 0 1rem;
+    }
+    section.sub.detail .ticket .infomation {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        background: #fff;
+        font-size: 1rem;
+    }
+    section.sub.detail .ticket .infomation p {
+        display: inline-block;
+        margin: 0 0.625rem 0;
+        padding: 0.625rem 0;
+    }
+    section.sub.detail .ticket .infomation p.off {
+        color: #999;
+    }
+    section.sub.detail .ticket .infomation p.complete {
+        color: #ff3300;
+    }
+    section.sub.detail .ticket .infomation p.on {
+        color: #0066cc;
+    }
+    section.sub.detail .ticket .infomation i {
+        margin-right: 0.25rem;
+    }
+    section.sub.detail .ticket table {
+        border-top: 0.125rem solid #0066cc;
+        background: #fff;
+        width: 87.5rem;
+    }
+    section.sub.detail .ticket th,
+    section.sub.detail .ticket td {
+        position: relative;
+        border: 0.063rem solid #ccc;
+        border-left: none;
+        border-top: none;
+        text-align: center;
+        padding: 0;
+    }
+    section.sub.detail .ticket th:first-child,
+    section.sub.detail .ticket td:first-child {
+        border-left: 0.063rem solid #ccc;
+        word-break: keep-all;
+    }
+    section.sub.detail .ticket th {
+        background: #efefef;
+        font-weight: 400;
+        padding: 0.25rem;
+    }
+    section.sub.detail .ticket th.sat {
+        color: #0066cc;
+    }
+    section.sub.detail .ticket th.sun {
+        color: #ff3300;
+    }
+    section.sub.detail .ticket th strong {
+        display: block;
+    }
+    section.sub.detail .ticket td p {
+        display: block;
+        font-size: 0;
+        background: #eee;
+        width: 100%;
+        height: 100%;
+        padding: 0.625rem 0;
+        margin: 0;
+    }
+    section.sub.detail .ticket td p.off {
+        color: #999;
+        background: #e0e0e0;
+    }
+    section.sub.detail .ticket td p.complete {
+        color: #ff3300;
+        background: #e0e0e0;
+    }
+    section.sub.detail .ticket td p.on {
+        color: #0066cc;
+        background: #fff;
+    }
+    section.sub.detail .ticket td i {
+        font-size: 1rem;
+    }
+    /*
+
+
+
+
+
+
+
+
+sdf
+
+
+
+
+
+
+
+
+
+*/
+    section.sub.detail .ticket #selectItemArea {
+        position: relative;
+        border: 0.063rem solid #bce8f1;
+        background: #d9edf7;
+        padding: 1.25rem 0.625rem 0.625rem;
+        margin: 0.625rem;
+    }
+    section.sub.detail .ticket #selectItemArea .productDelete {
+        position: absolute;
+        right: 0.625rem;
+        top: 0.625rem;
+        font-size: 0;
+        border: 0;
+        background: 0;
+    }
+    section.sub.detail .ticket #selectItemArea .productDelete i {
+        font-size: 1.375rem;
+        color: #0066cc;
+    }
+    section.sub.detail .ticket #selectItemArea h5 {
+        margin: 0;
+        font-size: 1rem;
+        border-bottom: 0.063rem solid #bce8f1;
+        color: #0066cc;
+        padding-bottom: 1.25rem;
+    }
+    section.sub.detail .ticket #selectItemArea p {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+    section.sub.detail .ticket #selectItemArea ul {
+        margin: 0.625rem 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+    section.sub.detail .ticket #selectItemArea li {
+        display: inline-block;
+        margin: 0 0.375rem 0.625rem;
+        font-weight: 600;
+        font-size: 0;
+    }
+    section.sub.detail .ticket #selectItemArea li h6 {
+        font-size: 1.125rem;
+        display: inline-block;
+        padding-right: 0.625rem;
+        margin: 0;
+    }
+    section.sub.detail .ticket #selectItemArea li strong {
+        display: inline-block;
+        background: #fff;
+        width: 5.625rem;
+        font-size: 1.125rem;
+        height: 1.875rem;
+        line-height: 1.875rem;
+    }
+    section.sub.detail .ticket #selectItemArea button {
+        font-size: 0;
+        border: none;
+        background: #0066cc;
+        padding: 0 0.625rem;
+    }
+    section.sub.detail .ticket #selectItemArea button i {
+        font-size: 1.125rem;
+        color: #fff;
+        font-weight: 400;
+        height: 1.875rem;
+        line-height: 1.875rem;
+    }
+    section.sub.detail .ticket #selectItemArea .productPrice {
+        text-align: right;
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #0066cc;
+        margin: 0;
+    }
+    section.sub.detail .ticket #discount {
+        text-align: center;
+        padding: 0.625rem 0;
+    }
+    section.sub.detail .ticket #discount .toggle {
+        background: #333;
+        color: #fff;
+        font-size: 1.125rem;
+        padding: 0.625rem 1.25rem;
+        margin: 0.625rem 1.875rem 0.625rem;
+        border-radius: 0.375rem;
+    }
+    section.sub.detail .ticket #discount p {
+        display: inline-block;
+        margin: 0;
+        font-size: 1rem;
+        margin-bottom: 0.625rem;
+    }
+    section.sub.detail .ticket #discount p strong {
+        padding-left: 0.625rem;
+    }
+    section.sub.detail .ticket #discount p.result {
+        display: block;
+        margin-top: 0.625rem;
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+    section.sub.detail .ticket #discount p.minus strong {
+        color: #0066cc;
+    }
+    section.sub.detail .ticket #discount p.result strong {
+        font-size: 1.625rem;
+        color: #ff3300;
+    }
+    section.sub.detail .ticket #discount p i {
+        margin: 0 0.625rem;
+        color: #999;
+    }
+    section.sub.detail .ticket .discount_div {
+        display: none;
+        position: relative;
+        top: -3.125rem;
+        background: #333;
+        margin: 1.25rem 0 -3.125rem;
+        padding: 2.5rem 0.625rem 0.625rem;
+        width: 100%;
+    }
+    section.sub.detail .ticket .discount_div::before {
+        content: "▲";
+        position: absolute;
+        font-size: 1.5rem;
+        left: calc(50% - 0.75rem);
+        top: -1.25rem;
+        color: #333;
+    }
+    section.sub.detail .ticket .discount_div .close {
+        position: absolute;
+        right: 0.625rem;
+        top: 0.625rem;
+        color: #fff;
+        border: none;
+        background: none;
+        font-size: 0;
+        cursor: pointer;
+    }
+    section.sub.detail .ticket .discount_div .close i {
+        font-size: 1.5rem;
+    }
+    section.sub.detail .ticket .discount_div .outline {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        background: #fff;
+        padding-bottom: 1.25rem;
+    }
+    section.sub.detail .ticket .discount_div h4 {
+        display: inline-block;
+        width: 100%;
+        background: #0066cc;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding: 1.25rem 1.875rem;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+    }
+    section.sub.detail .ticket .discount_div .item {
+        padding: 1.25rem 1.25rem 0;
+        text-align: center;
+    }
+    section.sub.detail .ticket .discount_div .item h5 {
+        font-size: 1rem;
+        margin: 0;
+        padding-bottom: 0.625rem;
+        color: #0066cc;
+    }
+    section.sub.detail .ticket .discount_div .item h5 small {
+        display: block;
+        padding-top: 0.375rem;
+        font-weight: 400;
+        color: #555;
+    }
+    section.sub.detail .ticket .discount_div .item div {
+        position: relative;
+        background: #efefef;
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    section.sub.detail .ticket .discount_div .item div>strong {
+        display: block;
+        text-align: center;
+        font-weight: 400;
+        color: #0066cc;
+    }
+    section.sub.detail .ticket .discount_div .item.none div {
+        background: #cdcdcd;
+        color: #555;
+    }
+    section.sub.detail .ticket .discount_div .item.none div>strong {
+        color: #555;
+    }
+    section.sub.detail .ticket .discount_div .discount_result {
+        text-align: center;
+        padding: 1.25rem 0;
+    }
+    section.sub.detail .ticket .discount_div select {
+        vertical-align: middle;
+        padding: 1px;
+        width: 100%;
+    }
+    section.sub.detail .ticket .discount_div .btn {
+        margin: 1.25rem 0;
+    }
+    section.sub.detail .ticket .discount_div .btn.ok {
+        background: #0066cc;
+        color: #fff;
+        padding: 0.188rem 0.375rem;
+    }
+    section.sub.detail .ticket .discount_div .btn.cancle {
+        background: #333;
+        color: #fff;
+        padding: 0.188rem 0.375rem;
+    }
+    section.sub.detail .ticket .discount_div .btn-area {
+        text-align: center;
+    }
+    section.sub.detail .ticket .discount_div .btn-area .btn {
+        font-size: 1rem;
+        padding: 0.75rem;
+        width: 7.5rem;
+    }
+    section.sub.detail .ticket .submit {
+        display: inline-block;
+        font-size: 1.25rem;
+        vertical-align: top;
+        width: 100%;
+        padding: 0 0.625rem;
+    }
+    section.sub.detail .ticket .submit .btn {
+        background: #0066cc;
+        color: #fff;
+        padding: 1.25rem;
+        width: 100%;
+        border-radius: 0.375rem;
+    }
+    /*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+    section.sub.detail.view .container {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        font-size: 0.875rem;
+        margin: 0 0 1.25rem 0;
+        padding: 0.625rem;
+        background: #fff;
+    }
+    section.sub.detail.view .infoBox {
+        display: inline-block;
+        width: 100%;
+        padding: 0.625rem;
+        word-break: keep-all;
+        border: 0.063rem solid #ccc;
+        background: #f4f4f4;
+        font-size: 0.875rem;
+        color: #555;
+        line-height: 1.6;
+    }
+    section.sub.detail.view .infoBox h5 {
+        margin: 0 0 0.625rem;
+        font-size: 1.125rem;
+    }
+    section.sub.detail.view .infoBox p {
+        margin: 0;
+    }
+    section.sub.detail.view .tabs {
+        font-size: 0;
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0;
+        background: #efefef;
+    }
+    section.sub.detail.view .tabs li {
+        display: inline-block;
+        width: calc(100% / 4);
+    }
+    section.sub.detail.view .tabs li a {
+        display: block;
+        font-size: 1rem;
+        text-align: center;
+        border-bottom: 0.063rem solid #0066cc;
+        padding: 1rem 0;
+        cursor: pointer;
+    }
+    section.sub.detail.view .tabs li a.active {
+        border: 1px solid #0066cc;
+        border-bottom-color: #fff;
+        background: #fff;
+        font-weight: 600;
+        color: #0066cc;
+    }
+    section.sub.detail.view .tab-contents {
+        display: none;
+    }
+    section.sub.detail.view .tab-contents.active {
+        display: block;
+    }
+    section.sub.detail.view table.price {
+        border-top: 0.125rem solid #ccc;
+        width: 100%;
+        border-spacing: 0px;
+        padding: 0px;
+        border-collapse: collapse;
+        margin-bottom: 1.25rem;
+        font-size: 0.625rem;
+    }
+    section.sub.detail.view table.price th {
+        padding: 0.625rem 0.125rem;
+        vertical-align: middle;
+        text-align: center;
+        background: #efefef;
+        border-bottom: 0.063rem solid #ccc;
+        border-right: 0.063rem solid #ccc;
+    }
+    section.sub.detail.view table.price td {
+        padding: 0.625rem 0.125rem;
+        border-bottom: 0.063rem solid #ccc;
+        border-right: 0.063rem solid #ccc;
+        text-align: center;
+        vertical-align: middle;
+    }
+    section.sub.detail.view table.price th:last-child,
+    section.sub.detail.view table.price td:last-child {
+        border-right: none;
+    }
+    section.sub.detail.view #productExplain {
+        word-break: keep-all;
+        line-height: 1.6;
+    }
+    section.sub.detail.view h5 {
+        font-size: 1.25rem;
+        color: #0066cc;
+        margin: 1.25rem 0;
+    }
+    section.sub.detail.view h6 {
+        font-size: 1.125rem;
+        margin: 1.25rem 0;
+    }
+    section.sub.detail.view .attention ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+    section.sub.detail.view .attention li {
+        position: relative;
+        padding: 0 0 0.25rem 0.625rem;
+    }
+    section.sub.detail.view .attention li::before {
+        content: "·";
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+    section.sub.detail.view .attention strong {
+        font-size: 1rem;
+    }
+    /*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+    section.sub.detail.view .write {
+        font-size: 0;
+    }
+    section.sub.detail.view .write .star {
+        margin-bottom: 0.625rem;
+        text-align: center;
+    }
+    section.sub.detail.view .write .star h6 {
+        margin: 0 0.625rem 0;
+        display: inline-block;
+    }
+    section.sub.detail.view .write .star button {
+        display: inline-block;
+        font-size: 0;
+        margin-right: 0.25rem;
+        padding: 0;
+        color: #999;
+    }
+    section.sub.detail.view .write .star button i {
+        font-size: 1.75rem;
+    }
+    section.sub.detail.view .write .star button.on {
+        color: #ff9900;
+    }
+    section.sub.detail.view .write textarea {
+        display: inline-block;
+        width: 100%;
+        height: 5.375rem;
+        border: 0.063rem solid #ccc;
+        padding: 0.625rem;
+        font-size: 1rem;
+    }
+    section.sub.detail.view .write>button {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        padding: 0.875rem 0;
+        margin-top: 0.625rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 0.375rem;
+        border: 0;
+        color: #fff;
+        background: #0066CC;
+    }
+    section.sub.detail.view #tab03 ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: auto;
+    }
+    section.sub.detail.view #tab03 ul li {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        border: 0.063rem solid #ccc;
+        border-bottom-width: 0.125rem;
+        font-size: 1rem;
+        padding: 1.25rem;
+        margin-bottom: 0.625rem;
+        line-height: 1.6;
+    }
+    section.sub.detail.view #tab03 ul li.reply {
+        position: relative;
+        background: #eee;
+        margin-left: 3.125rem;
+        width: calc(100% - 3.125rem);
+    }
+    section.sub.detail.view #tab03 ul li.reply i.fa {
+        display: block;
+        position: absolute;
+        left: -36px;
+        top: 0.625rem;
+        color: #999;
+        font-size: 1.75rem;
+    }
+    section.sub.detail.view #tab03 ul li>p {
+        float: right;
+        margin: 0;
+        font-size: 0.875rem;
+        color: #666;
+        text-align: right;
+        margin-top: 0.438rem;
+        font-weight: 600;
+        line-height: 1.6;
+    }
+    section.sub.detail.view #tab03 ul li p span {
+        display: block;
+        color: #999;
+        font-weight: 400;
+        font-size: 0.75rem;
+    }
+    section.sub.detail.view #tab03 ul li a.delete {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        line-height: 1.375rem;
+        font-size: 0;
+        background: url('../images/delete.png') no-repeat center;
+        margin-left: 0.625rem;
+    }
+    section.sub.detail.view #tab04 ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: auto;
+    }
+    section.sub.detail.view #tab04 ul li {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 0.063rem solid #ccc;
+        font-size: 1rem;
+        padding: 1.25rem 0;
+        line-height: 1.6;
+    }
+    section.sub.detail.view #tab04 ul li .star {
+        display: block;
+        margin-bottom: 0.625rem;
+    }
+    section.sub.detail.view #tab04 ul li .star p {
+        display: inline-block;
+        font-size: 0;
+        padding: 0;
+        color: #999;
+    }
+    section.sub.detail.view #tab04 ul li .star p i {
+        font-size: 1.125rem;
+    }
+    section.sub.detail.view #tab04 ul li .star p.on {
+        color: #ff9900;
+    }
+    section.sub.detail.view #tab04 ul li>p {
+        float: right;
+        margin: 0.625rem 0 0;
+        font-size: 0.875rem;
+        color: #999;
+        text-align: right;
+        font-weight: 600;
+        line-height: 1.6;
+    }
+    section.sub.detail.view #tab04 ul li>p span {
+        color: #999;
+        font-weight: 400;
+        font-size: 0.75rem;
+        padding-right: 0.625rem;
+    }
+    section.sub.detail.view #tab04 ul li a.delete {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        line-height: 1.375rem;
+        font-size: 0;
+        background: url('../images/delete.png') no-repeat center;
+        margin-left: 0.625rem;
+    }
+}
+
+
+/*PC-sub*/
+
+@media (min-width:1024px) {
+    section.sub {
+        display: inline-block;
+        width: 100%;
+        font-size: 0;
+        text-align: center;
+        background: #eee;
+    }
+    section.sub.detail.head .container {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        border: 1px solid #e9e9e9;
+        border-bottom: none;
+        padding: 20px;
+        min-height: 460px;
+        background: #fff;
+    }
+    section.sub .sub_navigation {
+        width: 980px;
+        margin: 16px auto;
+        text-align: right;
+        padding: 0;
+        list-style: none;
+        font-size: 1rem;
+    }
+    section.sub .sub_navigation li {
+        display: inline-block;
+        color: #555;
+    }
+    section.sub .sub_navigation li::after {
+        content: ">";
+        display: inline-block;
+        padding: 0 6px;
+        color: #999;
+    }
+    section.sub .sub_navigation li:last-child::after {
+        content: "";
+    }
+    section.sub .sub_navigation strong {
+        font-weight: 400;
+        color: #0066cc;
+    }
+    section.sub h3 {
+        margin: 0;
+        padding: 0.625rem 0;
+        font-size: 1.375rem;
+        text-align: center;
+        font-weight: 400;
+    }
+    section.sub div.tag {
+        font-size: 1rem;
+    }
+    section.sub .image_slider {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: 400px;
+    }
+    section.sub .image_slider .bx {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+    }
+    section.sub .image_slider .bx img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+    }
+    section.sub #bx-pager {
+        margin-top: 10px;
+    }
+    section.sub #bx-pager img {
+        width: 50px;
+        height: 50px;
+    }
+    section.sub #bx-pager a {
+        display: inline-block;
+        width: 52px;
+        height: 52px;
+        margin-right: 5px;
+        background: #fff;
+        border: 1px solid #ccc;
+    }
+    section.sub #bx-pager a.active {
+        border-color: #0066cc;
+    }
+    section.sub.detail div.title {
+        position: absolute;
+        left: 450px;
+        top: 10px;
+        z-index: 600;
+    }
+    section.sub.detail div.title h3 {
+        display: inline-block;
+        padding: 22px 0 10px;
+        margin-bottom: 10px;
+        font-size: 32px;
+    }
+    section.sub.detail div.title p.tag i {
+        display: inline-block;
+        background: #0066cc;
+        color: #fff;
+        font-size: 0.875rem;
+        padding: 6px;
+        border-radius: 5px;
+        margin: 0 2px;
+        font-style: normal;
+    }
+    section.sub.detail .ticket {
+        font-size: 1rem;
+        position: relative;
+        left: 430px;
+        width: 510px;
+        margin-top: 140px;
+        z-index: 600;
+    }
+    section.sub.detail .ticket .tel {
+        font-size: 16px;
+        color: #0066cc;
+    }
+    section.sub.detail .ticket .lodge_div {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    section.sub.detail .ticket .lodge_div .outline {
+        position: relative;
+        width: 980px;
+        margin: 220px auto 0;
+    }
+    section.sub.detail .ticket .calendar h4 {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        border: 1px solid #ccc;
+        padding: 20px;
+        font-size: 16px;
+        color: #555;
+    }
+    section.sub.detail .ticket .calendar h4 i {
+        position: absolute;
+        right: 20px;
+        font-size: 20px;
+    }
+    section.sub.detail .ticket .close {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        color: #fff;
+        border: none;
+        background: none;
+        font-size: 0;
+        cursor: pointer;
+    }
+    section.sub.detail .ticket .close i {
+        font-size: 24px;
+    }
+    section.sub.detail .ticket .tabs {
+        display: inline-block;
+        width: 100%;
+        background: #0066cc;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 0;
+    }
+    section.sub.detail .ticket .tabs li {
+        display: inline-block;
+    }
+    section.sub.detail .ticket .tabs li a {
+        display: block;
+        padding: 20px 30px;
+        color: #fff;
+        background: #0060c0;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    section.sub.detail .ticket .tab-data {
+        display: none;
+    }
+    section.sub.detail .ticket .tab-data.active {
+        display: block;
+    }
+    section.sub.detail .ticket .tabs li a.active {
+        background: #fff;
+        color: #0066cc;
+        font-weight: 600;
+    }
+    section.sub.detail .ticket .lodge_div h5 {
+        display: inline-block;
+        width: 100%;
+        background: #fff;
+        margin: 0;
+        padding: 20px 10px 10px;
+        font-size: 28px;
+        font-weight: 400;
+    }
+    section.sub.detail .ticket .lodge_div h5 button {
+        background: none;
+        border: none;
+        font-size: 0;
+        cursor: pointer;
+    }
+    section.sub.detail .ticket h5 button i {
+        font-size: 28px;
+    }
+    section.sub.detail .ticket h5 .outline strong {
+        padding: 0 40px;
+    }
+    section.sub.detail .ticket .infomation {
+        display: inline-block;
+        text-align: right;
+        width: 100%;
+        background: #fff;
+        font-size: 16px;
+    }
+    section.sub.detail .ticket .infomation p {
+        display: inline-block;
+        margin: 0 10px 0;
+        position: relative;
+        top: -20px;
+    }
+    section.sub.detail .ticket .infomation p.off {
+        color: #999;
+    }
+    section.sub.detail .ticket .infomation p.complete {
+        color: #ff3300;
+    }
+    section.sub.detail .ticket .infomation p.on {
+        color: #0066cc;
+    }
+    section.sub.detail .ticket .infomation i {
+        margin-right: 4px;
+    }
+    section.sub.detail .ticket table {
+        border-top: 2px solid #0066cc;
+        background: #fff;
+        width: 100%;
+    }
+    section.sub.detail .ticket th,
+    section.sub.detail .ticket td {
+        position: relative;
+        border: 1px solid #ccc;
+        border-left: none;
+        border-top: none;
+        text-align: center;
+        padding: 0;
+    }
+    section.sub.detail .ticket th:first-child,
+    section.sub.detail .ticket td:first-child {
+        border-left: 1px solid #ccc;
+    }
+    section.sub.detail .ticket th {
+        background: #efefef;
+        font-weight: 400;
+        padding: 4px;
+    }
+    section.sub.detail .ticket th.sat {
+        color: #0066cc;
+    }
+    section.sub.detail .ticket th.sun {
+        color: #ff3300;
+    }
+    section.sub.detail .ticket th strong {
+        display: block;
+    }
+    section.sub.detail .ticket td p {
+        display: block;
+        font-size: 0;
+        background: #eee;
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+    section.sub.detail .ticket td p.off {
+        color: #999;
+        background: #e0e0e0;
+    }
+    section.sub.detail .ticket td p.complete {
+        color: #ff3300;
+        background: #e0e0e0;
+    }
+    section.sub.detail .ticket td p.on {
+        color: #0066cc;
+        background: #fff;
+    }
+    section.sub.detail .ticket td i {
+        font-size: 1rem;
+    }
+    /*
+    
+    calendar
+    
+    */
+    section.sub.detail .ticket .sights_div {
+        display: block;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+section.sub.detail .ticket .sights_div h5 {
+    background: #0066cc;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+section.sub.detail .ticket .sights_div .outline {
+    position: relative;
+    width: 500px;
+    margin: 220px auto 0;
+}
+
+section.sub.detail .ticket .sights_div th {
+    padding: 10px 0;
+}
+
+section.sub.detail .ticket .sights_div td a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section.sub.detail .ticket .sights_div td p {
+    font-size: 1rem;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+}
+
+section.sub.detail .ticket #selectItemArea {
+    position: relative;
+    border: 1px solid #bce8f1;
+    background: #d9edf7;
+    padding: 20px 10px 10px;
+    margin-bottom: 10px;
+}
+
+section.sub.detail .ticket #selectItemArea .productDelete {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 0;
+    border: 0;
+    background: 0;
+    padding: 0;
+}
+
+section.sub.detail .ticket #selectItemArea .productDelete i {
+    font-size: 22px;
+    color: #0066cc;
+}
+
+section.sub.detail .ticket #selectItemArea h5 {
+    margin: 0;
+    font-size: 18px;
+    border-bottom: 1px solid #bce8f1;
+    color: #0066cc;
+    padding-bottom: 20px;
+}
+
+section.sub.detail .ticket #selectItemArea .lodge ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+section.sub.detail .ticket #selectItemArea .lodge li {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 0;
+}
+
+section.sub.detail .ticket #selectItemArea .lodge li h6 {
+    font-size: 18px;
+    display: inline-block;
+    padding-right: 10px;
+    margin: 0;
+}
+
+section.sub.detail .ticket #selectItemArea li strong {
+    display: inline-block;
+    background: #fff;
+    width: 90px;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+}
+
+section.sub.detail .ticket #selectItemArea .sights ul {
+    margin: 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+section.sub.detail .ticket #selectItemArea .sights li {
+    display: block;
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 0;
+}
+
+section.sub.detail .ticket #selectItemArea .sights li h6 {
+    font-size: 18px;
+    display: inline-block;
+    text-align: left;
+    width: 100px;
+    margin: 0;
+}
+
+section.sub.detail .ticket #selectItemArea .sights li p {
+    display: inline-block;
+    text-align: right;
+    width: 210px;
+    font-size: 18px;
+    color: #0066cc;
+    margin: 0;
+}
+
+section.sub.detail .ticket #selectItemArea button {
+    font-size: 0;
+    border: none;
+    background: #0066cc;
+    padding: 0 10px;
+}
+
+section.sub.detail .ticket #selectItemArea button i {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    height: 30px;
+    line-height: 30px;
+}
+
+section.sub.detail .ticket #selectItemArea .productPrice {
+    text-align: right;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0066cc;
+    margin: 0;
+}
+
+section.sub.detail .ticket #discount {
+    display: inline-block;
+    width: 354px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+section.sub.detail .ticket #discount.sights {
+    padding-top: 20px;
+}
+
+section.sub.detail .ticket #discount .toggle {
+    background: #333;
+    color: #fff;
+    padding: 2px 4px;
+    margin-left: 6px;
+    border-radius: 6px;
+}
+
+section.sub.detail .ticket #discount p {
+    display: inline-block;
+    margin: 0;
+    font-size: 16px;
+}
+
+section.sub.detail .ticket #discount p strong {
+    padding-left: 10px;
+}
+
+section.sub.detail .ticket #discount p.result {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+section.sub.detail .ticket #discount p.minus strong {
+    color: #0066cc;
+}
+
+section.sub.detail .ticket #discount p.result strong {
+    font-size: 26px;
+    color: #ff3300;
+}
+
+section.sub.detail .ticket #discount p i {
+    margin: 0 10px;
+    color: #999;
+}
+
+section.sub.detail .ticket .discount_div {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+section.sub.detail .ticket .discount_div .outline {
+    position: relative;
+    width: 980px;
+    margin: 220px auto 0;
+    text-align: left;
+    background: #fff;
+    padding-bottom: 20px;
+}
+
+section.sub.detail .ticket .discount_div h4 {
+    display: inline-block;
+    width: 100%;
+    background: #0066cc;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 16px;
+}
+
+section.sub.detail .ticket .discount_div .item {
+    padding: 20px 20px 0;
+}
+
+section.sub.detail .ticket .discount_div .item h5 {
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 10px;
+    color: #0066cc;
+}
+
+section.sub.detail .ticket .discount_div .item h5 small {
+    padding-left: 10px;
+    font-weight: 400;
+    color: #555;
+}
+
+section.sub.detail .ticket .discount_div .item div {
+    position: relative;
+    background: #efefef;
+    padding: 20px;
+}
+
+section.sub.detail .ticket .discount_div .item div .price {
+    display: block;
+    width: 200px;
+}
+
+section.sub.detail .ticket .discount_div .item div>strong {
+    position: absolute;
+    right: 20px;
+    font-weight: 400;
+    color: #0066cc;
+}
+
+section.sub.detail .ticket .discount_div .item.none div {
+    background: #cdcdcd;
+    color: #555;
+}
+
+section.sub.detail .ticket .discount_div .item.none div>strong {
+    color: #555;
+}
+
+section.sub.detail .ticket .discount_div .discount_result {
+    text-align: center;
+    padding: 20px 0;
+}
+
+section.sub.detail .ticket .discount_div select {
+    padding: 1px;
+    min-width: 300px;
+}
+
+section.sub.detail .ticket .discount_div .btn.ok {
+    background: #0066cc;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+section.sub.detail .ticket .discount_div .btn.cancle {
+    background: #333;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+section.sub.detail .ticket .discount_div .btn-area {
+    text-align: center;
+}
+
+section.sub.detail .ticket .discount_div .btn-area .btn {
+    font-size: 16px;
+    padding: 12px;
+    width: 120px;
+}
+
+section.sub.detail .ticket .submit {
+    display: inline-block;
+    font-size: 1.25rem;
+    vertical-align: top;
+    padding: 10px 0 0 10px;
+}
+
+section.sub.detail .ticket .submit .btn {
+    background: #0066cc;
+    color: #fff;
+    padding: 20px;
+    width: 142px;
+    border-radius: 6px;
+}
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+section.sub.detail.view .container {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    font-size: 1rem;
+    border: 1px solid #e9e9e9;
+    border-top: none;
+    margin: 0 0 20px 0;
+    padding: 20px;
+    background: #fff;
+}
+
+section.sub.detail.view .infoBox {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    word-break: keep-all;
+    border: 1px solid #ccc;
+    background: #f4f4f4;
+    line-height: 1.6;
+}
+
+section.sub.detail.view .infoBox h5 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+section.sub.detail.view .infoBox p {
+    margin: 0 0 6px;
+}
+
+section.sub.detail.view .tabs {
+    font-size: 0;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    background: #efefef;
+}
+
+section.sub.detail.view .tabs li {
+    display: inline-block;
+    width: calc(100% / 4);
+}
+
+section.sub.detail.view .tabs li a {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #0066cc;
+    padding: 20px 0;
+    cursor: pointer
+}
+
+section.sub.detail.view .tabs li a.active {
+    border: 1px solid #0066cc;
+    border-bottom-color: #fff;
+    background: #fff;
+    font-weight: 600;
+    color: #0066cc;
+}
+
+section.sub.detail.view .tab-contents {
+    display: none;
+}
+
+section.sub.detail.view .tab-contents.active {
+    display: block;
+}
+
+section.sub.detail.view table.price {
+    border-top: 2px solid #ccc;
+    width: 100%;
+    border-spacing: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+section.sub.detail.view table.price th {
+    padding: 10px 6px;
+    vertical-align: middle;
+    text-align: center;
+    background: #efefef;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+section.sub.detail.view table.price td {
+    padding: 10px 6px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+}
+
+section.sub.detail.view table.price th:last-child,
+section.sub.detail.view table.price td:last-child {
+    border-right: none;
+}
+
+section.sub.detail.view #productExplain {
+    word-break: keep-all;
+    line-height: 1.6;
+}
+
+section.sub.detail.view h5 {
+    font-size: 18px;
+    color: #0066cc;
+    margin: 20px 0;
+}
+
+section.sub.detail.view h6 {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+section.sub.detail.view .attention ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+section.sub.detail.view .attention li {
+    position: relative;
+    padding: 0 0 4px 10px;
+}
+
+section.sub.detail.view .attention li::before {
+    content: "·";
+    display: block;
+    position: absolute;
+    left: 0;
+}
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+section.sub.detail.view .write {
+    font-size: 0;
+}
+
+section.sub.detail.view .write .star {
+    margin-bottom: 10px;
+}
+
+section.sub.detail.view .write .star h6 {
+    margin: 0 10px 0;
+    display: inline-block;
+}
+
+section.sub.detail.view .write .star button {
+    display: inline-block;
+    font-size: 0;
+    margin-right: 4px;
+    padding: 0;
+    color: #999;
+}
+
+section.sub.detail.view .write .star button i {
+    font-size: 28px;
+}
+
+section.sub.detail.view .write .star button.on {
+    color: #ff9900;
+}
+
+section.sub.detail.view .write textarea {
+    display: inline-block;
+    width: 810px;
+    max-width: 810px;
+    height: 86px;
+    max-height: 86px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+}
+
+section.sub.detail.view .write button.submit {
+    display: inline-block;
+    vertical-align: top;
+    width: 128px;
+    height: 86px;
+    line-height: 86px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    color: #fff;
+    background: #0066CC;
+}
+
+section.sub.detail.view #tab03 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: auto;
+}
+
+section.sub.detail.view #tab03 ul li {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    font-size: 16px;
+    padding: 20px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+section.sub.detail.view #tab03 ul li.reply {
+    position: relative;
+    background: #eee;
+    margin-left: 50px;
+    width: calc(100% - 50px);
+}
+
+section.sub.detail.view #tab03 ul li.reply i.fa {
+    display: block;
+    position: absolute;
+    left: -36px;
+    top: 10px;
+    color: #999;
+    font-size: 28px;
+}
+
+section.sub.detail.view #tab03 ul li p {
+    float: right;
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    text-align: right;
+    margin-top: 7px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+section.sub.detail.view #tab03 ul li b {
+    display: inline-block;
+    width: 80%;
+    line-height: 1.6;
+}
+
+section.sub.detail.view #tab03 ul li p span {
+    display: block;
+    color: #999;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+section.sub.detail.view #tab03 ul li a.delete {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 22px;
+    font-size: 0;
+    background: url('../images/delete.png') no-repeat center;
+    margin-left: 10px;
+}
+
+section.sub.detail.view #tab04 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: auto;
+}
+
+section.sub.detail.view #tab04 ul li {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    padding: 20px 0;
+    line-height: 1.6;
+}
+
+section.sub.detail.view #tab04 ul li .star {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+section.sub.detail.view #tab04 ul li .star p {
+    display: inline-block;
+    font-size: 0;
+    padding: 0;
+    color: #999;
+}
+
+section.sub.detail.view #tab04 ul li .star p i {
+    font-size: 18px;
+}
+
+section.sub.detail.view #tab04 ul li .star p.on {
+    color: #ff9900;
+}
+
+section.sub.detail.view #tab04 ul li>p {
+    float: right;
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+section.sub.detail.view #tab04 ul li>p span {
+    color: #999;
+    font-weight: 400;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+section.sub.detail.view #tab04 ul li a.delete {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 22px;
+    font-size: 0;
+    background: url('../images/delete.png') no-repeat center;
+    margin-left: 10px;
+}
+
+
 }

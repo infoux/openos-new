@@ -46,15 +46,75 @@ $(document).ready(function () {
         $('#content').removeClass("mobile_navOn");
     });
 
-
     $('section.main .goods').each(function () {
-
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-
-
-
     });
 
+
+    $(".ticket .tabs a").click(function () {
+        var tabs = $(this).attr("data");
+        $(".ticket .tabs a").removeClass("active");
+        $(this).addClass("active");
+        $(".ticket div.tab-data").removeClass("active");
+        $(".ticket div #" + tabs).addClass("active");
+    });
+
+    $(".ticket .calendar h4").click(function () {
+        $("div.popup").css("display", "block");
+    });
+
+    $("div.popup .close").click(function () {
+        $("div.popup").css("display", "none");
+    });
+
+
+
+    $(".ticket #discount .toggle").click(function () {
+        $("div.discount_div").css("display", "block");
+    });
+
+    $("div.discount_div .close").click(function () {
+        $("div.discount_div").css("display", "none");
+    });
+
+    $("div.discount_div .btn-area .cancle").click(function () {
+        $("div.discount_div").css("display", "none");
+    });
+
+
+
+
+    $(".sub.detail.view .tabs a").click(function () {
+        var tabs = $(this).attr("data");
+        $(".sub.detail.view .tabs a").removeClass("active");
+        $(this).addClass("active");
+        $(".sub.detail.view div.tab-contents").removeClass("active");
+        $(".sub.detail.view div #" + tabs).addClass("active");
+    });
+
+    $(".sub.detail.view .star button").click(function () {
+        var starValue = $(this).attr("data");
+        $(".sub.detail.view button.star").removeClass("on");
+
+
+        $(".sub.detail.view .star button").each(function () {
+            $(this).find("i").removeClass("fa-star");
+            $(this).find("i").addClass("fa-star-o");
+            if ($(this).attr("data") <= starValue) {
+                $(this).addClass("on");
+                $(this).find("i").removeClass("fa-star-o");
+                $(this).find("i").addClass("fa-star");
+            }
+        });
+    });
+
+
+    $(window).load(function () {
+        $('.image_slider .bx').bxSlider({
+            pagerCustom: '#bx-pager',
+            auto: true
+        });
+    });
 
 
 
