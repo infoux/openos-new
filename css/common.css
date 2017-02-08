@@ -1259,7 +1259,6 @@ html {
         display: inline-block;
         margin: 0 0.375rem 0.625rem;
         font-weight: 600;
-        font-size: 0;
     }
     section.sub.detail .ticket #selectItemArea li h6 {
         font-size: 1.125rem;
@@ -1267,13 +1266,15 @@ html {
         padding-right: 0.625rem;
         margin: 0;
     }
-    section.sub.detail .ticket #selectItemArea li strong {
+    section.sub.detail .ticket #selectItemArea li input {
         display: inline-block;
         background: #fff;
-        width: 5.625rem;
+        text-align: center;
+        width: 6.25rem;
         font-size: 1.125rem;
         height: 1.875rem;
         line-height: 1.875rem;
+        margin-right: 0.25rem;
     }
     section.sub.detail .ticket #selectItemArea .sights ul {
         margin: 0.625rem 0;
@@ -1285,7 +1286,6 @@ html {
         display: block;
         margin: 0 0 0.625rem;
         font-weight: 600;
-        font-size: 0;
     }
     section.sub.detail .ticket #selectItemArea .sights li h6 {
         font-size: 1.125rem;
@@ -1325,9 +1325,43 @@ html {
         color: #0066cc;
         margin: 0;
     }
+    section.sub.detail .ticket .discount_item {
+        display: block;
+        margin: 0 10px;
+        list-style: none;
+        padding: 0;
+    }
+    section.sub.detail .ticket .discount_item li {
+        position: relative;
+        border: 1px solid #eee;
+        background: #efefef;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    section.sub.detail .ticket .discount_item li strong {
+        display: block;
+        text-align: right;
+        padding-top: 4px;
+        color: #0066cc;
+    }
+    section.sub.detail .ticket .discount_item li button {
+        border: none;
+        background: none;
+        font-size: 0;
+        padding: 0;
+        margin-left: 10px;
+    }
+    section.sub.detail .ticket .discount_item li button i {
+        font-size: 1rem;
+    }
     section.sub.detail .ticket #discount {
         text-align: center;
         padding: 0.625rem 0;
+    }
+    section.sub.detail .ticket #discount .discount_item {
+        margin: 0;
+        list-style: none;
+        padding: 0;
     }
     section.sub.detail .ticket #discount .toggle {
         background: #333;
@@ -2121,7 +2155,7 @@ html {
     
     */
     section.sub.detail .ticket .sights_div {
-        display: block;
+        display: none;
         position: fixed;
         z-index: 999;
         left: 0;
@@ -2216,7 +2250,7 @@ html {
         display: inline-block;
         margin: 0 10px;
         font-weight: 600;
-        font-size: 0;
+        font-size: 18px;
     }
     section.sub.detail .ticket #selectItemArea .lodge li h6 {
         font-size: 18px;
@@ -2224,13 +2258,15 @@ html {
         padding-right: 10px;
         margin: 0;
     }
-    section.sub.detail .ticket #selectItemArea li strong {
+    section.sub.detail .ticket #selectItemArea li input {
         display: inline-block;
         background: #fff;
-        width: 90px;
+        width: 120px;
         font-size: 18px;
         height: 30px;
         line-height: 30px;
+        margin-right: 4px;
+        text-align: center;
     }
     section.sub.detail .ticket #selectItemArea .sights ul {
         margin: 0 0;
@@ -2242,7 +2278,6 @@ html {
         display: block;
         margin: 0 0 10px;
         font-weight: 600;
-        font-size: 0;
     }
     section.sub.detail .ticket #selectItemArea .sights li h6 {
         font-size: 18px;
@@ -2259,19 +2294,6 @@ html {
         color: #0066cc;
         margin: 0;
     }
-    section.sub.detail .ticket #selectItemArea button {
-        font-size: 0;
-        border: none;
-        background: #0066cc;
-        padding: 0 10px;
-    }
-    section.sub.detail .ticket #selectItemArea button i {
-        font-size: 18px;
-        color: #fff;
-        font-weight: 400;
-        height: 30px;
-        line-height: 30px;
-    }
     section.sub.detail .ticket #selectItemArea .productPrice {
         text-align: right;
         font-size: 18px;
@@ -2284,6 +2306,34 @@ html {
         width: 354px;
         text-align: right;
         padding-top: 10px;
+    }
+    section.sub.detail .ticket .discount_item {
+        display: block;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+    section.sub.detail .ticket .discount_item li {
+        position: relative;
+        border: 1px solid #eee;
+        background: #efefef;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    section.sub.detail .ticket .discount_item li strong {
+        position: absolute;
+        right: 10px;
+        color: #0066cc;
+    }
+    section.sub.detail .ticket .discount_item li button {
+        border: none;
+        background: none;
+        font-size: 0;
+        padding: 0;
+        margin-left: 10px;
+    }
+    section.sub.detail .ticket .discount_item li button i {
+        font-size: 1rem;
     }
     section.sub.detail .ticket #discount.sights {
         padding-top: 20px;
@@ -2389,6 +2439,8 @@ html {
         padding: 20px 0;
     }
     section.sub.detail .ticket .discount_div select {
+        display: inline-block;
+        vertical-align: middle;
         padding: 1px;
         min-width: 300px;
     }
