@@ -1325,6 +1325,13 @@ html {
         color: #0066cc;
         margin: 0;
     }
+    section.sub.detail .ticket .discount_alert {
+        word-break: keep-all;
+        border: 1px solid #eee;
+        background: #efefef;
+        padding: 10px;
+        margin: 0 10px 10px;
+    }
     section.sub.detail .ticket .discount_item {
         display: block;
         margin: 0 10px;
@@ -2306,6 +2313,12 @@ html {
         width: 354px;
         text-align: right;
         padding-top: 10px;
+    }
+    section.sub.detail .ticket .discount_alert {
+        border: 1px solid #eee;
+        background: #efefef;
+        padding: 10px;
+        margin-bottom: 10px;
     }
     section.sub.detail .ticket .discount_item {
         display: block;
