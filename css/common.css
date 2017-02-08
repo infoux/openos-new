@@ -1152,25 +1152,73 @@ html {
         font-size: 1rem;
     }
     /*
-
-
-
-
-
-
-
-
-sdf
-
-
-
-
-
-
-
-
-
-*/
+    
+    calendar
+    
+    */
+    section.sub.detail .ticket .sights_div {
+        display: none;
+        position: relative;
+        background: #333;
+        margin: 1.25rem 0;
+        padding: 2.5rem 0.625rem 0.625rem;
+        width: 100%;
+    }
+    section.sub.detail .ticket .sights_div::before {
+        content: "▲";
+        position: absolute;
+        font-size: 1.5rem;
+        left: calc(50% - 0.75rem);
+        top: -1.25rem;
+        color: #333;
+    }
+    section.sub.detail .ticket .sights_div h5 {
+        background: #0066cc;
+        margin: 0;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 1.25rem;
+        color: #fff;
+        font-weight: 400;
+    }
+    section.sub.detail .ticket .sights_div h5 button {
+        color: #fff;
+        background: none;
+        border: none;
+        font-size: 0;
+        margin: 0 20px;
+        cursor: pointer;
+    }
+    section.sub.detail .ticket .sights_div h5 button i {
+        font-size: 1.25rem;
+    }
+    section.sub.detail .ticket .sights_div table {
+        width: 100%;
+    }
+    section.sub.detail .ticket .sights_div th {
+        padding: 10px 0;
+    }
+    section.sub.detail .ticket .sights_div td {
+        background: #eee;
+    }
+    section.sub.detail .ticket .sights_div td a {
+        color: #333;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    section.sub.detail .ticket .sights_div td p {
+        font-size: 1rem;
+        padding: 0;
+        height: 50px;
+        line-height: 50px;
+        background: #fff;
+    }
+    section.sub.detail .ticket .sights_div td:first-child p {
+        color: #ff3300;
+    }
+    section.sub.detail .ticket .sights_div td:last-child p {
+        color: #0066cc;
+    }
     section.sub.detail .ticket #selectItemArea {
         position: relative;
         border: 0.063rem solid #bce8f1;
@@ -1226,6 +1274,36 @@ sdf
         font-size: 1.125rem;
         height: 1.875rem;
         line-height: 1.875rem;
+    }
+    section.sub.detail .ticket #selectItemArea .sights ul {
+        margin: 0.625rem 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+    section.sub.detail .ticket #selectItemArea .sights li {
+        display: block;
+        margin: 0 0 0.625rem;
+        font-weight: 600;
+        font-size: 0;
+    }
+    section.sub.detail .ticket #selectItemArea .sights li h6 {
+        font-size: 1.125rem;
+        display: inline-block;
+        text-align: left;
+        width: 4.375rem;
+        margin: 0;
+    }
+    section.sub.detail .ticket #selectItemArea .sights li strong {
+        width: 4.375rem;
+    }
+    section.sub.detail .ticket #selectItemArea .sights li p {
+        display: inline-block;
+        text-align: right;
+        width: 6.25rem;
+        font-size: 1.125rem;
+        color: #0066cc;
+        margin: 0;
     }
     section.sub.detail .ticket #selectItemArea button {
         font-size: 0;
@@ -2052,327 +2130,300 @@ sdf
         bottom: 0;
         background: rgba(0, 0, 0, 0.7);
     }
-}
-
-section.sub.detail .ticket .sights_div h5 {
-    background: #0066cc;
-    margin: 0;
-    text-align: center;
-    padding: 10px 0;
-}
-
-section.sub.detail .ticket .sights_div .outline {
-    position: relative;
-    width: 500px;
-    margin: 220px auto 0;
-}
-
-section.sub.detail .ticket .sights_div th {
-    padding: 10px 0;
-}
-
-section.sub.detail .ticket .sights_div td a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-section.sub.detail .ticket .sights_div td p {
-    font-size: 1rem;
-    padding: 0;
-    height: 50px;
-    line-height: 50px;
-}
-
-section.sub.detail .ticket #selectItemArea {
-    position: relative;
-    border: 1px solid #bce8f1;
-    background: #d9edf7;
-    padding: 20px 10px 10px;
-    margin-bottom: 10px;
-}
-
-section.sub.detail .ticket #selectItemArea .productDelete {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 0;
-    border: 0;
-    background: 0;
-    padding: 0;
-}
-
-section.sub.detail .ticket #selectItemArea .productDelete i {
-    font-size: 22px;
-    color: #0066cc;
-}
-
-section.sub.detail .ticket #selectItemArea h5 {
-    margin: 0;
-    font-size: 18px;
-    border-bottom: 1px solid #bce8f1;
-    color: #0066cc;
-    padding-bottom: 20px;
-}
-
-section.sub.detail .ticket #selectItemArea .lodge ul {
-    margin: 20px 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-}
-
-section.sub.detail .ticket #selectItemArea .lodge li {
-    display: inline-block;
-    margin: 0 10px;
-    font-weight: 600;
-    font-size: 0;
-}
-
-section.sub.detail .ticket #selectItemArea .lodge li h6 {
-    font-size: 18px;
-    display: inline-block;
-    padding-right: 10px;
-    margin: 0;
-}
-
-section.sub.detail .ticket #selectItemArea li strong {
-    display: inline-block;
-    background: #fff;
-    width: 90px;
-    font-size: 18px;
-    height: 30px;
-    line-height: 30px;
-}
-
-section.sub.detail .ticket #selectItemArea .sights ul {
-    margin: 0 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-}
-
-section.sub.detail .ticket #selectItemArea .sights li {
-    display: block;
-    margin: 0 0 10px;
-    font-weight: 600;
-    font-size: 0;
-}
-
-section.sub.detail .ticket #selectItemArea .sights li h6 {
-    font-size: 18px;
-    display: inline-block;
-    text-align: left;
-    width: 100px;
-    margin: 0;
-}
-
-section.sub.detail .ticket #selectItemArea .sights li p {
-    display: inline-block;
-    text-align: right;
-    width: 210px;
-    font-size: 18px;
-    color: #0066cc;
-    margin: 0;
-}
-
-section.sub.detail .ticket #selectItemArea button {
-    font-size: 0;
-    border: none;
-    background: #0066cc;
-    padding: 0 10px;
-}
-
-section.sub.detail .ticket #selectItemArea button i {
-    font-size: 18px;
-    color: #fff;
-    font-weight: 400;
-    height: 30px;
-    line-height: 30px;
-}
-
-section.sub.detail .ticket #selectItemArea .productPrice {
-    text-align: right;
-    font-size: 18px;
-    font-weight: 600;
-    color: #0066cc;
-    margin: 0;
-}
-
-section.sub.detail .ticket #discount {
-    display: inline-block;
-    width: 354px;
-    text-align: right;
-    padding-top: 10px;
-}
-
-section.sub.detail .ticket #discount.sights {
-    padding-top: 20px;
-}
-
-section.sub.detail .ticket #discount .toggle {
-    background: #333;
-    color: #fff;
-    padding: 2px 4px;
-    margin-left: 6px;
-    border-radius: 6px;
-}
-
-section.sub.detail .ticket #discount p {
-    display: inline-block;
-    margin: 0;
-    font-size: 16px;
-}
-
-section.sub.detail .ticket #discount p strong {
-    padding-left: 10px;
-}
-
-section.sub.detail .ticket #discount p.result {
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-section.sub.detail .ticket #discount p.minus strong {
-    color: #0066cc;
-}
-
-section.sub.detail .ticket #discount p.result strong {
-    font-size: 26px;
-    color: #ff3300;
-}
-
-section.sub.detail .ticket #discount p i {
-    margin: 0 10px;
-    color: #999;
-}
-
-section.sub.detail .ticket .discount_div {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-section.sub.detail .ticket .discount_div .outline {
-    position: relative;
-    width: 980px;
-    margin: 220px auto 0;
-    text-align: left;
-    background: #fff;
-    padding-bottom: 20px;
-}
-
-section.sub.detail .ticket .discount_div h4 {
-    display: inline-block;
-    width: 100%;
-    background: #0066cc;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    padding: 20px 30px;
-    color: #fff;
-    font-size: 16px;
-}
-
-section.sub.detail .ticket .discount_div .item {
-    padding: 20px 20px 0;
-}
-
-section.sub.detail .ticket .discount_div .item h5 {
-    font-size: 16px;
-    margin: 0;
-    padding-bottom: 10px;
-    color: #0066cc;
-}
-
-section.sub.detail .ticket .discount_div .item h5 small {
-    padding-left: 10px;
-    font-weight: 400;
-    color: #555;
-}
-
-section.sub.detail .ticket .discount_div .item div {
-    position: relative;
-    background: #efefef;
-    padding: 20px;
-}
-
-section.sub.detail .ticket .discount_div .item div .price {
-    display: block;
-    width: 200px;
-}
-
-section.sub.detail .ticket .discount_div .item div>strong {
-    position: absolute;
-    right: 20px;
-    font-weight: 400;
-    color: #0066cc;
-}
-
-section.sub.detail .ticket .discount_div .item.none div {
-    background: #cdcdcd;
-    color: #555;
-}
-
-section.sub.detail .ticket .discount_div .item.none div>strong {
-    color: #555;
-}
-
-section.sub.detail .ticket .discount_div .discount_result {
-    text-align: center;
-    padding: 20px 0;
-}
-
-section.sub.detail .ticket .discount_div select {
-    padding: 1px;
-    min-width: 300px;
-}
-
-section.sub.detail .ticket .discount_div .btn.ok {
-    background: #0066cc;
-    color: #fff;
-    padding: 3px 6px;
-}
-
-section.sub.detail .ticket .discount_div .btn.cancle {
-    background: #333;
-    color: #fff;
-    padding: 3px 6px;
-}
-
-section.sub.detail .ticket .discount_div .btn-area {
-    text-align: center;
-}
-
-section.sub.detail .ticket .discount_div .btn-area .btn {
-    font-size: 16px;
-    padding: 12px;
-    width: 120px;
-}
-
-section.sub.detail .ticket .submit {
-    display: inline-block;
-    font-size: 1.25rem;
-    vertical-align: top;
-    padding: 10px 0 0 10px;
-}
-
-section.sub.detail .ticket .submit .btn {
-    background: #0066cc;
-    color: #fff;
-    padding: 20px;
-    width: 142px;
-    border-radius: 6px;
-}
-
-
-/*
+    section.sub.detail .ticket .sights_div h5 {
+        background: #0066cc;
+        margin: 0;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 1.25rem;
+        color: #fff;
+        font-weight: 400;
+    }
+    section.sub.detail .ticket .sights_div h5 button {
+        color: #fff;
+        background: none;
+        border: none;
+        font-size: 0;
+        margin: 0 20px;
+        cursor: pointer;
+    }
+    section.sub.detail .ticket .sights_div h5 button i {
+        font-size: 1.25rem;
+    }
+    section.sub.detail .ticket .sights_div .outline {
+        position: relative;
+        width: 500px;
+        margin: 220px auto 0;
+    }
+    section.sub.detail .ticket .sights_div th {
+        padding: 10px 0;
+    }
+    section.sub.detail .ticket .sights_div td {
+        background: #eee;
+    }
+    section.sub.detail .ticket .sights_div td a {
+        color: #333;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    section.sub.detail .ticket .sights_div td p {
+        font-size: 1rem;
+        padding: 0;
+        height: 50px;
+        line-height: 50px;
+        background: #fff;
+    }
+    section.sub.detail .ticket .sights_div td:first-child p {
+        color: #ff3300;
+    }
+    section.sub.detail .ticket .sights_div td:last-child p {
+        color: #0066cc;
+    }
+    section.sub.detail .ticket #selectItemArea {
+        position: relative;
+        border: 1px solid #bce8f1;
+        background: #d9edf7;
+        padding: 20px 10px 10px;
+        margin-bottom: 10px;
+    }
+    section.sub.detail .ticket #selectItemArea .productDelete {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 0;
+        border: 0;
+        background: 0;
+        padding: 0;
+    }
+    section.sub.detail .ticket #selectItemArea .productDelete i {
+        font-size: 22px;
+        color: #0066cc;
+    }
+    section.sub.detail .ticket #selectItemArea h5 {
+        margin: 0;
+        font-size: 18px;
+        border-bottom: 1px solid #bce8f1;
+        color: #0066cc;
+        padding-bottom: 20px;
+    }
+    section.sub.detail .ticket #selectItemArea .lodge ul {
+        margin: 20px 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+    section.sub.detail .ticket #selectItemArea .lodge li {
+        display: inline-block;
+        margin: 0 10px;
+        font-weight: 600;
+        font-size: 0;
+    }
+    section.sub.detail .ticket #selectItemArea .lodge li h6 {
+        font-size: 18px;
+        display: inline-block;
+        padding-right: 10px;
+        margin: 0;
+    }
+    section.sub.detail .ticket #selectItemArea li strong {
+        display: inline-block;
+        background: #fff;
+        width: 90px;
+        font-size: 18px;
+        height: 30px;
+        line-height: 30px;
+    }
+    section.sub.detail .ticket #selectItemArea .sights ul {
+        margin: 0 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+    section.sub.detail .ticket #selectItemArea .sights li {
+        display: block;
+        margin: 0 0 10px;
+        font-weight: 600;
+        font-size: 0;
+    }
+    section.sub.detail .ticket #selectItemArea .sights li h6 {
+        font-size: 18px;
+        display: inline-block;
+        text-align: left;
+        width: 100px;
+        margin: 0;
+    }
+    section.sub.detail .ticket #selectItemArea .sights li p {
+        display: inline-block;
+        text-align: right;
+        width: 210px;
+        font-size: 18px;
+        color: #0066cc;
+        margin: 0;
+    }
+    section.sub.detail .ticket #selectItemArea button {
+        font-size: 0;
+        border: none;
+        background: #0066cc;
+        padding: 0 10px;
+    }
+    section.sub.detail .ticket #selectItemArea button i {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 400;
+        height: 30px;
+        line-height: 30px;
+    }
+    section.sub.detail .ticket #selectItemArea .productPrice {
+        text-align: right;
+        font-size: 18px;
+        font-weight: 600;
+        color: #0066cc;
+        margin: 0;
+    }
+    section.sub.detail .ticket #discount {
+        display: inline-block;
+        width: 354px;
+        text-align: right;
+        padding-top: 10px;
+    }
+    section.sub.detail .ticket #discount.sights {
+        padding-top: 20px;
+    }
+    section.sub.detail .ticket #discount .toggle {
+        background: #333;
+        color: #fff;
+        padding: 2px 4px;
+        margin-left: 6px;
+        border-radius: 6px;
+    }
+    section.sub.detail .ticket #discount p {
+        display: inline-block;
+        margin: 0;
+        font-size: 16px;
+    }
+    section.sub.detail .ticket #discount p strong {
+        padding-left: 10px;
+    }
+    section.sub.detail .ticket #discount p.result {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    section.sub.detail .ticket #discount p.minus strong {
+        color: #0066cc;
+    }
+    section.sub.detail .ticket #discount p.result strong {
+        font-size: 26px;
+        color: #ff3300;
+    }
+    section.sub.detail .ticket #discount p i {
+        margin: 0 10px;
+        color: #999;
+    }
+    section.sub.detail .ticket .discount_div {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    section.sub.detail .ticket .discount_div .outline {
+        position: relative;
+        width: 980px;
+        margin: 220px auto 0;
+        text-align: left;
+        background: #fff;
+        padding-bottom: 20px;
+    }
+    section.sub.detail .ticket .discount_div h4 {
+        display: inline-block;
+        width: 100%;
+        background: #0066cc;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding: 20px 30px;
+        color: #fff;
+        font-size: 16px;
+    }
+    section.sub.detail .ticket .discount_div .item {
+        padding: 20px 20px 0;
+    }
+    section.sub.detail .ticket .discount_div .item h5 {
+        font-size: 16px;
+        margin: 0;
+        padding-bottom: 10px;
+        color: #0066cc;
+    }
+    section.sub.detail .ticket .discount_div .item h5 small {
+        padding-left: 10px;
+        font-weight: 400;
+        color: #555;
+    }
+    section.sub.detail .ticket .discount_div .item div {
+        position: relative;
+        background: #efefef;
+        padding: 20px;
+    }
+    section.sub.detail .ticket .discount_div .item div .price {
+        display: block;
+        width: 200px;
+    }
+    section.sub.detail .ticket .discount_div .item div>strong {
+        position: absolute;
+        right: 20px;
+        font-weight: 400;
+        color: #0066cc;
+    }
+    section.sub.detail .ticket .discount_div .item.none div {
+        background: #cdcdcd;
+        color: #555;
+    }
+    section.sub.detail .ticket .discount_div .item.none div>strong {
+        color: #555;
+    }
+    section.sub.detail .ticket .discount_div .discount_result {
+        text-align: center;
+        padding: 20px 0;
+    }
+    section.sub.detail .ticket .discount_div select {
+        padding: 1px;
+        min-width: 300px;
+    }
+    section.sub.detail .ticket .discount_div .btn.ok {
+        background: #0066cc;
+        color: #fff;
+        padding: 3px 6px;
+    }
+    section.sub.detail .ticket .discount_div .btn.cancle {
+        background: #333;
+        color: #fff;
+        padding: 3px 6px;
+    }
+    section.sub.detail .ticket .discount_div .btn-area {
+        text-align: center;
+    }
+    section.sub.detail .ticket .discount_div .btn-area .btn {
+        font-size: 16px;
+        padding: 12px;
+        width: 120px;
+    }
+    section.sub.detail .ticket .submit {
+        display: inline-block;
+        font-size: 1.25rem;
+        vertical-align: top;
+        padding: 10px 0 0 10px;
+    }
+    section.sub.detail .ticket .submit .btn {
+        background: #0066cc;
+        color: #fff;
+        padding: 20px;
+        width: 142px;
+        border-radius: 6px;
+    }
+    /*
 
 
 
@@ -2395,144 +2446,122 @@ section.sub.detail .ticket .submit .btn {
 
 
 */
-
-section.sub.detail.view .container {
-    display: inline-block;
-    position: relative;
-    text-align: left;
-    font-size: 1rem;
-    border: 1px solid #e9e9e9;
-    border-top: none;
-    margin: 0 0 20px 0;
-    padding: 20px;
-    background: #fff;
-}
-
-section.sub.detail.view .infoBox {
-    display: inline-block;
-    width: 100%;
-    padding: 20px;
-    word-break: keep-all;
-    border: 1px solid #ccc;
-    background: #f4f4f4;
-    line-height: 1.6;
-}
-
-section.sub.detail.view .infoBox h5 {
-    margin: 0 0 10px;
-    font-size: 18px;
-}
-
-section.sub.detail.view .infoBox p {
-    margin: 0 0 6px;
-}
-
-section.sub.detail.view .tabs {
-    font-size: 0;
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    background: #efefef;
-}
-
-section.sub.detail.view .tabs li {
-    display: inline-block;
-    width: calc(100% / 4);
-}
-
-section.sub.detail.view .tabs li a {
-    display: block;
-    font-size: 16px;
-    text-align: center;
-    border-bottom: 1px solid #0066cc;
-    padding: 20px 0;
-    cursor: pointer
-}
-
-section.sub.detail.view .tabs li a.active {
-    border: 1px solid #0066cc;
-    border-bottom-color: #fff;
-    background: #fff;
-    font-weight: 600;
-    color: #0066cc;
-}
-
-section.sub.detail.view .tab-contents {
-    display: none;
-}
-
-section.sub.detail.view .tab-contents.active {
-    display: block;
-}
-
-section.sub.detail.view table.price {
-    border-top: 2px solid #ccc;
-    width: 100%;
-    border-spacing: 0px;
-    padding: 0px;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-section.sub.detail.view table.price th {
-    padding: 10px 6px;
-    vertical-align: middle;
-    text-align: center;
-    background: #efefef;
-    border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-}
-
-section.sub.detail.view table.price td {
-    padding: 10px 6px;
-    border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    text-align: center;
-    vertical-align: middle;
-}
-
-section.sub.detail.view table.price th:last-child,
-section.sub.detail.view table.price td:last-child {
-    border-right: none;
-}
-
-section.sub.detail.view #productExplain {
-    word-break: keep-all;
-    line-height: 1.6;
-}
-
-section.sub.detail.view h5 {
-    font-size: 18px;
-    color: #0066cc;
-    margin: 20px 0;
-}
-
-section.sub.detail.view h6 {
-    font-size: 16px;
-    margin: 20px 0;
-}
-
-section.sub.detail.view .attention ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-section.sub.detail.view .attention li {
-    position: relative;
-    padding: 0 0 4px 10px;
-}
-
-section.sub.detail.view .attention li::before {
-    content: "·";
-    display: block;
-    position: absolute;
-    left: 0;
-}
-
-
-/*
+    section.sub.detail.view .container {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        font-size: 1rem;
+        border: 1px solid #e9e9e9;
+        border-top: none;
+        margin: 0 0 20px 0;
+        padding: 20px;
+        background: #fff;
+    }
+    section.sub.detail.view .infoBox {
+        display: inline-block;
+        width: 100%;
+        padding: 20px;
+        word-break: keep-all;
+        border: 1px solid #ccc;
+        background: #f4f4f4;
+        line-height: 1.6;
+    }
+    section.sub.detail.view .infoBox h5 {
+        margin: 0 0 10px;
+        font-size: 18px;
+    }
+    section.sub.detail.view .infoBox p {
+        margin: 0 0 6px;
+    }
+    section.sub.detail.view .tabs {
+        font-size: 0;
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+        background: #efefef;
+    }
+    section.sub.detail.view .tabs li {
+        display: inline-block;
+        width: calc(100% / 4);
+    }
+    section.sub.detail.view .tabs li a {
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        border-bottom: 1px solid #0066cc;
+        padding: 20px 0;
+        cursor: pointer
+    }
+    section.sub.detail.view .tabs li a.active {
+        border: 1px solid #0066cc;
+        border-bottom-color: #fff;
+        background: #fff;
+        font-weight: 600;
+        color: #0066cc;
+    }
+    section.sub.detail.view .tab-contents {
+        display: none;
+    }
+    section.sub.detail.view .tab-contents.active {
+        display: block;
+    }
+    section.sub.detail.view table.price {
+        border-top: 2px solid #ccc;
+        width: 100%;
+        border-spacing: 0px;
+        padding: 0px;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    section.sub.detail.view table.price th {
+        padding: 10px 6px;
+        vertical-align: middle;
+        text-align: center;
+        background: #efefef;
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+    section.sub.detail.view table.price td {
+        padding: 10px 6px;
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        text-align: center;
+        vertical-align: middle;
+    }
+    section.sub.detail.view table.price th:last-child,
+    section.sub.detail.view table.price td:last-child {
+        border-right: none;
+    }
+    section.sub.detail.view #productExplain {
+        word-break: keep-all;
+        line-height: 1.6;
+    }
+    section.sub.detail.view h5 {
+        font-size: 18px;
+        color: #0066cc;
+        margin: 20px 0;
+    }
+    section.sub.detail.view h6 {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    section.sub.detail.view .attention ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+    section.sub.detail.view .attention li {
+        position: relative;
+        padding: 0 0 4px 10px;
+    }
+    section.sub.detail.view .attention li::before {
+        content: "·";
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+    /*
 
 
 
@@ -2555,191 +2584,164 @@ section.sub.detail.view .attention li::before {
 
 
 */
-
-section.sub.detail.view .write {
-    font-size: 0;
-}
-
-section.sub.detail.view .write .star {
-    margin-bottom: 10px;
-}
-
-section.sub.detail.view .write .star h6 {
-    margin: 0 10px 0;
-    display: inline-block;
-}
-
-section.sub.detail.view .write .star button {
-    display: inline-block;
-    font-size: 0;
-    margin-right: 4px;
-    padding: 0;
-    color: #999;
-}
-
-section.sub.detail.view .write .star button i {
-    font-size: 28px;
-}
-
-section.sub.detail.view .write .star button.on {
-    color: #ff9900;
-}
-
-section.sub.detail.view .write textarea {
-    display: inline-block;
-    width: 810px;
-    max-width: 810px;
-    height: 86px;
-    max-height: 86px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    font-size: 16px;
-}
-
-section.sub.detail.view .write button.submit {
-    display: inline-block;
-    vertical-align: top;
-    width: 128px;
-    height: 86px;
-    line-height: 86px;
-    font-size: 16px;
-    font-weight: 600;
-    border: 0;
-    color: #fff;
-    background: #0066CC;
-}
-
-section.sub.detail.view #tab03 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    height: auto;
-}
-
-section.sub.detail.view #tab03 ul li {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-bottom-width: 2px;
-    font-size: 16px;
-    padding: 20px;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-section.sub.detail.view #tab03 ul li.reply {
-    position: relative;
-    background: #eee;
-    margin-left: 50px;
-    width: calc(100% - 50px);
-}
-
-section.sub.detail.view #tab03 ul li.reply i.fa {
-    display: block;
-    position: absolute;
-    left: -36px;
-    top: 10px;
-    color: #999;
-    font-size: 28px;
-}
-
-section.sub.detail.view #tab03 ul li p {
-    float: right;
-    margin: 0;
-    font-size: 14px;
-    color: #666;
-    text-align: right;
-    margin-top: 7px;
-    font-weight: 600;
-    line-height: 1.6;
-}
-
-section.sub.detail.view #tab03 ul li b {
-    display: inline-block;
-    width: 80%;
-    line-height: 1.6;
-}
-
-section.sub.detail.view #tab03 ul li p span {
-    display: block;
-    color: #999;
-    font-weight: 400;
-    font-size: 12px;
-}
-
-section.sub.detail.view #tab03 ul li a.delete {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    line-height: 22px;
-    font-size: 0;
-    background: url('../images/delete.png') no-repeat center;
-    margin-left: 10px;
-}
-
-section.sub.detail.view #tab04 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    height: auto;
-}
-
-section.sub.detail.view #tab04 ul li {
-    display: inline-block;
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    font-size: 16px;
-    padding: 20px 0;
-    line-height: 1.6;
-}
-
-section.sub.detail.view #tab04 ul li .star {
-    display: inline-block;
-    margin-right: 30px;
-}
-
-section.sub.detail.view #tab04 ul li .star p {
-    display: inline-block;
-    font-size: 0;
-    padding: 0;
-    color: #999;
-}
-
-section.sub.detail.view #tab04 ul li .star p i {
-    font-size: 18px;
-}
-
-section.sub.detail.view #tab04 ul li .star p.on {
-    color: #ff9900;
-}
-
-section.sub.detail.view #tab04 ul li>p {
-    float: right;
-    margin: 10px 0 0;
-    font-size: 14px;
-    color: #999;
-    text-align: right;
-    font-weight: 600;
-    line-height: 1.6;
-}
-
-section.sub.detail.view #tab04 ul li>p span {
-    color: #999;
-    font-weight: 400;
-    font-size: 12px;
-    padding-right: 10px;
-}
-
-section.sub.detail.view #tab04 ul li a.delete {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    line-height: 22px;
-    font-size: 0;
-    background: url('../images/delete.png') no-repeat center;
-    margin-left: 10px;
-}
-
-
+    section.sub.detail.view .write {
+        font-size: 0;
+    }
+    section.sub.detail.view .write .star {
+        margin-bottom: 10px;
+    }
+    section.sub.detail.view .write .star h6 {
+        margin: 0 10px 0;
+        display: inline-block;
+    }
+    section.sub.detail.view .write .star button {
+        display: inline-block;
+        font-size: 0;
+        margin-right: 4px;
+        padding: 0;
+        color: #999;
+    }
+    section.sub.detail.view .write .star button i {
+        font-size: 28px;
+    }
+    section.sub.detail.view .write .star button.on {
+        color: #ff9900;
+    }
+    section.sub.detail.view .write textarea {
+        display: inline-block;
+        width: 810px;
+        max-width: 810px;
+        height: 86px;
+        max-height: 86px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 16px;
+    }
+    section.sub.detail.view .write button.submit {
+        display: inline-block;
+        vertical-align: top;
+        width: 128px;
+        height: 86px;
+        line-height: 86px;
+        font-size: 16px;
+        font-weight: 600;
+        border: 0;
+        color: #fff;
+        background: #0066CC;
+    }
+    section.sub.detail.view #tab03 ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: auto;
+    }
+    section.sub.detail.view #tab03 ul li {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-bottom-width: 2px;
+        font-size: 16px;
+        padding: 20px;
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+    section.sub.detail.view #tab03 ul li.reply {
+        position: relative;
+        background: #eee;
+        margin-left: 50px;
+        width: calc(100% - 50px);
+    }
+    section.sub.detail.view #tab03 ul li.reply i.fa {
+        display: block;
+        position: absolute;
+        left: -36px;
+        top: 10px;
+        color: #999;
+        font-size: 28px;
+    }
+    section.sub.detail.view #tab03 ul li p {
+        float: right;
+        margin: 0;
+        font-size: 14px;
+        color: #666;
+        text-align: right;
+        margin-top: 7px;
+        font-weight: 600;
+        line-height: 1.6;
+    }
+    section.sub.detail.view #tab03 ul li b {
+        display: inline-block;
+        width: 80%;
+        line-height: 1.6;
+    }
+    section.sub.detail.view #tab03 ul li p span {
+        display: block;
+        color: #999;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    section.sub.detail.view #tab03 ul li a.delete {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        line-height: 22px;
+        font-size: 0;
+        background: url('../images/delete.png') no-repeat center;
+        margin-left: 10px;
+    }
+    section.sub.detail.view #tab04 ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: auto;
+    }
+    section.sub.detail.view #tab04 ul li {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        font-size: 16px;
+        padding: 20px 0;
+        line-height: 1.6;
+    }
+    section.sub.detail.view #tab04 ul li .star {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    section.sub.detail.view #tab04 ul li .star p {
+        display: inline-block;
+        font-size: 0;
+        padding: 0;
+        color: #999;
+    }
+    section.sub.detail.view #tab04 ul li .star p i {
+        font-size: 18px;
+    }
+    section.sub.detail.view #tab04 ul li .star p.on {
+        color: #ff9900;
+    }
+    section.sub.detail.view #tab04 ul li>p {
+        float: right;
+        margin: 10px 0 0;
+        font-size: 14px;
+        color: #999;
+        text-align: right;
+        font-weight: 600;
+        line-height: 1.6;
+    }
+    section.sub.detail.view #tab04 ul li>p span {
+        color: #999;
+        font-weight: 400;
+        font-size: 12px;
+        padding-right: 10px;
+    }
+    section.sub.detail.view #tab04 ul li a.delete {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        line-height: 22px;
+        font-size: 0;
+        background: url('../images/delete.png') no-repeat center;
+        margin-left: 10px;
+    }
 }
