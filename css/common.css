@@ -1266,6 +1266,15 @@ html {
         padding-right: 0.625rem;
         margin: 0;
     }
+    section.sub.detail .ticket #selectItemArea li strong {
+        display: inline-block;
+        background: #fff;
+        text-align: center;
+        width: 4rem;
+        font-size: 1.125rem;
+        height: 1.875rem;
+        line-height: 1.875rem;
+    }
     section.sub.detail .ticket #selectItemArea li input {
         display: inline-block;
         background: #fff;
@@ -2292,6 +2301,27 @@ html {
         text-align: left;
         width: 100px;
         margin: 0;
+    }
+    section.sub.detail .ticket #selectItemArea li strong {
+        display: inline-block;
+        background: #fff;
+        width: 90px;
+        font-size: 18px;
+        height: 30px;
+        line-height: 30px;
+    }
+    section.sub.detail .ticket #selectItemArea button {
+        font-size: 0;
+        border: none;
+        background: #0066cc;
+        padding: 0 10px;
+    }
+    section.sub.detail .ticket #selectItemArea button i {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 400;
+        height: 30px;
+        line-height: 30px;
     }
     section.sub.detail .ticket #selectItemArea .sights li p {
         display: inline-block;
