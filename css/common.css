@@ -1916,18 +1916,34 @@ html {
         height:6.25rem;
     }
         
-    section.sub.order.sheet .product .option {
-        color:#0066cc;
-        margin:0 0 0.25rem;
+
+    section.sub.order.sheet .product dl {
+        width:100%;
+
         font-size:0.875rem;
     }
-            
-    section.sub.order.sheet .product .sum {
-        margin:0;
+    section.sub.order.sheet .product dt {
+        font-weight:600;
+        color:#0066cc;
+        margin:0 0 10px;
+        padding-bottom:10px;
+        border-bottom:1px solid #ccc;
     }
+    section.sub.order.sheet .product dd {
+        margin:0 0 4px;
+    }
+    section.sub.order.sheet .product dd strong {
+        display:block;
+    }
+    section.sub.order.sheet .product dd i {
+        font-style:normal;
+        color:#ff3300;
+    }     
+    
     
     section.sub.order.sheet .product .price {
-        display:none;
+        font-weight:600;
+        color:#0066cc;
     }
     
     section.sub.order.sheet .product .total {
@@ -3154,9 +3170,9 @@ border-radius:0.625rem;
     
     section.sub.order.sheet .product li {
         position:relative;
-        border:1px solid #eee;
+        border:1px solid #ccc;
         border-bottom:none;
-        padding:20px 0 0 140px;
+        padding:20px 0 16px 140px;
         min-height:140px;
     } 
     
@@ -3173,16 +3189,28 @@ border-radius:0.625rem;
         height:100px;
     }
         
-    section.sub.order.sheet .product .option {
+    section.sub.order.sheet .product dl {
+        width:600px;
+    }
+    section.sub.order.sheet .product dt {
+        font-weight:600;
         color:#0066cc;
+        margin:0 0 10px;
+        padding-bottom:10px;
+        
+        border-bottom:1px solid #ccc;
+    }
+    section.sub.order.sheet .product dd {
         margin:0 0 4px;
     }
-            
-    section.sub.order.sheet .product .sum {
-        
-        margin:0;
+    section.sub.order.sheet .product dd strong {
+        padding-right:10px;
     }
-    
+    section.sub.order.sheet .product dd i {
+        font-style:normal;
+        color:#ff3300;
+    }     
+
     section.sub.order.sheet .product .price {
         position:absolute;
         right:20px;
@@ -3200,6 +3228,7 @@ border-radius:0.625rem;
         margin:0;
         text-align:right;
         font-size:16px;
+        border-top:1px solid #ccc;
     }
     
       
