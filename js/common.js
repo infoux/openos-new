@@ -84,12 +84,12 @@ $(document).ready(function () {
 
 
 
-    $(".sub.detail.view .tabs a").click(function () {
+    $(".sub .container .tabs a").click(function () {
         var tabs = $(this).attr("data");
-        $(".sub.detail.view .tabs a").removeClass("active");
+        $(".sub .container .tabs a").removeClass("active");
         $(this).addClass("active");
-        $(".sub.detail.view div.tab-contents").removeClass("active");
-        $(".sub.detail.view div #" + tabs).addClass("active");
+        $(".sub div.tab-contents").removeClass("active");
+        $(".sub div #" + tabs).addClass("active");
     });
 
     $(".sub.detail.view .star button").click(function () {
