@@ -84,9 +84,9 @@ $(document).ready(function () {
 
 
 
-    $(".sub .container .tabs a").click(function () {
+    $(".sub .container ul.tabs a").click(function () {
         var tabs = $(this).attr("data");
-        $(".sub .container .tabs a").removeClass("active");
+        $(".sub .container ul.tabs a").removeClass("active");
         $(this).addClass("active");
         $(".sub div.tab-contents").removeClass("active");
         $(".sub div #" + tabs).addClass("active");
