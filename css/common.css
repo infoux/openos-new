@@ -90,6 +90,7 @@ html {
     width: 100%;
     padding: 1.25rem;
     text-align: center;
+    font-size: 1rem;
 }
 
 .pagination strong,
@@ -1850,13 +1851,6 @@ html {
     section.sub.order.sheet .container h5 small {
         color: #ff3300;
     }
-
-
-
-
-
-
-
     section.sub .product {
         margin-bottom: 2.5rem;
     }
@@ -1930,33 +1924,19 @@ html {
         color: #555;
         margin-top: 0.625rem;
     }
-
-
-
-
-
-
-
-
-
-
-
-
     section.sub.order.result .container {
         background: #fff;
         padding: 0.625rem;
         font-size: 1rem;
         text-align: left;
     }
-    
-
     section.sub.order.result .container h4 {
         font-size: 1rem;
         text-align: center;
         margin: 1.25rem 0;
         color: #333;
-        font-weight:400;
-        word-break:keep-all;
+        font-weight: 400;
+        word-break: keep-all;
     }
     section.sub.order.result .container h4 strong {
         display: block;
@@ -1967,10 +1947,8 @@ html {
         font-size: 1rem;
         display: block;
         margin: 1.25rem 0 0.625rem;
-        font-weight:600;
+        font-weight: 600;
     }
-
-
     section.sub.result .order_list ul {
         display: inline-block;
         width: 100%;
@@ -1985,44 +1963,32 @@ html {
         padding: 0.625rem;
         min-height: 5rem;
     }
-
     section.sub .order_list li:last-child {
         border-bottom: 1px solid #0066cc;
     }
     section.sub .order_list li h6 {
         font-size: 1rem;
         margin: 0 0 0.625rem;
-        color:#0066cc;
+        color: #0066cc;
     }
     section.sub .order_list li h6 small {
-        display:inline-block;
-        font-weight:400;
+        display: inline-block;
+        font-weight: 400;
     }
-
     section.sub .order_list img {
-        display:none;
+        display: none;
     }
-
     section.sub .order_list p {
-        margin:0 0 0.375rem;
+        margin: 0 0 0.375rem;
     }
-
     section.sub .order_list .price {
         font-size: 1rem;
         color: #0066cc;
         font-weight: 600;
     }
-
     section.sub .order_list .result {
-        font-weight:600;
-
+        font-weight: 600;
     }
-
-
-
-
-
-
     section.sub.order .show_box dl {
         display: inline-block;
         padding: 0.875rem;
@@ -2037,27 +2003,13 @@ html {
     section.sub.order .show_box dd {
         margin: 0;
         padding-left: 0;
-        height:2.438rem;
-        line-height:2.438rem;
-
-        vertical-align:middle;
+        height: 2.438rem;
+        line-height: 2.438rem;
+        vertical-align: middle;
     }
-
     section.sub.order .show_box dd:last-child {
-        border:none;
+        border: none;
     }
-
-
-
-
-
-
-
-
-
-
-
-
     section.sub.order .input_box dl {
         display: inline-block;
         padding: 0.875rem 0.875rem 0;
@@ -2085,7 +2037,6 @@ html {
         padding: 0.5rem;
         height: 2.75rem;
     }
-    section.sub.order .input_box.more select {}
     section.sub.order .input_box .mail_select input[type="text"] {
         margin-bottom: 0.625rem;
     }
@@ -2326,116 +2277,81 @@ html {
         font-size: 26px;
         margin: 20px 0 0;
     }
-
-
-
-
-
-
-
-
-
-
-
     section.sub.refund h5 {
-        margin:0.875rem 0 0.625rem;
-        font-size:1.125rem;
-        color:#0066cc;
+        margin: 0.875rem 0 0.625rem;
+        font-size: 1.125rem;
+        color: #0066cc;
     }
     section.sub.refund textarea {
-        width:100%;
-        border:0.063rem solid #ccc;
-        min-height:7.5rem;
-        padding:0.625rem;
+        width: 100%;
+        border: 0.063rem solid #ccc;
+        min-height: 7.5rem;
+        padding: 0.625rem;
     }
-
     section.sub.refund .refund_list ul {
-        display:inline-block;
-        width:100%;
-        margin:0;
-        padding:0;
-        list-style:none;
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
-
     section.sub.refund .refund_list li {
-        position:relative;
-        border:0.063rem solid #ccc;
-        border-bottom:none;
-        padding:0.625rem;
+        position: relative;
+        border: 0.063rem solid #ccc;
+        border-bottom: none;
+        padding: 0.625rem;
     }
-
-        section.sub.refund .refund_list li:last-child {
-            border-bottom:0.063rem solid #ccc;
-        }
-
+    section.sub.refund .refund_list li:last-child {
+        border-bottom: 0.063rem solid #ccc;
+    }
     section.sub.refund .refund_list h6,
-        section.sub.refund .refund_list li p {
-                    margin:0;
-        }
-
-    section.sub.refund .refund_list h6 {
-        margin-bottom:0.625rem;
-        font-size:1rem;
+    section.sub.refund .refund_list li p {
+        margin: 0;
     }
-        section.sub.refund .refund_list li p {color:#0066cc;margin-bottom:4px;}
-        section.sub.refund .refund_list .total {
-            display:inline-block;
-            width:100%;
-            background:#efefef;
-            margin:0;
-            padding:0.625rem;
-            text-align:center;
-            color:#0066cc;
-            font-size:1.125rem;
-
-        }
-
+    section.sub.refund .refund_list h6 {
+        margin-bottom: 0.625rem;
+        font-size: 1rem;
+    }
+    section.sub.refund .refund_list li p {
+        color: #0066cc;
+        margin-bottom: 4px;
+    }
+    section.sub.refund .refund_list .total {
+        display: inline-block;
+        width: 100%;
+        background: #efefef;
+        margin: 0;
+        padding: 0.625rem;
+        text-align: center;
+        color: #0066cc;
+        font-size: 1.125rem;
+    }
     section.sub.refund .refund_info ul {
-        padding:0;
-        margin:0 0 1.25rem;
-        list-style:none;
+        padding: 0;
+        margin: 0 0 1.25rem;
+        list-style: none;
     }
     section.sub.refund .refund_info li {
-        position:relative;
-        padding:0 0 0.375rem 0.875rem;
+        position: relative;
+        padding: 0 0 0.375rem 0.875rem;
     }
     section.sub.refund .refund_info li::before {
-        content:"·";
-        position:absolute;
-        left:0;
+        content: "·";
+        position: absolute;
+        left: 0;
     }
-    
-        section.sub.refund .btn-area {
+    section.sub.refund .btn-area {
         text-align: center;
     }
-
-        section.sub.refund .btn-area .btn {
+    section.sub.refund .btn-area .btn {
         background: #333;
         color: #fff;
         padding: 1rem 1.25rem;
         font-size: 1rem;
     }
-        section.sub.refund .btn-area .btn.ok {
+    section.sub.refund .btn-area .btn.ok {
         background: #0066cc;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     section.sub .aside_content .product li {
         padding-bottom: 40px;
     }
@@ -2502,82 +2418,214 @@ html {
     section.sub .aside_content.customer td:first-child {
         border: 1px solid #ccc;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  section.sub .login {
-  }
-
-
-
-  section.sub .login_form p {
-      font-size:18px;
-      color:#0066cc;
-      margin:30 0 20px;
-      word-break:keep-all;
-  }
-  section.sub .login_form ul {
-      list-style:none;
-      padding:0;
-      position:relative;
-      margin-bottom:26px;
-  }
-
-  section.sub .login_form li {
-
-  }
-  section.sub .login_form label {
-    display:none;
-  }
-
-  section.sub .login_form input {
-      font-size:18px;
-      padding:0 10px;
-      height:48px;
-      width:calc(100% - 106px);
-      border:1px solid #ccc;
-      margin-bottom:4px;
-  }
-
-  section.sub .login_form .btn {
-      position:absolute;
-      right:0;
-      top:0;
-      margin-left:84px;
-      width:100px;
-      height:100px;
-      line-height:100px;
-      font-weight:600;
-      font-size:1rem;
-      background:#ff6600;
-      color:#fff;
-  }
-
-
-
-    
+    section.sub .login_form p {
+        font-size: 18px;
+        color: #0066cc;
+        margin: 30 0 20px;
+        word-break: keep-all;
+    }
+    section.sub .login_form ul {
+        list-style: none;
+        padding: 0;
+        position: relative;
+        margin-bottom: 26px;
+    }
+    section.sub .login_form label {
+        display: none;
+    }
+    section.sub .login_form input {
+        font-size: 18px;
+        padding: 0 10px;
+        height: 48px;
+        width: calc(100% - 106px);
+        border: 1px solid #ccc;
+        margin-bottom: 4px;
+    }
+    section.sub .login_form .btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-left: 84px;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-weight: 600;
+        font-size: 1rem;
+        background: #ff6600;
+        color: #fff;
+    }
+    section.sub.community .accordion {
+        margin: 1.25rem 0;
+        line-height: 1.6;
+        word-break: keep-all;
+    }
+    section.sub.community .accordion h5 {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        padding: 0.625rem 0.625rem 0.625rem 2.5rem;
+        margin: 0.25rem 0 0;
+        background: #efefef;
+        color: #333;
+        font-size: 1rem;
+        border: 0.063rem solid #ccc;
+        cursor: pointer;
+    }
+    section.sub.community .accordion h5 strong {
+        display: block;
+        position: absolute;
+        left: -0.063rem;
+        top: -0.063rem;
+        color: #fff;
+        background: #333;
+        width: 1.875rem;
+        text-align: center;
+        height: calc(100% + 0.125rem);
+        padding-top: 0.625rem;
+    }
+    section.sub.community .accordion h5.active {
+        background: #0066cc;
+        color: #fff;
+        border-color: #0066cc;
+    }
+    section.sub.community .accordion>div {
+        display: none;
+        position: relative;
+        padding-left: 2.5rem;
+    }
+    section.sub.community .accordion>div .fa {
+        position: absolute;
+        left: 0.625rem;
+        top: 0;
+        font-size: 1.25rem;
+        color: #ccc;
+    }
+    section.sub.community .accordion>div.active {
+        display: block;
+    }
+    section.sub.community .list {
+        margin: 1.25rem 0;
+    }
+    section.sub.community .list div {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        padding: 0.625rem 0.625rem 0.625rem 3.125rem;
+    }
+    section.sub.community .list div:last-of-type {
+        border-bottom: 1px solid #ccc;
+    }
+    section.sub.community .list div p {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #fff;
+        margin: 0;
+        text-align: center;
+        padding: 0.625rem 0;
+        min-width: 2.5rem;
+        height: 100%;
+        background: #eee;
+    }
+    section.sub.community .list div h5 {
+        margin: 0;
+        font-size: 1.125rem;
+    }
+    section.sub.community .list div ul {
+        margin: 0.375rem 0 0;
+        padding: 0;
+        list-style: none;
+    }
+    section.sub.community .list div li {
+        display: inline-block;
+        margin-right: 1.25rem;
+        color: #0066cc;
+    }
+    section.sub.community .btn-area {
+        text-align: center;
+    }
+    section.sub.community .btn-area .btn {
+        font-size: 1rem;
+        color: #333;
+        border: 1px solid #ccc;
+        padding: 0.625rem;
+        width: 60%;
+    }
+    section.sub.community .view {
+        word-break: keep-all;
+    }
+    section.sub.community .view .head {
+        padding: 1.25rem 0.625rem;
+        margin-top: 1.25rem;
+        border: 1px solid #ccc;
+        border-bottom-color: #eee;
+        text-align: center;
+    }
+    section.sub.community .view .head h5 {
+        margin: 0;
+        font-size: 1.125rem;
+    }
+    section.sub.community .view .head ul {
+        margin: 0.375rem 0 0;
+        padding: 0;
+        list-style: none;
+    }
+    section.sub.community .view .head li {
+        display: inline-block;
+        margin-right: 0.625rem;
+        color: #0066cc;
+    }
+    section.sub.community .view .head li:last-child {
+        margin-right: 0;
+    }
+    section.sub.community .view .bbs_view {
+        border: 1px solid #ccc;
+        border-top: none;
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    section.sub.community .bbs_write .head {
+        padding: 1.25rem;
+        margin-top: 1.25rem;
+        border: 0.063rem solid #ccc;
+        border-bottom-color: #eee;
+        text-align: left;
+    }
+    section.sub.community .bbs_write .head input[type="text"] {
+        margin: 0;
+        font-size: 1rem;
+        padding: 0.625rem;
+        width: 100%;
+    }
+    section.sub.community .bbs_write .head label {
+        display: none;
+    }
+    section.sub.community .bbs_write .bbs_text {
+        border: 1px solid #ccc;
+        border-top: none;
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    section.sub.community .bbs_write .bbs_text textarea {
+        width: 100%;
+        min-height: 16.25rem;
+    }
+    section.sub.community .bbs_write .btn-area {
+        text-align: center;
+    }
+    section.sub.community .bbs_write .btn-area .btn {
+        width: 45%;
+    }
+    section.sub.community .bbs_write .btn-area .ok {
+        background: #0066cc;
+        color: #fff;
+        border-color: #0066cc;
+    }
 }
 
 
@@ -3550,13 +3598,11 @@ html {
         font-size: 1rem;
         text-align: left;
     }
-
     section.sub.order.sheet .container h4 {
         font-size: 20px;
         color: #0066cc;
         margin: 0 0 20px;
     }
-
     section.sub.order.sheet .container h5,
     section.sub.order.result .container h5 {
         font-size: 18px;
@@ -3566,10 +3612,6 @@ html {
     section.sub.order.sheet .container h5 small {
         color: #ff3300;
     }
-
-
-
-
     section.sub .product {
         margin-bottom: 40px;
     }
@@ -3647,19 +3689,6 @@ html {
         font-size: 14px;
         color: #555;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
     section.sub.result .order_list ul {
         display: inline-block;
         width: 100%;
@@ -3674,22 +3703,19 @@ html {
         padding: 10px 0 6px 140px;
         min-height: 80px;
     }
-
     section.sub .order_list li:last-child {
         border-bottom: 1px solid #0066cc;
     }
     section.sub .order_list li h6 {
         font-size: 16px;
         margin: 0 0 10px;
-        color:#0066cc;
+        color: #0066cc;
     }
     section.sub .order_list li h6 small {
-        display:inline-block;
-        margin-left:10px;
-        font-size:;
-        font-weight:400;
+        display: inline-block;
+        margin-left: 10px;
+        font-weight: 400;
     }
-
     section.sub .order_list img {
         position: absolute;
         left: 10px;
@@ -3697,11 +3723,9 @@ html {
         width: 60px;
         height: 60px;
     }
-
     section.sub .order_list p {
-        margin:0 0 6px;
+        margin: 0 0 6px;
     }
-
     section.sub .order_list .price {
         position: absolute;
         right: 20px;
@@ -3710,19 +3734,9 @@ html {
         color: #0066cc;
         font-weight: 600;
     }
-
     section.sub .order_list .result {
-        font-weight:600;
-
+        font-weight: 600;
     }
-
-
-
-
-
-
-
-
     section.sub.order.sheet .product .total {
         background: #efefef;
         position: relative;
@@ -3743,29 +3757,12 @@ html {
         font-size: 14px;
         color: #555;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     section.sub.order.result .container {
         background: #fff;
         padding: 20px;
         font-size: 1rem;
         text-align: left;
     }
-    
-
     section.sub.order.result .container h4 {
         font-size: 1rem;
         text-align: center;
@@ -3783,13 +3780,6 @@ html {
         display: block;
         margin: 20px 0 10px;
     }
-
-
-
-
-
-
-
     section.sub.order .show_box dl {
         display: inline-block;
         padding: 14px;
@@ -3806,22 +3796,14 @@ html {
     section.sub.order .show_box dd {
         margin: 0;
         padding-left: 150px;
-        height:39px;
-        line-height:39px;
-
-        vertical-align:middle;
-        border-bottom:1px solid #ccc;
+        height: 39px;
+        line-height: 39px;
+        vertical-align: middle;
+        border-bottom: 1px solid #ccc;
     }
-
     section.sub.order .show_box dd:last-child {
-        border:none;
+        border: none;
     }
-
-
-
-
-
-
     section.sub.order .input_box dl {
         display: inline-block;
         padding: 14px 14px 0;
@@ -3846,7 +3828,6 @@ html {
         border: 1px solid #ccc;
         padding: 10px;
     }
-
     section.sub.order .input_box select {
         padding: 8px;
     }
@@ -3945,9 +3926,6 @@ html {
         vertical-align: bottom;
         margin-left: 6px;
     }
-
-
-
     section.sub.order .payment .btn-area {
         text-align: center;
     }
@@ -4086,107 +4064,80 @@ html {
         padding: 50px 20px;
         text-align: center;
     }
-
-
-
-
-
-
     section.sub.refund h5 {
-        margin:14px 0 10px;
-        font-size:18px;
-        color:#0066cc;
+        margin: 14px 0 10px;
+        font-size: 18px;
+        color: #0066cc;
     }
     section.sub.refund textarea {
-        width:100%;
-        border:1px solid #ccc;
-        min-height:120px;
-        padding:10px;
+        width: 100%;
+        border: 1px solid #ccc;
+        min-height: 120px;
+        padding: 10px;
     }
-
     section.sub.refund .refund_list ul {
-        display:inline-block;
-        width:100%;
-        margin:0;
-        padding:0;
-        list-style:none;
-        text-align:right;
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: right;
     }
-
     section.sub.refund .refund_list li {
-        position:relative;
-        border:1px solid #ccc;
-        border-bottom:none;
-        padding:10px;
+        position: relative;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        padding: 10px;
     }
-
-        section.sub.refund .refund_list li:last-child {
-            border-bottom:1px solid #ccc;
-        }
-
+    section.sub.refund .refund_list li:last-child {
+        border-bottom: 1px solid #ccc;
+    }
     section.sub.refund .refund_list h6,
-        section.sub.refund .refund_list li p {
-            display:inline-block;
-                    margin:0;
-        }
-
+    section.sub.refund .refund_list li p {
+        display: inline-block;
+        margin: 0;
+    }
     section.sub.refund .refund_list h6 {
-        position:absolute;
-        left:10px;
-
-        font-size:1rem;
+        position: absolute;
+        left: 10px;
+        font-size: 1rem;
     }
-        section.sub.refund .refund_list li p {color:#0066cc;margin-left:10px;}
-        section.sub.refund .refund_list .total {
-            display:inline-block;
-            width:100%;
-            background:#efefef;
-            margin:0;
-            padding:10px;
-            text-align:center;
-            color:#0066cc;
-            font-size:18px;
-
-        }
-
+    section.sub.refund .refund_list li p {
+        color: #0066cc;
+        margin-left: 10px;
+    }
+    section.sub.refund .refund_list .total {
+        display: inline-block;
+        width: 100%;
+        background: #efefef;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        color: #0066cc;
+        font-size: 18px;
+    }
     section.sub.refund .refund_info ul {
-        padding:0;
-        margin:0 0 20px;
-        list-style:none;
+        padding: 0;
+        margin: 0 0 20px;
+        list-style: none;
     }
-
     section.sub.refund .refund_info li::before {
-        content:"·";
-        display:inline-block;
-        padding:0 4px 0 10px;
+        content: "·";
+        display: inline-block;
+        padding: 0 4px 0 10px;
     }
-    
-        section.sub.refund .btn-area {
+    section.sub.refund .btn-area {
         text-align: center;
     }
-
-        section.sub.refund .btn-area .btn {
+    section.sub.refund .btn-area .btn {
         background: #333;
         color: #fff;
         padding: 16px 40px;
         font-size: 16px;
     }
-        section.sub.refund .btn-area .btn.ok {
+    section.sub.refund .btn-area .btn.ok {
         background: #0066cc;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
     section.sub .product p.result {
         margin: 0;
         position: absolute;
@@ -4244,67 +4195,440 @@ html {
     section.sub .aside_content.customer td:first-child {
         border: 1px solid #ccc;
     }
-
-
-
-  section.sub .login {
-      text-align:center;
-  }
-  section.sub .login h4 {
-      margin:50px 0 0;
-  }
-
-  section.sub .login_form {
-      display:inline-block;
-      width:500px;
-      margin:20px 0 50px;
-      border:5px solid #eee;
-      font-size:0;
-  }
-  section.sub .login_form p {
-      font-size:18px;
-      color:#0066cc;
-      margin:30 0 20px;
-  }
-  section.sub .login_form ul {
-      list-style:none;
-      padding:0;
-      position:relative;
-      margin-bottom:26px;
-  }
-
-  section.sub .login_form li {
-
-      padding-right:100px;
-  }
-  section.sub .login_form label {
-    display:none;
-  }
-
-  section.sub .login_form input {
-      font-size:18px;
-      padding:0 10px;
-      height:48px;
-      width:260px;
-      border:1px solid #ccc;
-      margin-bottom:4px;
-  }
-
-  section.sub .login_form .btn {
-      position:absolute;
-      left:50%;
-      top:0;
-      margin-left:84px;
-      width:100px;
-      height:100px;
-      line-height:100px;
-      font-weight:600;
-      font-size:1rem;
-      background:#ff6600;
-      color:#fff;
-  }
-
-
-
-
+    section.sub .login {
+        text-align: center;
+    }
+    section.sub .login h4 {
+        margin: 50px 0 0;
+    }
+    section.sub .login_form {
+        display: inline-block;
+        width: 500px;
+        margin: 20px 0 50px;
+        border: 5px solid #eee;
+        font-size: 0;
+    }
+    section.sub .login_form p {
+        font-size: 18px;
+        color: #0066cc;
+        margin: 30 0 20px;
+    }
+    section.sub .login_form ul {
+        list-style: none;
+        padding: 0;
+        position: relative;
+        margin-bottom: 26px;
+    }
+    section.sub .login_form li {
+        padding-right: 100px;
+    }
+    section.sub .login_form label {
+        display: none;
+    }
+    section.sub .login_form input {
+        font-size: 18px;
+        padding: 0 10px;
+        height: 48px;
+        width: 260px;
+        border: 1px solid #ccc;
+        margin-bottom: 4px;
+    }
+    section.sub .login_form .btn {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: 84px;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-weight: 600;
+        font-size: 1rem;
+        background: #ff6600;
+        color: #fff;
+    }
+    section.sub.community .accordion {
+        margin: 20px 0;
+    }
+    section.sub.community .accordion h5 {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        padding: 0 10px 0 50px;
+        height: 42px;
+        line-height: 42px;
+        margin: 4px 0 0;
+        background: #efefef;
+        color: #333;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+    section.sub.community .accordion h5 strong {
+        display: block;
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        color: #fff;
+        background: #333;
+        width: 30px;
+        text-align: center;
+        height: 42px;
+    }
+    section.sub.community .accordion h5.active {
+        background: #0066cc;
+        color: #fff;
+        border-color: #0066cc;
+    }
+    section.sub.community .accordion>div {
+        display: none;
+        position: relative;
+        padding-left: 40px;
+    }
+    section.sub.community .accordion>div .fa {
+        position: absolute;
+        left: 10px;
+        top: 0;
+        font-size: 20px;
+        color: #ccc;
+    }
+    section.sub.community .accordion>div.active {
+        display: block;
+    }
+    section.sub.community .list {
+        margin: 20px 0;
+    }
+    section.sub.community .list div {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        padding: 10px 10px 10px 50px;
+    }
+    section.sub.community .list div:last-of-type {
+        border-bottom: 1px solid #ccc;
+    }
+    section.sub.refund .refund_info ul {
+        padding: 0;
+        margin: 0 0 20px;
+        list-style: none;
+    }
+    section.sub.refund .refund_info li::before {
+        content: "·";
+        display: inline-block;
+        padding: 0 4px 0 10px;
+    }
+    section.sub.refund .btn-area {
+        text-align: center;
+    }
+    section.sub.refund .btn-area .btn {
+        background: #333;
+        color: #fff;
+        padding: 16px 40px;
+        font-size: 16px;
+    }
+    section.sub.refund .btn-area .btn.ok {
+        background: #0066cc;
+    }
+    section.sub .product p.result {
+        margin: 0;
+        position: absolute;
+        text-align: right;
+        right: 20px;
+        top: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #ff3300;
+    }
+    section.sub .aside_content .product p.result .btn {
+        background: #333;
+        color: #fff;
+        display: block;
+        font-size: 1rem;
+        margin: 6px 0;
+        padding: 6px;
+    }
+    section.sub .aside_content.customer h5 {
+        font-size: 14px;
+        margin: 20px 0 10px;
+    }
+    section.sub .aside_content.customer ul {
+        list-style: none;
+        padding: 0 0 0 20px;
+    }
+    section.sub .aside_content.customer li {
+        padding-bottom: 10px;
+    }
+    section.sub .aside_content.customer ul ul {
+        margin-top: 10px;
+        padding: 0 0 0 10px;
+    }
+    section.sub .aside_content.customer table {
+        border-spacing: 0px;
+        padding: 0px;
+        border-collapse: collapse;
+        border-top: 1px solid #ccc;
+        line-height: 1.4;
+        margin-top: 10px;
+        width: 100%;
+    }
+    section.sub .aside_content.customer table th,
+    section.sub .aside_content.customer td {
+        border: 1px solid #ccc;
+        border-left: none;
+        border-top: none;
+        padding: 10px;
+        word-break: keep-all;
+    }
+    section.sub .aside_content.customer table th {
+        text-align: center;
+    }
+    section.sub .aside_content.customer table th:first-child,
+    section.sub .aside_content.customer td:first-child {
+        border: 1px solid #ccc;
+    }
+    section.sub .login {
+        text-align: center;
+    }
+    section.sub .login h4 {
+        margin: 50px 0 0;
+    }
+    section.sub .login_form {
+        display: inline-block;
+        width: 500px;
+        margin: 20px 0 50px;
+        border: 5px solid #eee;
+        font-size: 0;
+    }
+    section.sub .login_form p {
+        font-size: 18px;
+        color: #0066cc;
+        margin: 30 0 20px;
+    }
+    section.sub .login_form ul {
+        list-style: none;
+        padding: 0;
+        position: relative;
+        margin-bottom: 26px;
+    }
+    section.sub .login_form li {
+        padding-right: 100px;
+    }
+    section.sub .login_form label {
+        display: none;
+    }
+    section.sub .login_form input {
+        font-size: 18px;
+        padding: 0 10px;
+        height: 48px;
+        width: 260px;
+        border: 1px solid #ccc;
+        margin-bottom: 4px;
+    }
+    section.sub .login_form .btn {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: 84px;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-weight: 600;
+        font-size: 1rem;
+        background: #ff6600;
+        color: #fff;
+    }
+    section.sub.community .accordion {
+        margin: 20px 0;
+    }
+    section.sub.community .accordion h5 {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        padding: 0 10px 0 50px;
+        height: 42px;
+        line-height: 42px;
+        margin: 4px 0 0;
+        background: #efefef;
+        color: #333;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+    section.sub.community .accordion h5 strong {
+        display: block;
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        color: #fff;
+        background: #333;
+        width: 30px;
+        text-align: center;
+        height: 42px;
+    }
+    section.sub.community .accordion h5.active {
+        background: #0066cc;
+        color: #fff;
+        border-color: #0066cc;
+    }
+    section.sub.community .accordion>div {
+        display: none;
+        position: relative;
+        padding-left: 40px;
+    }
+    section.sub.community .accordion>div .fa {
+        position: absolute;
+        left: 10px;
+        top: 0;
+        font-size: 20px;
+        color: #ccc;
+    }
+    section.sub.community .accordion>div.active {
+        display: block;
+    }
+    section.sub.community .list {
+        margin: 20px 0;
+    }
+    section.sub.community .list div {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        padding: 10px 10px 10px 50px;
+    }
+    section.sub.community .list div:last-of-type {
+        border-bottom: 1px solid #ccc;
+    }
+    section.sub.community .list div p {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+        min-width: 40px;
+        height: 100%;
+        background: #eee;
+    }
+    section.sub.community .list div h5 {
+        margin: 0;
+        font-size: 18px;
+    }
+    section.sub.community .list div ul {
+        margin: 6px 0 0;
+        padding: 0;
+        list-style: none;
+    }
+    section.sub.community .list div li {
+        display: inline-block;
+        margin-right: 20px;
+        color: #0066cc;
+    }
+    section.sub.community .list div p {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+        min-width: 40px;
+        height: 100%;
+        background: #eee;
+    }
+    section.sub.community .list div h5 {
+        margin: 0;
+        font-size: 18px;
+    }
+    section.sub.community .list div ul {
+        margin: 6px 0 0;
+        padding: 0;
+        list-style: none;
+    }
+    section.sub.community .list div li {
+        display: inline-block;
+        margin-right: 20px;
+        color: #0066cc;
+    }
+    section.sub.community .btn-area {
+        text-align: right;
+    }
+    section.sub.community .btn-area .btn {
+        font-size: 1rem;
+        color: #333;
+        border: 1px solid #ccc;
+        padding: 4px 10px;
+    }
+    section.sub.community .view .head {
+        padding: 20px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        border-bottom-color: #eee;
+        text-align: center;
+    }
+    section.sub.community .view .head h5 {
+        margin: 0;
+        font-size: 18px;
+    }
+    section.sub.community .view .head ul {
+        margin: 6px 0 0;
+        padding: 0;
+        list-style: none;
+    }
+    section.sub.community .view .head li {
+        display: inline-block;
+        margin-right: 20px;
+        color: #0066cc;
+    }
+    section.sub.community .view .head li:last-child {
+        margin-right: 0;
+    }
+    section.sub.community .view .bbs_view {
+        border: 1px solid #ccc;
+        border-top: none;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    section.sub.community .bbs_write .head {
+        padding: 20px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        border-bottom-color: #eee;
+        text-align: left;
+    }
+    section.sub.community .bbs_write .head input[type="text"] {
+        margin: 0;
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+    }
+    section.sub.community .bbs_write .head label {
+        display: none;
+    }
+    section.sub.community .bbs_write .bbs_text {
+        border: 1px solid #ccc;
+        border-top: none;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    section.sub.community .bbs_write .bbs_text textarea {
+        width: 100%;
+        min-height: 260px;
+    }
+    section.sub.community .bbs_write .btn-area {
+        text-align: center;
+    }
+    section.sub.community .bbs_write .btn-area .ok {
+        background: #0066cc;
+        color: #fff;
+        border-color: #0066cc;
+    }
 }
