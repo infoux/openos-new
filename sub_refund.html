@@ -87,11 +87,11 @@
     <!-- E:header -->
     <!-- S:mainContent -->
     <article id="content">
-        <section class="sub mypage">
+        <section class="sub mypage refund">
             <ul class="sub_navigation">
                 <li>HOME</li>
                 <li>마이페이지</li>
-                <li><strong>구매조회</strong></li>
+                <li><strong>환불신청</strong></li>
             </ul>
             <div class="container">
                 <aside>
@@ -106,52 +106,53 @@
                     </ul>
                 </aside>
                 <div class="aside_content">
-                    <h4>구매조회</h4>
+                    <h4>환불신청</h4>
 
-                    <div class="tabs">
-                        <p><input id="tab01" name="tab" type="radio"><label for="tab01">오늘</label></p>
-                        <p><input id="tab02" name="tab" type="radio"><label for="tab02">1주</label></p>
-                        <p><input id="tab03" name="tab" type="radio"><label for="tab03">1개월</label></p>
-                        <p><input id="tab04" name="tab" type="radio"><label for="tab04">3개월</label></p>
-                        <p><input id="tab05" name="tab" type="radio"><label for="tab05">6개월</label></p>
-                    </div>
-                    <div class="search">
-                        <input type="text" placeholder="시작일선택">
-                        <button class="btn day">시작일선택<i class="fa fa-calendar-check-o" aria-hidden="true"></i></button>
-                        <strong>~</strong>
-                        <input type="text" placeholder="종료일선택">
-                        <button class="btn day">종료일선택<i class="fa fa-calendar-check-o" aria-hidden="true"></i></button>
-                        
-                        <button class="btn search">조회하기</button>
-                    </div>
-                    
-                    <div class="product">
+                <div class="input_box">
+                    <h5>환불신청사유</h5>
+                    <textarea placeholder="주문취소 사유을 입력해주세요"></textarea>
+                </div>
+
+
+
+                    <div class="refund_list">
+                    <h5>상품별 환불정보</h5>
                         <ul>
                             <li>
-                                <h6>붉은오름자연휴양림</h6> <img src="images/tmp.PNG">
-                                <dl> <dt>초록나무동조록 입실일 : 2017.02.10 / 1박 / 숙박객 1명</dt>
-                                    <dd><strong>2017.02.10 [<i>성수기</i>]</strong>58,000원 - 0원 = 58,000원</dd>
-                                    <dd><strong>2017.02.10</strong>58,000원 - 0원 = 58,000원</dd>
-                                    <dd><strong>2017.02.10</strong>58,000원 - 0원 = 58,000원</dd>
-                                    <dd><strong>2017.02.10</strong>58,000원 - 0원 = 58,000원</dd>
-                                </dl>
-                                <p class="price">74,000원</p>
-                                <p class="result">주문완료
-                                    <button class="btn">주문취소요청</button>
-                                </p>
+                                <h6>삼나무동도라지(2층) / 3박</h6>
+                                <p class="price">상품취소금액 : 74,000원</p>
+                                <p class="pee">환불수수료 차감 : -0원</p>
                             </li>
                             <li>
-                                <h6>붉은오름자연휴양림</h6> <img src="images/tmp.PNG">
-                                <dl> <dt>초록나무동조록 입실일 : 2017.02.10 / 1박 / 숙박객 1명</dt>
-                                    <dd><strong>2017.02.10</strong>58,000원 - 0원 = 58,000원</dd>
-                                </dl>
-                                <p class="price">74,000원</p>
-                                <p class="result">주문취소요청됨 </p>
-                            </li>
-                            <li class="empty">구매내역이 존재하지 않습니다.
+                                <h6>삼나무동도라지(2층) / 3박</h6>
+                                <p class="price">상품취소금액 : 74,000원</p>
+                                <p class="pee">환불수수료 차감 : -0원</p>
                             </li>
                         </ul>
+
+                    <p class="total">총 환불(예정)금액 <strong>74,000원</strong></p>
+   
+
                     </div>
+
+
+
+
+                    <div class="refund_info">
+                    <h5>주문취소 이용안내</h5>
+                        <ul>
+                            <li>해당 상품을 취소하려는 사유와 기타 요구되는 정보를 정확하게 기재합니다.</li>
+                            <li>할인쿠폰, 즉시할인으로 인해 환불 금액이 다를 수 있습니다.</li>
+                            <li>환불완료 후 취소내역페이지에서 자세한 환불 내역을 확인하실 수 있습니다.</li>
+                        </ul>
+                        <div class="btn-area">
+                 <a class="btn ok" href="">주문취소요청</a> <a class="btn cancle" href="">주문취소철회</a> </div>
+                    </div>
+
+
+                    </div>
+
+
                 </div>
         </section>
     </article>
