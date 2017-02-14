@@ -1221,7 +1221,7 @@ html {
     section.sub.detail .ticket .sights_div td:last-child p {
         color: #0066cc;
     }
-    section.sub.detail .ticket #selectItemArea {
+    section.sub.detail .ticket #selectItemArea .lodge {
         position: relative;
         border: 0.063rem solid #bce8f1;
         background: #d9edf7;
@@ -3000,7 +3000,7 @@ html {
     section.sub.detail .ticket .sights_div td:last-child p {
         color: #0066cc;
     }
-    section.sub.detail .ticket #selectItemArea {
+    section.sub.detail .ticket #selectItemArea .lodge{
         position: relative;
         border: 1px solid #bce8f1;
         background: #d9edf7;
