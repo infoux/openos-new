@@ -2769,7 +2769,7 @@ html {
     section.sub.detail .ticket .lodge_div .outline {
         position: relative;
         width: 980px;
-        margin: 220px auto 0;
+        margin: 160px auto 0;
     }
     section.sub.detail .ticket .calendar h4 {
         cursor: pointer;
@@ -2875,6 +2875,12 @@ html {
     section.sub.detail .ticket .infomation i {
         margin-right: 4px;
     }
+
+    section.sub.detail .ticket .table-cover {
+        max-height:500px;
+        overflow-y:scroll;
+    }
+
     section.sub.detail .ticket table {
         border-top: 2px solid #0066cc;
         background: #fff;
@@ -2907,6 +2913,8 @@ html {
     section.sub.detail .ticket th strong {
         display: block;
     }
+
+
     section.sub.detail .ticket td p {
         display: block;
         font-size: 0;
@@ -2970,6 +2978,7 @@ html {
     section.sub.detail .ticket .sights_div th {
         padding: 10px 0;
     }
+
     section.sub.detail .ticket .sights_div td {
         background: #eee;
     }
