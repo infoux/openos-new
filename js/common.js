@@ -49,7 +49,7 @@ $(document).ready(function () {
     $(".ticket .calendar h4").click(function () {
         $("div.popup").css("display", "block");
     });
-    $("div.popup .close").click(function () {
+    $("div.popup").on('click', '.close', function () {
         $("div.popup").css("display", "none");
     });
     $(".ticket #discount .toggle").click(function () {
