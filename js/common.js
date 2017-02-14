@@ -33,7 +33,7 @@ $(document).ready(function () {
         $('#content').addClass("mobile_navOn");
     });
     $("#header nav .mobileClose").click(function () {
-        $("#header nav").css("display", "none");
+        $("#header nav").css("display", "");
         $('#content').removeClass("mobile_navOn");
     });
     $('section.main .goods').each(function () {
