@@ -1925,6 +1925,23 @@ html {
         color: #555;
         margin-top: 0.625rem;
     }
+
+
+
+
+
+    section.sub .product .payment {
+        display:inline-block;
+        width:100%;
+        padding:0.625rem;
+        background:#efefef;
+    }
+
+    section.sub .product .payment p {
+        margin:0 0 0.375rem;
+    }
+
+
     section.sub.order.result .container {
         background: #fff;
         padding: 0.625rem;
@@ -2375,10 +2392,11 @@ html {
     }
     section.sub .aside_content .product p.result .btn {
         background: #333;
+        
         color: #fff;
-        display: block;
+        display: inline-block;
         font-size: 1rem;
-        margin: 6px 0;
+        margin: 6px 0 0 6px;
         padding: 6px;
     }
     section.sub .aside_content.customer h5 {
@@ -3699,6 +3717,9 @@ html {
         font-size: 14px;
         color: #555;
     }
+
+
+
     section.sub.result .order_list ul {
         display: inline-block;
         width: 100%;
@@ -4066,6 +4087,7 @@ html {
     }
     section.sub .aside_content .product dl {
         width: 460px;
+        margin-top:20px;
     }
     section.sub .product li:last-child {
         border-bottom: 1px solid #ccc;
@@ -4074,6 +4096,23 @@ html {
         padding: 50px 20px;
         text-align: center;
     }
+
+
+
+    section.sub .product .payment {
+        display:inline-block;
+        width:460px;
+        padding:10px;
+        background:#efefef;
+    }
+
+    section.sub .product .payment p {
+        margin:0 0 6px;
+    }
+
+
+
+
     section.sub.refund h5 {
         margin: 14px 0 10px;
         font-size: 18px;
@@ -4351,6 +4390,8 @@ html {
         color: #ff3300;
     }
     section.sub .aside_content .product p.result .btn {
+        position:absolute;
+        right:0;
         background: #333;
         color: #fff;
         display: block;
