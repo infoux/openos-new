@@ -2097,10 +2097,19 @@ html {
     }
     section.sub div.tabs {
         display: inline-block;
+        position:relative;
         width: 100%;
         padding: 0.625rem;
         text-align: center;
     }
+
+    section.sub div.tabs h5 {
+        font-size:1.25rem;
+        display:block;
+        margin:0 0 0.625rem;
+        color:#0066cc;
+    }
+
     section.sub div.tabs p {
         position: relative;
         display: inline-block;
@@ -3854,6 +3863,7 @@ html {
     section.sub.order .input_box dd {
         margin: 0 0 14px;
         padding-left: 150px;
+        min-height:38px;
     }
     section.sub.order .input_box input[type="text"] {
         border: 1px solid #ccc;
@@ -3898,8 +3908,19 @@ html {
     }
     section.sub div.tabs {
         display: inline-block;
+        position:relative;
         width: 100%;
         padding: 10px;
+        text-align:right;
+    }
+    section.sub div.tabs h5 {
+        font-size:18px;
+        display:inline-block;
+        margin:0;
+        position:absolute;
+        left:16px;
+        top:16px; 
+        color:#0066cc;
     }
     section.sub div.tabs p {
         position: relative;
