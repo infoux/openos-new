@@ -4411,13 +4411,12 @@ html {
         color: #ff3300;
     }
     section.sub .aside_content .product p.result .btn {
-        position:absolute;
-        right:0;
+
         background: #333;
         color: #fff;
         display: block;
         font-size: 1rem;
-        margin: 6px 0;
+        margin: 6px 0 0 auto;
         padding: 6px;
     }
     section.sub .aside_content.customer h5 {
