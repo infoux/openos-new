@@ -2028,47 +2028,47 @@ html {
     section.sub.order .show_box dd:last-child {
         border: none;
     }
-    section.sub.order .input_box dl {
+    section.sub .input_box dl {
         display: inline-block;
         padding: 0.875rem 0.875rem 0;
         width: 100%;
         border: 0.063rem solid #ccc;
         margin: 0 0 1.875rem;
     }
-    section.sub.order .input_box.essential dl {
+    section.sub .input_box.essential dl {
         border-color: #0066cc;
     }
-    section.sub.order .input_box dt {
+    section.sub .input_box dt {
         display: block;
         margin-bottom: 0.625rem;
     }
-    section.sub.order .input_box dd {
+    section.sub .input_box dd {
         margin: 0 0 0.875rem;
     }
-    section.sub.order .input_box input[type="text"], section.sub.order .input_box input[type="password"] {
+    section.sub .input_box input[type="text"], section.sub .input_box input[type="password"] {
         border: 0.063rem solid #ccc;
         padding: 0.625rem;
         width: 100%;
     }
-    section.sub.order .input_box select {
+    section.sub .input_box select {
         width: 100%;
         padding: 0.5rem;
         height: 2.75rem;
     }
-    section.sub.order .input_box .mail_select input[type="text"] {
+    section.sub .input_box .mail_select input[type="text"] {
         margin-bottom: 0.625rem;
     }
-    section.sub.order .input_box input[type="text"].at {
+    section.sub .input_box input[type="text"].at {
         width: calc(100% - 1.875rem);
     }
-    section.sub.order .input_box dd strong {
+    section.sub .input_box dd strong {
         display: inline-block;
         padding: 0 0.375rem;
         font-weight: 400;
         width: 1.875rem;
         text-align: right;
     }
-    section.sub.order .input_box dd p {
+    section.sub .input_box dd p {
         display: inline-block;
         margin: 0.625rem 0 0;
         font-size: 0.75rem;
@@ -3844,42 +3844,42 @@ html {
     section.sub.order .show_box dd:last-child {
         border: none;
     }
-    section.sub.order .input_box dl {
+    section.sub .input_box dl {
         display: inline-block;
         padding: 14px 14px 0;
         width: 100%;
         border: 1px solid #ccc;
         margin: 0 0 30px;
     }
-    section.sub.order .input_box.essential dl {
+    section.sub .input_box.essential dl {
         border-color: #0066cc;
     }
-    section.sub.order .input_box dt {
+    section.sub .input_box dt {
         float: left;
         width: 140px;
         background: #eee;
         padding: 11px;
     }
-    section.sub.order .input_box dd {
+    section.sub .input_box dd {
         margin: 0 0 14px;
         padding-left: 150px;
         min-height:38px;
     }
-    section.sub.order .input_box input[type="text"], section.sub.order .input_box input[type="password"] {
+    section.sub .input_box input[type="text"], section.sub .input_box input[type="password"] {
         border: 1px solid #ccc;
         padding: 10px;
     }
-    section.sub.order .input_box select {
+    section.sub .input_box select {
         padding: 8px;
     }
-    section.sub.order .input_box.more select {
+    section.sub .input_box.more select {
         min-width: 182px;
     }
-    section.sub.order .input_box dd strong {
+    section.sub .input_box dd strong {
         padding: 0 6px;
         font-weight: 400;
     }
-    section.sub.order .input_box dd p {
+    section.sub .input_box dd p {
         display: inline-block;
         margin: 4px 0 0 10px;
         font-size: 12px;
