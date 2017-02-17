@@ -1579,6 +1579,7 @@ html {
         margin: 0 0 1.25rem 0;
         padding: 0.625rem;
         background: #fff;
+        width:100%;
     }
     
     section.sub.detail.view .infoBox {
