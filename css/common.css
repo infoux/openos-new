@@ -1543,6 +1543,34 @@ html {
         width: 100%;
         border-radius: 0.375rem;
     }
+
+
+
+
+
+    section.sub.detail .ticket .infoBox {
+        display: inline-block;
+        width: calc(100% - 1.25rem);
+        padding: 0.625rem;
+        word-break: keep-all;
+        border: 0.063rem solid #ccc;
+        margin:0 0.625rem;
+        background: #f4f4f4;
+        font-size: 0.875rem;
+        color: #555;
+        line-height: 1.6;
+    }
+    section.sub.detail .ticket .infoBox h5 {
+        margin: 0 0 0.625rem;
+        font-size: 1.125rem;
+    }
+    section.sub.detail .ticket .infoBox p {
+        margin: 0;
+    }
+
+
+
+
     section.sub.detail.view .container {
         display: inline-block;
         position: relative;
@@ -1552,6 +1580,7 @@ html {
         padding: 0.625rem;
         background: #fff;
     }
+    
     section.sub.detail.view .infoBox {
         display: inline-block;
         width: 100%;
@@ -3322,6 +3351,30 @@ html {
         width: 142px;
         border-radius: 6px;
     }
+
+
+    section.sub.detail .ticket .infoBox {
+        display: inline-block;
+        width: 100%;
+        padding: 20px;
+        word-break: keep-all;
+        border: 1px solid #ccc;
+        background: #f4f4f4;
+        line-height: 1.6;
+    }
+    section.sub.detail .ticket .infoBox h5 {
+        margin: 0 0 10px;
+        font-size: 18px;
+        color:#0066cc;
+    }
+    section.sub.detail .ticket .infoBox p {
+        margin: 0 0 6px;
+    }
+
+
+
+
+
     section.sub.detail.view .container {
         display: inline-block;
         position: relative;
@@ -3333,6 +3386,10 @@ html {
         padding: 20px;
         background: #fff;
     }
+
+
+
+
     section.sub.detail.view .infoBox {
         display: inline-block;
         width: 100%;
@@ -3349,6 +3406,10 @@ html {
     section.sub.detail.view .infoBox p {
         margin: 0 0 6px;
     }
+
+
+
+
     section.sub .tabs {
         font-size: 0;
         list-style: none;
@@ -3640,6 +3701,8 @@ html {
         padding: 20px;
         font-size: 1rem;
         text-align: left;
+
+        margin: 0 0 20px 0;
     }
     section.sub.order.sheet .container h4 {
         font-size: 20px;
@@ -3808,6 +3871,7 @@ html {
         padding: 20px;
         font-size: 1rem;
         text-align: left;
+        margin: 0 0 20px 0;
     }
     section.sub.order.result .container h4 {
         font-size: 1rem;
