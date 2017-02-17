@@ -1959,12 +1959,13 @@ html {
     section.sub.order.result .container h4 strong {
         display: block;
         font-size: 1.75rem;
+        margin-bottom:0.625rem;
         color: #0066cc;
     }
     section.sub.order.result .container h4 small {
         font-size: 1rem;
         display: block;
-        margin: 1.25rem 0 0.625rem;
+        margin: 0.625rem 0 0.625rem;
         font-weight: 600;
     }
     section.sub.result .order_list ul {
@@ -2168,7 +2169,7 @@ html {
         vertical-align: bottom;
         margin-left: 0.375rem;
     }
-    section.sub.order .payment .btn-area {
+    section.sub.order .btn-area {
         margin-bottom: 2.5rem;
         text-align: center;
     }
@@ -2190,13 +2191,13 @@ html {
     section.sub.order .payment .btn-area i {
         margin: 0 0.625rem;
     }
-    section.sub.order .payment .btn-area .btn {
+    section.sub.order .btn-area .btn {
         background: #333;
         color: #fff;
-        padding: 1rem 2.5rem;
+        padding: 1rem 1.5rem;
         font-size: 1rem;
     }
-    section.sub.order .payment .btn-area .btn.ok {
+    section.sub.order .btn-area .btn.ok {
         background: #0066cc;
     }
     section.sub aside {
@@ -2564,6 +2565,11 @@ html {
         margin: 0;
         font-size: 1.125rem;
     }
+    section.sub.community .list div h5 a {
+        color:#333;
+        text-decoration:none;
+    }
+
     section.sub.community .list div ul {
         margin: 0.375rem 0 0;
         padding: 0;
@@ -3814,11 +3820,12 @@ html {
         font-weight: 400;
         font-size: 32px;
         color: #0066cc;
+        margin-bottom:10px;
     }
     section.sub.order.result .container h4 small {
         font-size: 18px;
         display: block;
-        margin: 20px 0 10px;
+        margin: 10px 0 10px;
     }
     section.sub.order .show_box dl {
         display: inline-block;
@@ -3978,7 +3985,7 @@ html {
         vertical-align: bottom;
         margin-left: 6px;
     }
-    section.sub.order .payment .btn-area {
+    section.sub.order .btn-area {
         text-align: center;
     }
     section.sub.order .payment .btn-area ul {
@@ -3998,13 +4005,13 @@ html {
     section.sub.order .payment .btn-area i {
         margin: 0 10px;
     }
-    section.sub.order .payment .btn-area .btn {
+    section.sub.order .btn-area .btn {
         background: #333;
         color: #fff;
         padding: 16px 40px;
         font-size: 16px;
     }
-    section.sub.order .payment .btn-area .btn.ok {
+    section.sub.order .btn-area .btn.ok {
         background: #0066cc;
     }
     section.sub aside {
@@ -4590,6 +4597,11 @@ html {
         margin: 0;
         font-size: 18px;
     }
+    section.sub.community .list div h5 a {
+        color:#333;
+        text-decoration:none;
+    }
+
     section.sub.community .list div ul {
         margin: 6px 0 0;
         padding: 0;
