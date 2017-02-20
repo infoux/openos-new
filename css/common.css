@@ -1502,6 +1502,14 @@ html {
     section.sub.detail .ticket .discount_div .item.none div>strong {
         color: #555;
     }
+
+    section.sub.detail .ticket .discount_div .info-text {
+        text-align:center;
+        margin:1.25rem 1.25rem 0;
+        word-break:keep-all;
+        color:#ff3300;
+    }
+
     section.sub.detail .ticket .discount_div .discount_result {
         text-align: center;
         padding: 1.25rem 0;
@@ -3346,10 +3354,22 @@ html {
     section.sub.detail .ticket .discount_div .item.none div>strong {
         color: #555;
     }
+    section.sub.detail .ticket .discount_div .info-text {
+        text-align:center;
+        margin:20px 20px 0;
+
+        color:#ff3300;
+    }
+
     section.sub.detail .ticket .discount_div .discount_result {
         text-align: center;
         padding: 20px 0;
+        font-size:16px;
     }
+
+
+
+
     section.sub.detail .ticket .discount_div select {
         display: inline-block;
         vertical-align: middle;
