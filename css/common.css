@@ -691,7 +691,7 @@ html {
         top: 0;
         width: 100%;
         height: 100%;
-        padding-top: 20%;
+        padding: 20% 5% 0;
         background: rgba(0, 0, 0, 0.5);
         text-align: center;
         color: #fff;
@@ -837,9 +837,12 @@ html {
         line-height: 50px;
         background: rgba(0, 0, 0, 0.5);
         text-align: left;
-        padding: 0 20px;
+        padding: 0 60px 0 20px;
         color: #fff;
         font-weight: 400;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     section.main .goods h4 small {
         position: absolute;
@@ -862,7 +865,7 @@ html {
         top: 0;
         text-align: center;
         font-size: 18px;
-        padding-top: 60px;
+        padding: 60px 20px 0;
     }
     section.main .goods a:hover h4 small {
         display: block;
