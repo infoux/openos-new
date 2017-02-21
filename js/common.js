@@ -8,9 +8,8 @@ $(document).ready(function () {
         var windowWidth = $(window).width();
         if (windowWidth > 1023) {
             $("body").addClass("pcMode");
-            $("body").remobeClass("mobileMode");
-        }
-        else {
+            $("body").removeClass("mobileMode");
+        } else {
             $("body").removeClass("pcMode");
             $("body").addClass("mobileMode");
 
@@ -62,19 +61,19 @@ $(document).ready(function () {
 
 
 
-    $(".mobileMode .tab-data .table-cover").scroll(function(){
-                var t=$(".mobileMode .tab-data.active .table-cover").scrollLeft();
-                if (t > 1){
+    $(".mobileMode .tab-data .table-cover").scroll(function () {
+        var t = $(".mobileMode .tab-data.active .table-cover").scrollLeft();
+        if (t > 1) {
 
-                    $(".mobileMode .active .table-cover").addClass("fixOn");
-                    $(".mobileMode .active .table-cover td:nth-child(-n+3)").addClass("fix");
-                    $(".mobileMode .active .table-cover th:nth-child(-n+3)").addClass("fix");
-                } else {
-                    $(".mobileMode .active .table-cover").removeClass("fixOn");
-                    $(".mobileMode .active .table-cover td:nth-child(-n+3)").removeClass("fix");
-                    $(".mobileMode .active .table-cover th:nth-child(-n+3)").removeClass("fix");
+            $(".mobileMode .active .table-cover").addClass("fixOn");
+            $(".mobileMode .active .table-cover td:nth-child(-n+3)").addClass("fix");
+            $(".mobileMode .active .table-cover th:nth-child(-n+3)").addClass("fix");
+        } else {
+            $(".mobileMode .active .table-cover").removeClass("fixOn");
+            $(".mobileMode .active .table-cover td:nth-child(-n+3)").removeClass("fix");
+            $(".mobileMode .active .table-cover th:nth-child(-n+3)").removeClass("fix");
 
-                };
+        };
     });
 
 
@@ -122,8 +121,8 @@ $(document).ready(function () {
     });
     $(window).load(function () {
         $('.image_slider .bx').bxSlider({
-            pagerCustom: '#bx-pager'
-            , auto: true
+            pagerCustom: '#bx-pager',
+            auto: true
         });
     });
 
