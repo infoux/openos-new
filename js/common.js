@@ -1,11 +1,19 @@
 $(document).ready(function () {
+
+
+
+
+
     function navPc() {
         var windowWidth = $(window).width();
         if (windowWidth > 1023) {
             $("body").addClass("pcMode");
+            $("body").remobeClass("mobileMode");
         }
         else {
             $("body").removeClass("pcMode");
+            $("body").addClass("mobileMode");
+
         }
         $('.pcMode #header nav').hover(function () {
             $(this).addClass('active');
@@ -24,6 +32,10 @@ $(document).ready(function () {
             $(this).removeClass('over');
         });
     }
+
+
+
+
     navPc();
     $(window).resize(function () {
         navPc();
@@ -45,7 +57,27 @@ $(document).ready(function () {
         $(this).addClass("active");
         $(".ticket div.tab-data").removeClass("active");
         $(".ticket div #" + tabs).addClass("active");
+
     });
+
+
+
+    $(".mobileMode .tab-data .table-cover").scroll(function(){
+                var t=$(".mobileMode .tab-data.active .table-cover").scrollLeft();
+                if (t > 1){
+
+                    $(".mobileMode .active .table-cover").addClass("fixOn");
+                    $(".mobileMode .active .table-cover td:nth-child(-n+3)").addClass("fix");
+                    $(".mobileMode .active .table-cover th:nth-child(-n+3)").addClass("fix");
+                } else {
+                    $(".mobileMode .active .table-cover").removeClass("fixOn");
+                    $(".mobileMode .active .table-cover td:nth-child(-n+3)").removeClass("fix");
+                    $(".mobileMode .active .table-cover th:nth-child(-n+3)").removeClass("fix");
+
+                };
+    });
+
+
     $(".ticket .calendar h4").click(function () {
         $("div.popup").css("display", "block");
     });
@@ -94,4 +126,8 @@ $(document).ready(function () {
             , auto: true
         });
     });
+
+
+
+
 });
