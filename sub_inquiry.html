@@ -9,13 +9,36 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/pikaday.css" />
     <!--[if lt IE 9]>
         <script src="js/respond.min.js"></script>
         <script src="js/html5shiv.js"></script>
     <![endif]-->
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+  	<script type="text/javascript" src="js/pikaday.js"></script>
+  	<script type="text/javascript" src="js/pikaday.jquery.js"></script>
+
     <script src="js/common.js"></script>
+    <script>
+    $(document).ready(function(){
+        var $sDate = $('#sDate'), $eDate = $('#eDate');
+
+            $sDate.pikaday({
+                format: 'YYYY-MM-DD',
+                maxDate: moment().toDate(),
+                onSelect: function(e){
+                    $eDate.pikaday();
+    			}
+            });
+            $eDate.pikaday({
+                format: 'YYYY-MM-DD'
+    			//minDate: moment().toDate(),
+                //maxDate: moment().toDate()
+            });
+    });
+    </script>
 </head>
 
 <body>
@@ -131,9 +154,9 @@
                         </p>
                     </div>
                     <div class="search">
-                        <input type="text" placeholder="시작일선택">
+                        <input type="text" id="sDate" placeholder="시작일선택">
                         <button class="btn day">시작일선택<i class="fa fa-calendar-check-o" aria-hidden="true"></i></button> <strong>~</strong>
-                        <input type="text" placeholder="종료일선택">
+                        <input type="text" id="eDate" placeholder="종료일선택">
                         <button class="btn day">종료일선택<i class="fa fa-calendar-check-o" aria-hidden="true"></i></button>
                         <button class="btn search">조회하기</button>
                     </div>
