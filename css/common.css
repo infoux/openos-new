@@ -3344,7 +3344,7 @@ html {
         position: relative;
         border: 1px solid #eee;
         background: #efefef;
-        padding: 10px;
+        padding: 10px 100px 10px 10px;
         margin-bottom: 10px;
     }
     section.sub.detail .ticket .discount_item li strong {
