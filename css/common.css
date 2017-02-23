@@ -1081,6 +1081,14 @@ html {
     section.sub.detail .ticket .lodge_div h5 strong {
         padding: 0 1rem;
     }
+    section.sub.detail .ticket .lodge_div select#person{
+      position:relative;
+      padding:0.313rem 1.563rem 0.313rem 0.313rem;
+      font-size:1rem;
+      top:0;
+      margin-left:0;
+      width:100%;
+    }
     section.sub.detail .ticket .infomation {
         display: inline-block;
         text-align: center;
@@ -2889,6 +2897,13 @@ html {
         width: 980px;
         margin: 160px auto 0;
     }
+    section.sub.detail .ticket .lodge_div select#person{
+  		position:relative;
+  		top:0.625rem;
+  		padding:0.313rem 1.563rem 0.313rem 0.313rem;
+  		font-size:1rem;
+  		margin-left:1.25rem;
+  	}
     section.sub.detail .ticket .calendar h4 {
         cursor: pointer;
         display: block;
