@@ -1180,6 +1180,12 @@ html {
         left: 0.625rem;
         width: 7.5rem;
         padding: 0 0.125rem;
+        vertical-align: middle;
+        white-space: normal;
+        line-height: 1.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     section.sub.detail .ticket th.fix {
         background: #eee;
