@@ -636,6 +636,7 @@
             this.hide();
             self.el.className += ' is-bound';
             addEvent(opts.trigger, 'click', self._onInputClick);
+            addEvent(opts.trigger, 'touchend', self._onInputClick);
             addEvent(opts.trigger, 'focus', self._onInputFocus);
             addEvent(opts.trigger, 'blur', self._onInputBlur);
         } else {
@@ -1150,6 +1151,7 @@
                 this.draw();
                 if (this._o.bound) {
                     addEvent(document, 'click', this._onClick);
+                    addEvent(document, 'touchend', this._onClick);
                     this.adjustPosition();
                 }
                 removeClass(this.el, 'is-hidden');
@@ -1165,6 +1167,7 @@
             if (v !== false) {
                 if (this._o.bound) {
                     removeEvent(document, 'click', this._onClick);
+                    removeEvent(document, 'touchend', this._onClick);
                 }
                 this.el.style.position = 'static'; // reset
                 this.el.style.left = 'auto';
@@ -1190,6 +1193,7 @@
                 removeEvent(this._o.field, 'change', this._onInputChange);
                 if (this._o.bound) {
                     removeEvent(this._o.trigger, 'click', this._onInputClick);
+                    removeEvent(this._o.trigger, 'touchend', this._onInputClick);
                     removeEvent(this._o.trigger, 'focus', this._onInputFocus);
                     removeEvent(this._o.trigger, 'blur', this._onInputBlur);
                 }
