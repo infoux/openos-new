@@ -1060,7 +1060,7 @@ html {
         font-weight: 600;
     }
     section.sub.detail .ticket .lodge_div h5 {
-        display: inline-block;
+        display: block;
         width: 100%;
         text-align: center;
         background: #fff;
@@ -1068,6 +1068,7 @@ html {
         padding: 1.25rem 0.625rem 0.625rem;
         font-size: 28px;
         font-weight: 400;
+        overflow: hidden;
     }
     section.sub.detail .ticket .lodge_div h5 button {
         background: none;
@@ -1081,13 +1082,18 @@ html {
     section.sub.detail .ticket .lodge_div h5 strong {
         padding: 0 1rem;
     }
-    section.sub.detail .ticket .lodge_div select.staOption{
-      position:relative;
-      padding:0.313rem 1.563rem 0.313rem 0.313rem;
-      font-size:1rem;
-      top:0;
-      margin-left:0;
-      width:100%;
+    section.sub.detail .ticket .lodge_div .selectArea {
+        overflow: hidden;
+        width: 100%;
+        background: #fff;
+    }
+    section.sub.detail .ticket .lodge_div select.staOption {
+        position: relative;
+        padding: 0.313rem 1.563rem 0.313rem 0.313rem;
+        font-size: 1rem;
+        top: 0;
+        margin: 0 0.625rem;
+        width: calc(100% - 1.25rem);
     }
     section.sub.detail .ticket .infomation {
         display: inline-block;
@@ -1116,36 +1122,44 @@ html {
     section.sub.detail .ticket .lodge_div .table-cover {
         display: inline-block;
         width: 100%;
+        border-top: 0.125rem solid #0066cc;
+        background: #fff;
         overflow-x: scroll;
     }
     section.sub.detail .ticket .lodge_div .table-cover.fixOn {
-        padding-left: 12rem;
-        background: #0066cc;
+        padding-left: 7.5rem;
     }
     section.sub.detail .ticket table {
-        border-top: 0.125rem solid #0066cc;
+        display: block;
+        white-space: nowrap;
         background: #fff;
-        width: 87.5rem;
     }
     section.sub.detail .ticket th,
     section.sub.detail .ticket td {
         position: relative;
+        display: inline-block;
+        width: 3.125rem;
         border: 0.063rem solid #ccc;
         border-left: none;
         border-top: none;
         text-align: center;
-        height: 50px;
+        height: 3.125rem;
         padding: 0;
     }
     section.sub.detail .ticket th:first-child,
     section.sub.detail .ticket td:first-child {
         border-left: 0.063rem solid #ccc;
         word-break: keep-all;
+        width: 15rem;
+        line-height: 3.125rem;
     }
     section.sub.detail .ticket th {
         background: #efefef;
         font-weight: 400;
-        padding: 0.25rem;
+        padding: 0.5rem 0.25rem;
+    }
+    section.sub.detail .ticket th:first-child {
+        padding: 0;
     }
     section.sub.detail .ticket th.sat {
         color: #0066cc;
@@ -1156,9 +1170,6 @@ html {
     section.sub.detail .ticket .fix {
         position: absolute;
         letter-spacing: -0.125rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         z-index: 10;
         background: #fff;
         font-size: 0.875rem;
@@ -1167,19 +1178,46 @@ html {
     }
     section.sub.detail .ticket .fix:first-child {
         left: 0.625rem;
-        width: 6.25rem;
+        width: 7.5rem;
         padding: 0 0.125rem;
     }
-    section.sub.detail .ticket .fix:nth-child(2) {
-        left: 6.875rem;
-        width: 3.125rem;
+    section.sub.detail .ticket th.fix {
+        background: #eee;
+        letter-spacing: 0;
+        font-size: 1rem;
     }
-    section.sub.detail .ticket .fix:nth-child(3) {
-        left: 10rem;
-        width: 2.5rem;
+    section.sub.detail .ticket .fixT {
+        padding-top: 3.25rem;
+    }
+    section.sub.detail .ticket thead {
+        position: relative;
+        z-index: 30;
+    }
+    section.sub.detail .ticket .fixT thead {
+        position: fixed;
+        z-index: 30;
+        left: 0.625rem;
+        right: 0.625rem;
+        top: 0;
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    section.sub.detail .ticket .fixT.fixOn thead {
+        padding-left: 7.5rem;
+    }
+    section.sub.detail .ticket .fixT th.fix {
+        width: 7.5rem;
+        position: fixed;
+        left: 0.625rem;
+        top: 0;
+        padding: 0;
     }
     section.sub.detail .ticket th strong {
         display: block;
+    }
+    section.sub.detail .ticket td {
+        line-height: 3.125rem;
     }
     section.sub.detail .ticket td p {
         display: inline-block;
@@ -2897,13 +2935,13 @@ html {
         width: 980px;
         margin: 160px auto 0;
     }
-    section.sub.detail .ticket .lodge_div select.staOption{
-  		position:relative;
-  		top:0.625rem;
-  		padding:0.313rem 1.563rem 0.313rem 0.313rem;
-  		font-size:1rem;
-  		margin-left:1.25rem;
-  	}
+    section.sub.detail .ticket .lodge_div select.staOption {
+        position: relative;
+        top: 0.625rem;
+        padding: 0.313rem 1.563rem 0.313rem 0.313rem;
+        font-size: 1rem;
+        margin-left: 1.25rem;
+    }
     section.sub.detail .ticket .calendar h4 {
         cursor: pointer;
         display: block;

@@ -1,6 +1,14 @@
 $(document).ready(function () {
 
+    var toRem = function (count) {
+        var unit = $('html').css('font-size');
 
+        if (typeof count !== 'undefined' && count > 0) {
+            return (parseInt(unit) * count);
+        } else {
+            return parseInt(unit);
+        }
+    }
 
 
 
@@ -61,20 +69,38 @@ $(document).ready(function () {
 
 
 
+
+    var gtt = "";
     $(".mobileMode .tab-data .table-cover").scroll(function () {
         var t = $(".mobileMode .tab-data.active .table-cover").scrollLeft();
+        var tt = -t;
         if (t > 1) {
-
             $(".mobileMode .active .table-cover").addClass("fixOn");
-            $(".mobileMode .active .table-cover td:nth-child(-n+3)").addClass("fix");
-            $(".mobileMode .active .table-cover th:nth-child(-n+3)").addClass("fix");
+            $(".mobileMode .active .table-cover td:first-child").addClass("fix");
+            $(".mobileMode .active .table-cover th:first-child").addClass("fix");
+
         } else {
             $(".mobileMode .active .table-cover").removeClass("fixOn");
-            $(".mobileMode .active .table-cover td:nth-child(-n+3)").removeClass("fix");
-            $(".mobileMode .active .table-cover th:nth-child(-n+3)").removeClass("fix");
-
+            $(".mobileMode .active .table-cover td:first-child").removeClass("fix");
+            $(".mobileMode .active .table-cover th:first-child").removeClass("fix");
         };
+        $(".mobileMode .active .fixT thead th:nth-child(2)").css("margin-left", tt);
+        gtt = tt;
     });
+    $(window).scroll(function () {
+
+        var h = $(window).scrollTop();
+        var hm = $(".mobileMode .tab-data.active .table-cover").offset().top + toRem(3.125);
+        var hm2 = $("#selectItemArea").offset().top - toRem(5.5);
+        if (h > hm && h < hm2) {
+            $(".mobileMode .active .table-cover").addClass("fixT");
+            $(".mobileMode .active .fixT thead th:nth-child(2)").css("margin-left", gtt);
+        } else {
+            $(".mobileMode .active .table-cover").removeClass("fixT");
+            $(".mobileMode .active thead th:nth-child(2)").attr("style", "");
+        }
+    });
+
 
 
     $(".ticket .calendar h4").click(function () {
