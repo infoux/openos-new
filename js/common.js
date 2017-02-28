@@ -92,9 +92,12 @@ $(document).ready(function () {
         var y = $(".pcMode .tab-data.active .table-cover").scrollTop();
         if (y > 1) {
             $(".pcMode .active .table-cover").addClass("fixOn");
-
+            $(".pcMode .active .table-cover thead").css("width", $(".pcMode .active .table-cover table").width());
+            $(".pcMode .active .table-cover thead").css("top", $(".pcMode .active .table-cover").offset().top);
         } else {
             $(".pcMode .active .table-cover").removeClass("fixOn");
+            $(".pcMode .active .table-cover thead").css("width", "");
+            $(".pcMode .active .table-cover thead").css("top", "");
 
         };
     });
