@@ -87,10 +87,23 @@ $(document).ready(function () {
         $(".mobileMode .active .fixT thead th:nth-child(2)").css("margin-left", tt);
         gtt = tt;
     });
+
+    $(".pcMode .tab-data .table-cover").scroll(function () {
+        var y = $(".pcMode .tab-data.active .table-cover").scrollTop();
+        if (y > 1) {
+            $(".pcMode .active .table-cover").addClass("fixOn");
+
+        } else {
+            $(".pcMode .active .table-cover").removeClass("fixOn");
+
+        };
+    });
+
+
     $(window).scroll(function () {
 
         var h = $(window).scrollTop();
-        var hm = $(".mobileMode .tab-data.active .table-cover").offset().top + toRem(3.125);
+        var hm = $(".tab-data.active .table-cover").offset().top + toRem(3.125);
         var hm2 = $("#selectItemArea").offset().top - toRem(5.5);
         if (h > hm && h < hm2) {
             $(".mobileMode .active .table-cover").addClass("fixT");
@@ -105,9 +118,15 @@ $(document).ready(function () {
 
     $(".ticket .calendar h4").click(function () {
         $("div.popup").css("display", "block");
+        $('html, body').css({
+            'overflow': 'hidden'
+        });
     });
     $("div.popup").on('click', '.close', function () {
         $("div.popup").css("display", "none");
+        $('html, body').css({
+            'overflow': ''
+        });
     });
     $(".ticket #discount .toggle").click(function () {
         $("div.discount_div").css("display", "block");

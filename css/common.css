@@ -3065,12 +3065,31 @@ html {
         margin-right: 4px;
     }
     section.sub.detail .ticket .table-cover {
+        display: inline-block;
+        width: 100%;
         max-height: 500px;
         overflow-y: scroll;
     }
     section.sub.detail .ticket table {
         border-top: 2px solid #0066cc;
         width: 100%;
+        overflow: hidden;
+    }
+    section.sub.detail .ticket .fixOn {
+        position: relative;
+        padding-top: 50px;
+    }
+    section.sub.detail .ticket .fixOn thead {
+        position: fixed;
+        display: table;
+        border-top: 2px solid #0066cc;
+        z-index: 30;
+        left: 50%;
+        margin-left: -490px;
+        width: 980px;
+        top: 323px;
+        padding: 0;
+        white-space: nowrap;
         overflow: hidden;
     }
     section.sub.detail .ticket th,
@@ -3082,6 +3101,7 @@ html {
         text-align: center;
         padding: 0;
         outline: 0;
+        width: 25px;
     }
     section.sub.detail .ticket tr:hover {
         background: #c8e4ff;
@@ -3100,11 +3120,12 @@ html {
     section.sub.detail .ticket th:first-child,
     section.sub.detail .ticket td:first-child {
         border-left: 1px solid #ccc;
+        width: auto;
     }
     section.sub.detail .ticket th {
         background: #efefef;
         font-weight: 400;
-        padding: 4px;
+        padding: 4px 0;
     }
     section.sub.detail .ticket th.sat {
         color: #0066cc;
