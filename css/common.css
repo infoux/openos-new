@@ -4,7 +4,7 @@
     font-style: normal;
     font-weight: 700;
     src: url(../fonts/NanumGothic-Bold.eot);
-    src: url(../fonts/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Bold.woff) format('woff'), url(../font/NanumGothic-Bold.ttf) format('truetype')
+    src: url(../fonts/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Bold.woff) format('woff'), url(../fonts/NanumGothic-Bold.ttf) format('truetype')
 }
 
 @font-face {
@@ -12,7 +12,7 @@
     font-style: normal;
     font-weight: 400;
     src: url(../fonts/NanumGothic-Regular.eot);
-    src: url(../fonts/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Regular.woff) format('woff'), url(../font/NanumGothic-Regular.ttf) format('truetype')
+    src: url(../fonts/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Regular.woff) format('woff'), url(../fonts/NanumGothic-Regular.ttf) format('truetype')
 }
 
 @font-face {
@@ -20,7 +20,7 @@
     font-style: normal;
     font-weight: 300;
     src: url(../fonts/NanumGothic-Light.eot);
-    src: url(../fonts/NanumGothic-Light.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Light.woff) format('woff'), url(../font/NanumGothic-Light.ttf) format('truetype')
+    src: url(../fonts/NanumGothic-Light.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Light.woff) format('woff'), url(../fonts/NanumGothic-Light.ttf) format('truetype')
 }
 
 @font-face {
@@ -28,7 +28,7 @@
     font-style: normal;
     font-weight: 800;
     src: url(../fonts/NanumGothic-ExtraBold.eot);
-    src: url(../fonts/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-ExtraBold.woff) format('woff'), url(../font/NanumGothic-ExtraBold.ttf) format('truetype')
+    src: url(../fonts/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-ExtraBold.woff) format('woff'), url(../fonts/NanumGothic-ExtraBold.ttf) format('truetype')
 }
 
 html {
@@ -112,6 +112,16 @@ html {
     background: #efefef;
 }
 
+div.loding {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
 
 /* Mobile-layout */
 
@@ -2934,14 +2944,12 @@ html {
         right: 0;
         top: 0;
         bottom: 0;
-        background: #fff;
+        background: rgba(0, 0, 0, 0.7);
     }
     section.sub.detail .ticket .lodge_div .outline {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
+        position: relative;
+        width: 980px;
+        margin: 160px auto 0;
     }
     section.sub.detail .ticket .lodge_div select.staOption {
         position: relative;
@@ -3069,9 +3077,8 @@ html {
     section.sub.detail .ticket .table-cover {
         display: inline-block;
         width: 100%;
-        height: calc(100vh - 163px);
+        max-height: 420px;
         overflow-y: scroll;
-        padding: 0 20px 20px;
     }
     section.sub.detail .ticket table {
         border-top: 2px solid #0066cc;
@@ -3087,8 +3094,8 @@ html {
         display: table;
         border-top: 2px solid #0066cc;
         z-index: 30;
-        left: 20px;
-        top: 163px;
+        left: 50%;
+        margin-left: -490px;
         padding: 0;
         white-space: nowrap;
         overflow: hidden;
