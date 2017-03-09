@@ -2934,12 +2934,14 @@ html {
         right: 0;
         top: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: #fff;
     }
     section.sub.detail .ticket .lodge_div .outline {
-        position: relative;
-        width: 980px;
-        margin: 160px auto 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
     }
     section.sub.detail .ticket .lodge_div select.staOption {
         position: relative;
@@ -3067,8 +3069,8 @@ html {
     section.sub.detail .ticket .table-cover {
         display: inline-block;
         width: 100%;
-        max-height: 420px;
         overflow-y: scroll;
+        padding: 0 20px 20px;
     }
     section.sub.detail .ticket table {
         border-top: 2px solid #0066cc;

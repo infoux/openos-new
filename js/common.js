@@ -121,13 +121,13 @@ $(document).ready(function () {
 
     $(".ticket .calendar h4").click(function () {
         $("div.popup").css("display", "block");
-        $('html, body').css({
+        $('.pcMode').css({
             'overflow': 'hidden'
         });
     });
     $("div.popup").on('click', '.close', function () {
         $("div.popup").css("display", "none");
-        $('html, body').css({
+        $('pcMode').css({
             'overflow': ''
         });
     });
