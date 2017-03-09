@@ -3069,6 +3069,7 @@ html {
     section.sub.detail .ticket .table-cover {
         display: inline-block;
         width: 100%;
+        height: calc(100vh - 163px);
         overflow-y: scroll;
         padding: 0 20px 20px;
     }
@@ -3086,8 +3087,7 @@ html {
         display: table;
         border-top: 2px solid #0066cc;
         z-index: 30;
-        left: 50%;
-        margin-left: -490px;
+        left: 20px;
         padding: 0;
         white-space: nowrap;
         overflow: hidden;
