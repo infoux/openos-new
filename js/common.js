@@ -125,7 +125,7 @@ $(document).ready(function () {
     });
     $("div.popup").on('click', '.close', function () {
         $("div.popup").css("display", "none");
-        $('pcMode').css({
+        $('.pcMode').css({
             'overflow': ''
         });
     });
