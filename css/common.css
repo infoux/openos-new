@@ -1146,6 +1146,9 @@ html {
         font-weight: 400;
         padding: 0.5rem 0.25rem;
     }
+    .lodge_div.popup th strong {
+        display: block;
+    }
     .lodge_div.popup th:first-child {
         padding: 0;
     }
@@ -2619,6 +2622,7 @@ html {
     section.sub.community .accordion>div {
         display: none;
         position: relative;
+        : relative;
         padding-left: 2.5rem;
     }
     section.sub.community .accordion>div .fa {
