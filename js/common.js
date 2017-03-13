@@ -71,7 +71,7 @@ $(document).ready(function () {
 
 
     var gtt = "";
-    $(".mobileMode .tab-data .table-cover").scroll(function () {
+    $(".mobileMode .table-cover").scroll(function () {
         var t = $(".mobileMode .tab-data.active .table-cover").scrollLeft();
         var tt = -t;
         if (t > 1) {
@@ -88,18 +88,6 @@ $(document).ready(function () {
         gtt = tt;
     });
 
-    $(".pcMode .tab-data .table-cover").scroll(function () {
-        var y = $(".pcMode .tab-data.active .table-cover").scrollTop();
-        if (y > 1) {
-            $(".pcMode .active .table-cover").addClass("fixOn");
-            $(".pcMode .active .table-cover thead").css("width", $(".pcMode .active .table-cover table").width());
-        } else {
-            $(".pcMode .active .table-cover").removeClass("fixOn");
-            $(".pcMode .active .table-cover thead").css("width", "");
-
-        };
-    });
-
 
     $(window).scroll(function () {
 
@@ -113,21 +101,34 @@ $(document).ready(function () {
             $(".mobileMode .active .table-cover").removeClass("fixT");
             $(".mobileMode .active thead th:nth-child(2)").attr("style", "");
         }
-    });
 
+
+        var y = $(".pcMode .tab-data.active .table-cover").offset().top;
+        var ym = $(".pcMode .tab-data.active tbody").height() + 280;
+        console.log(ym, h);
+        if (h > y && h < ym) {
+            $(".pcMode .active .table-cover").addClass("fixOn");
+            $(".pcMode .active .table-cover thead").css("width", $(".pcMode .active .table-cover table").width());
+
+        } else {
+            $(".pcMode .active .table-cover").removeClass("fixOn");
+            $(".pcMode .active .table-cover thead").css("width", "");
+
+        };
+
+
+    });
 
 
     $(".ticket .calendar h4").click(function () {
+        $('.pcMode').scrollTop(0);
+        $('.pcMode .popup').css("height", $(document).height())
         $("div.popup").css("display", "block");
-        $('.pcMode').css({
-            'overflow': 'hidden'
-        });
+
     });
     $("div.popup").on('click', '.close', function () {
         $("div.popup").css("display", "none");
-        $('.pcMode').css({
-            'overflow': ''
-        });
+
     });
     $(".ticket #discount .toggle").click(function () {
         $("div.discount_div").css("display", "block");

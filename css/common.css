@@ -4,7 +4,7 @@
     font-style: normal;
     font-weight: 700;
     src: url(../fonts/NanumGothic-Bold.eot);
-    src: url(../fonts/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Bold.woff) format('woff'), url(../fonts/NanumGothic-Bold.ttf) format('truetype')
+    src: url(../fonts/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Bold.woff) format('woff'), url(../font/NanumGothic-Bold.ttf) format('truetype')
 }
 
 @font-face {
@@ -12,7 +12,7 @@
     font-style: normal;
     font-weight: 400;
     src: url(../fonts/NanumGothic-Regular.eot);
-    src: url(../fonts/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Regular.woff) format('woff'), url(../fonts/NanumGothic-Regular.ttf) format('truetype')
+    src: url(../fonts/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Regular.woff) format('woff'), url(../font/NanumGothic-Regular.ttf) format('truetype')
 }
 
 @font-face {
@@ -20,7 +20,7 @@
     font-style: normal;
     font-weight: 300;
     src: url(../fonts/NanumGothic-Light.eot);
-    src: url(../fonts/NanumGothic-Light.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Light.woff) format('woff'), url(../fonts/NanumGothic-Light.ttf) format('truetype')
+    src: url(../fonts/NanumGothic-Light.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-Light.woff) format('woff'), url(../font/NanumGothic-Light.ttf) format('truetype')
 }
 
 @font-face {
@@ -28,7 +28,7 @@
     font-style: normal;
     font-weight: 800;
     src: url(../fonts/NanumGothic-ExtraBold.eot);
-    src: url(../fonts/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-ExtraBold.woff) format('woff'), url(../fonts/NanumGothic-ExtraBold.ttf) format('truetype')
+    src: url(../fonts/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-ExtraBold.woff) format('woff'), url(../font/NanumGothic-ExtraBold.ttf) format('truetype')
 }
 
 html {
@@ -112,16 +112,6 @@ html {
     background: #efefef;
 }
 
-div.loding {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-}
 
 /* Mobile-layout */
 
@@ -2936,28 +2926,6 @@ div.loding {
         font-size: 16px;
         color: #0066cc;
     }
-    section.sub.detail .ticket .lodge_div {
-        display: none;
-        position: fixed;
-        z-index: 999;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.7);
-    }
-    section.sub.detail .ticket .lodge_div .outline {
-        position: relative;
-        width: 980px;
-        margin: 160px auto 0;
-    }
-    section.sub.detail .ticket .lodge_div select.staOption {
-        position: relative;
-        top: 0.625rem;
-        padding: 0.313rem 1.563rem 0.313rem 0.313rem;
-        font-size: 1rem;
-        margin-left: 1.25rem;
-    }
     section.sub.detail .ticket .calendar h4 {
         cursor: pointer;
         display: block;
@@ -2972,7 +2940,56 @@ div.loding {
         right: 20px;
         font-size: 20px;
     }
-    section.sub.detail .ticket .close {
+    .bg.popup {
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .loadingPop {
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        color: #333;
+        text-align: center;
+        padding-top: 50vh;
+        font-weight: normal;
+        background: rgba(255, 255, 255, 0.9);
+    }
+    .loadingPop p {
+        margin: -85px 0 0 0;
+        display: block;
+        height: 170px;
+    }
+    .loadingPop h2 {
+        margin: 0;
+    }
+    .loadingPop i {
+        font-size: 120px;
+        margin-bottom: 20px;
+        color: #999;
+    }
+    .lodge_div.popup .outline {
+        position: relative;
+        width: 980px;
+        margin: 100px auto 0;
+        background: #fff;
+    }
+    .lodge_div.popup select.staOption {
+        position: relative;
+        top: 0.625rem;
+        padding: 0.313rem 1.563rem 0.313rem 0.313rem;
+        font-size: 1rem;
+        margin-left: 1.25rem;
+    }
+    .lodge_div.popup .close {
         position: absolute;
         right: 14px;
         top: 14px;
@@ -2982,10 +2999,10 @@ div.loding {
         font-size: 0;
         cursor: pointer;
     }
-    section.sub.detail .ticket .close i {
+    .lodge_div.popup .close i {
         font-size: 24px;
     }
-    section.sub.detail .ticket .tabs {
+    .lodge_div.popup .tabs {
         display: inline-block;
         width: 100%;
         background: #0066cc;
@@ -2994,10 +3011,10 @@ div.loding {
         list-style: none;
         font-size: 0;
     }
-    section.sub.detail .ticket .tabs li {
+    .lodge_div.popup .tabs li {
         display: inline-block;
     }
-    section.sub.detail .ticket .tabs li a {
+    .lodge_div.popup .tabs li a {
         display: block;
         padding: 20px 30px;
         color: #fff;
@@ -3005,19 +3022,19 @@ div.loding {
         font-size: 16px;
         cursor: pointer;
     }
-    section.sub.detail .ticket .tab-data {
+    .lodge_div.popup .tab-data {
         position: relative;
         display: none;
     }
-    section.sub.detail .ticket .tab-data.active {
+    .lodge_div.popup .tab-data.active {
         display: block;
     }
-    section.sub.detail .ticket .tabs li a.active {
+    .lodge_div.popup .tabs li a.active {
         background: #fff;
         color: #0066cc;
         font-weight: 600;
     }
-    section.sub.detail .ticket .tab-data::after {
+    .lodge_div.popup .tab-data::after {
         content: "";
         display: block;
         position: absolute;
@@ -3028,7 +3045,7 @@ div.loding {
         background: #fff;
         z-index: -2;
     }
-    section.sub.detail .ticket .lodge_div h5 {
+    .lodge_div.popup h5 {
         display: inline-block;
         width: 100%;
         background: #fff;
@@ -3037,71 +3054,70 @@ div.loding {
         font-size: 28px;
         font-weight: 400;
     }
-    section.sub.detail .ticket .lodge_div h5 button {
+    .lodge_div.popup h5 button {
         background: none;
         border: none;
         font-size: 0;
         cursor: pointer;
     }
-    section.sub.detail .ticket h5 button i {
+    .lodge_div.popup h5 button i {
         font-size: 28px;
     }
-    section.sub.detail .ticket h5 .outline strong {
+    .lodge_div.popup h5 .outline strong {
         padding: 0 40px;
     }
-    section.sub.detail .ticket .infomation {
+    .lodge_div.popup .infomation {
         display: inline-block;
         text-align: right;
         width: 100%;
         background: #fff;
         font-size: 16px;
     }
-    section.sub.detail .ticket .infomation p {
+    .lodge_div.popup .infomation p {
         display: inline-block;
         margin: 0 10px 0;
         position: relative;
         top: -20px;
     }
-    section.sub.detail .ticket .infomation p.off {
+    .lodge_div.popup .infomation p.off {
         color: #999;
     }
-    section.sub.detail .ticket .infomation p.complete {
+    .lodge_div.popup .infomation p.complete {
         color: #ff3300;
     }
-    section.sub.detail .ticket .infomation p.on {
+    .lodge_div.popup .infomation p.on {
         color: #0066cc;
     }
-    section.sub.detail .ticket .infomation i {
+    .lodge_div.popup .infomation i {
         margin-right: 4px;
     }
-    section.sub.detail .ticket .table-cover {
+    .lodge_div.popup .table-cover {
         display: inline-block;
         width: 100%;
-        max-height: 420px;
-        overflow-y: scroll;
     }
-    section.sub.detail .ticket table {
+    .lodge_div.popup table {
         border-top: 2px solid #0066cc;
         width: 100%;
         overflow: hidden;
     }
-    section.sub.detail .ticket .fixOn {
+    .lodge_div.popup .fixOn {
         position: relative;
         padding-top: 50px;
     }
-    section.sub.detail .ticket .fixOn thead {
+    .lodge_div.popup .fixOn thead {
         position: fixed;
         display: table;
         border-top: 2px solid #0066cc;
         z-index: 30;
         left: 50%;
+        top: 0;
         margin-left: -490px;
         padding: 0;
         white-space: nowrap;
         overflow: hidden;
     }
-    section.sub.detail .ticket th,
-    section.sub.detail .ticket td {
+    .lodge_div.popup th,
+    .lodge_div.popup td {
         position: relative;
         border: 1px solid #ccc;
         border-left: none;
@@ -3111,11 +3127,11 @@ div.loding {
         outline: 0;
         width: 25px;
     }
-    section.sub.detail .ticket tr:hover {
+    .lodge_div.popup tr:hover {
         background: #c8e4ff;
     }
-    section.sub.detail .ticket th:hover::after,
-    section.sub.detail .ticket td:hover::after {
+    .lodge_div.popup th:hover::after,
+    .lodge_div.popup td:hover::after {
         content: "";
         position: absolute;
         background-color: #c8e4ff;
@@ -3125,26 +3141,26 @@ div.loding {
         width: 100%;
         z-index: -1;
     }
-    section.sub.detail .ticket th:first-child,
-    section.sub.detail .ticket td:first-child {
+    .lodge_div.popup th:first-child,
+    .lodge_div.popup td:first-child {
         border-left: 1px solid #ccc;
         width: auto;
     }
-    section.sub.detail .ticket th {
+    .lodge_div.popup th {
         background: #efefef;
         font-weight: 400;
         padding: 4px 0;
     }
-    section.sub.detail .ticket th.sat {
+    .lodge_div.popup th.sat {
         color: #0066cc;
     }
-    section.sub.detail .ticket th.sun {
+    .lodge_div.popup th.sun {
         color: #ff3300;
     }
-    section.sub.detail .ticket th strong {
+    .lodge_div.popup th strong {
         display: block;
     }
-    section.sub.detail .ticket td p {
+    .lodge_div.popup td p {
         display: block;
         font-size: 0;
         width: 100%;
@@ -3152,18 +3168,18 @@ div.loding {
         padding: 10px 0;
         margin: 0;
     }
-    section.sub.detail .ticket td p.off {
+    .lodge_div.popup td p.off {
         color: #666;
         background: rgba(0, 0, 0, 0.3);
     }
-    section.sub.detail .ticket td p.complete {
+    .lodge_div.popup td p.complete {
         color: #ff3300;
         background: rgba(0, 0, 0, 0.3);
     }
-    section.sub.detail .ticket td p.on {
+    .lodge_div.popup td p.on {
         color: #0066cc;
     }
-    section.sub.detail .ticket td i {
+    .lodge_div.popup td i {
         font-size: 1rem;
     }
     /* calendar */
