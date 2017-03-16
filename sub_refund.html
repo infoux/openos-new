@@ -111,6 +111,33 @@
                         <h5>환불신청사유</h5>
                         <textarea placeholder="주문취소 사유을 입력해주세요"></textarea>
                     </div>
+
+                    <div class="input_box">
+                        <h5>본인인증</h5>
+
+                        <ul class="tabs">
+                            <li><a data="tab01" class="active">주문 비밀번호 인증</a></li>
+                            <li><a data="tab02">휴대폰 본인 인증</a></li>
+                        </ul>
+                        <div id="tab01" class="tab-contents active">
+                            <dl>
+                                <dt>주문 비밀번호</dt>
+                                <dd>
+                                    <input type="password" maxlength="8"/>
+                                    <p> <i class="fa fa-info-circle" aria-hidden="true"></i> 주문시 입력해주신 비밀번호를 입력해주시기 바랍니다. </p>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div id="tab02" class="tab-contents">
+                            <dl>
+                                <dt>인증번호</dt>
+                                <dd>
+                                    <input type="text"/><button type="button" class="btn">인증번호 전송</button>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
                     <div class="refund_list">
                         <h5>상품별 환불정보</h5>
                         <ul>
@@ -154,9 +181,9 @@
                             <li>환불완료 후 취소내역페이지에서 자세한 환불 내역을 확인하실 수 있습니다.</li>
                         </ul>
                         <div class="btn-area">
-                            <a class="btn ok" href="">주문취소</a> 
+                            <a class="btn ok" href="">주문취소</a>
                             <a class="btn request" href="">주문취소요청</a>
-                        
+
                         <a class="btn cancle" href="">닫기</a> </div>
                     </div>
                 </div>
