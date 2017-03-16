@@ -2491,6 +2491,13 @@ html {
     section.sub.refund .btn-area .btn.request {
         background: #0a5491;
     }
+    section.sub.refund dd button {
+        background: #eee;
+        border:1px solid #ccc;
+        border-top:none;
+        width:100%;
+        padding:10px 0;
+    }
     section.sub .aside_content .product li {
         padding-bottom: 40px;
     }
@@ -4398,6 +4405,15 @@ html {
     section.sub.refund .btn-area .btn.ok {
         background: #0066cc;
     }
+
+    section.sub.refund dd button {
+        background: #eee;
+        border:1px solid #ccc;
+        border-left:none;
+        vertical-align:top;
+        padding:10px 20px;
+    }
+
     section.sub .product p.result {
         margin: 0;
         position: absolute;
