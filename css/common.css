@@ -3478,6 +3478,19 @@ html {
         padding: 12px;
         width: 120px;
     }
+    section.sub.detail .ticket .discount_div .close {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        color: #fff;
+        border: none;
+        background: none;
+        font-size: 0;
+        cursor: pointer;
+    }
+    section.sub.detail .ticket .discount_div .close i {
+        font-size: 24px;
+    }
     section.sub.detail .ticket .submit {
         display: inline-block;
         font-size: 1.25rem;
