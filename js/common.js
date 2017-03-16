@@ -166,12 +166,13 @@ $(document).ready(function() {
         $(".accordion>div").removeClass("active");
         $(".accordion>div." + accOn).addClass("active");
     });
+    /* 2017-03-16 상세페이지 bx Slider 제거
     $(window).load(function() {
         $('.image_slider .bx').bxSlider({
             pagerCustom: '#bx-pager',
             auto: true
         });
-    });
+    });*/
 
 
 
