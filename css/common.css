@@ -31,6 +31,12 @@
   src: url(../fonts/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'), url(../fonts/NanumGothic-ExtraBold.woff) format('woff'), url(../font/NanumGothic-ExtraBold.ttf) format('truetype')
 }
 
+@keyframes blinker {
+  to {
+    opacity: 0.6;
+  }
+}
+
 html {
   font-family: 'Nanum Gothic', sans-serif;
   min-width: 320px;
@@ -634,32 +640,18 @@ html {
   }
   section.main .title .btn {
     position: absolute;
-    right: 0;
-    width: 5rem;
-    height: 5rem;
-    bottom: 0;
-    border: 0;
-    padding: 0;
-  }
-  section.main .title .btn strong {
+    left: 0.25rem;
+    bottom: 0.25rem;
+    width: 5.5rem;
+    height: 5.5rem;
+    background: #ff9900;
+    border-radius: 50%;
     color: #fff;
-    position: absolute;
-    right: 0.313rem;
-    bottom: 0.625rem;
-    z-index: 10;
-    font-weight: 400;
-    font-size: 0.75rem;
-  }
-  section.main .title .btn::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    display: block;
-    border-bottom: 5rem solid rgba(0, 0, 0, 0.4);
-    border-left: 5rem solid transparent;
-    z-index: 0;
+    border: 1px solid #c67700;
+    border-bottom-width: 2px;
+    border-top-width: 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    animation: blinker 0.6s cubic-bezier(.5, 0, 1, 1) infinite alternate;
   }
   section.main .dummy {
     display: none;
@@ -782,23 +774,19 @@ html {
     margin-top: 8%;
     color: rgba(255, 255, 255, 0.5);
   }
-  @keyframes blinker {
-    to {
-      opacity: 0.6;
-    }
-  }
   section.main .title .btn {
     position: relative;
     top: -20px;
     width: 160px;
     height: 36px;
-    background: #99cc00;
+    background: #ff9900;
     border-radius: 18px;
-    border: 1px solid #65830a;
+    color: #fff;
+    border: 1px solid #c67700;
     border-bottom-width: 2px;
     border-top-width: 0;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
-    animation: blinker 0.6s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+    animation: blinker 0.6s cubic-bezier(1, 0, 1, 1) infinite alternate;
   }
   section.main .dummy {
     color: #333;
