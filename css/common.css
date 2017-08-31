@@ -4907,3 +4907,47 @@ html {
   margin-bottom: 20px;
   color: #999;
 }
+
+
+
+.ltPop {
+  position: fixed;
+  display: block;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #333;
+  text-align: center;
+  padding-top: 50vh;
+  font-weight: normal;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.ltPop p {
+  margin: -85px 0 0 0;
+  display: block;
+  height: 170px;
+}
+
+.ltPop h2 {
+  margin: 0;
+  color:#fff;
+}
+
+.ltPop i {
+  font-size: 120px;
+  margin-bottom: 20px;
+  color: #0066cc;
+}
+
+.ltPop a {
+  display:inline-block;
+  padding:20px 30px;
+  margin:30px 0;
+  background:#0066cc;
+  color:#fff;
+  text-decoration:none;
+
+}
