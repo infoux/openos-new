@@ -4920,15 +4920,31 @@ html {
   bottom: 0;
   color: #333;
   text-align: center;
-  padding-top: 50vh;
+  padding-top: 200px;
   font-weight: normal;
-  background: rgba(0, 0, 0, 0.9);
+
+  /* 기본 배경색 지정-투명도가 모두 적용되지 않았을 때 색상 */
+  background: #000000);
+	/* RGBa 적용 - Firefox, Chrome, Safari, Opera ... */
+	background: rgba(0,0,0,0.8);
+	/* IE에서 Filter적용을 위해 배경을 지움 */
+	background: transparent !ie;
+	/* 정상적인 Filter적용을 위해 zoom:1을 적용 */
+	zoom:1;
+  /* IE5.5-7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000);
+  /* IE8,9 */
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000)";
+
+
+
 }
 
 .ltPop p {
   margin: -85px 0 0 0;
   display: block;
   height: 170px;
+
 }
 
 .ltPop h2 {
