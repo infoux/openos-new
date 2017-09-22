@@ -1624,6 +1624,8 @@ html {
     width: 100%;
     border-radius: 0.375rem;
   }
+
+
   section.sub.detail .ticket .infoBox {
     display: inline-block;
     width: calc(100% - 1.25rem);
@@ -3481,6 +3483,7 @@ html {
     vertical-align: top;
     padding: 10px 0 0 10px;
   }
+
   section.sub.detail .ticket .submit .btn {
     background: #0066cc;
     color: #fff;
@@ -3488,6 +3491,22 @@ html {
     width: 142px;
     border-radius: 6px;
   }
+
+  section.sub.detail .ticket .submit.full {
+    width:100%;
+    padding:10px 0;
+  }
+
+
+
+  section.sub.detail .ticket .submit .btn.full {
+    width:100%;
+  }
+
+
+
+
+
   section.sub.detail .ticket .infoBox {
     display: inline-block;
     width: 100%;
