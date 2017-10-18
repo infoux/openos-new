@@ -1089,6 +1089,11 @@ html {
   .lodge_div.popup .infomation p.on {
     color: #0066cc;
   }
+  .lodge_div.popup .infomation p.wheelchair {
+    color: #339900;
+  }
+
+
   .lodge_div.popup .infomation i {
     margin-right: 0.25rem;
   }
@@ -1222,6 +1227,10 @@ html {
   .lodge_div.popup td p.on {
     color: #0066cc;
     background: #fff;
+  }
+  .lodge_div.popup td p.wheelchair {
+    color: #339900;
+    background:#eee;
   }
   .lodge_div.popup td i {
     font-size: 1rem;
@@ -3033,6 +3042,11 @@ html {
   .lodge_div.popup .infomation p.on {
     color: #0066cc;
   }
+
+  .lodge_div.popup .infomation p.wheelchair {
+    color: #339900;
+  }
+
   .lodge_div.popup .infomation i {
     margin-right: 4px;
   }
@@ -3121,6 +3135,12 @@ html {
   .lodge_div.popup td p.on {
     color: #0066cc;
   }
+  .lodge_div.popup td p.wheelchair {
+    color: #339900;
+    background:#eee;
+  }
+
+
   .lodge_div.popup td i {
     font-size: 1rem;
   }
