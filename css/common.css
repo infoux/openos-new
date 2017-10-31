@@ -2418,6 +2418,9 @@ html {
     min-height: 7.5rem;
     padding: 0.625rem;
   }
+
+
+
   section.sub.refund .refund_list ul {
     display: inline-block;
     width: 100%;
@@ -2455,6 +2458,50 @@ html {
     color: #0066cc;
     font-size: 1.125rem;
   }
+
+
+
+  section.sub.refund .part_refund_list ul {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  section.sub.refund .part_refund_list li {
+    position: relative;
+    border: 0.063rem solid #ccc;
+    border-bottom: none;
+    padding: 0.625rem;
+  }
+  section.sub.refund .part_refund_list li:last-child {
+    border-bottom: 0.063rem solid #ccc;
+  }
+  section.sub.refund .part_refund_list h6, section.sub.refund .part_refund_list li p {
+    margin: 0;
+  }
+  section.sub.refund .part_refund_list h6 {
+    margin-bottom: 0.625rem;
+    font-size: 1rem;
+  }
+  section.sub.refund .part_refund_list li p {
+    color: #0066cc;
+    margin-bottom: 4px;
+  }
+  section.sub.refund .part_refund_list .total {
+    display: inline-block;
+    width: 100%;
+    background: #efefef;
+    margin: 0;
+    padding: 0.625rem;
+    text-align: center;
+    color: #0066cc;
+    font-size: 1.125rem;
+  }
+
+
+
+
   section.sub.refund .refund_info ul {
     padding: 0;
     margin: 0 0 1.25rem;
@@ -4043,6 +4090,8 @@ html {
     font-size: 14px;
     color: #555;
   }
+
+
   section.sub.order.result .container {
     background: #fff;
     padding: 20px;
@@ -4068,6 +4117,53 @@ html {
     display: block;
     margin: 10px 0 10px;
   }
+
+
+  section.sub.order.cert .container {
+    background: #fff;
+    padding: 20px;
+    text-align: left;
+    margin: 0 0 20px 0;
+  }
+  section.sub.order.cert .container h4 {
+    font-size: 20px;
+    text-align: center;
+    margin: 60px 0 30px;
+    color: #333;
+  }
+  section.sub.order.cert .container fieldset {
+    text-align:center;
+    border:none;
+    min-height:300px;
+  }
+
+
+
+  section.sub.order.cert .container fieldset input {
+    border: 2px solid #0066cc;
+    padding: 14px;
+    border-right:none;
+    font-size:1.5rem;
+    width:300px;
+  }
+
+
+  section.sub.order.cert .container fieldset button {
+    border: 1px solid #ccc;
+    padding: 14px;
+    border-radius:0;
+    font-size:1.5rem;
+    background:#0066cc;
+    border: 2px solid #0066cc;
+    color:white;
+  }
+
+
+
+
+
+
+
   section.sub.order .show_box dl {
     display: inline-block;
     padding: 14px;
@@ -4422,6 +4518,60 @@ html {
     color: #0066cc;
     font-size: 18px;
   }
+
+
+
+  section.sub.refund .part_refund_list ul {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  section.sub.refund .part_refund_list li {
+    position: relative;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 10px;
+  }
+  section.sub.refund .part_refund_list li:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+  section.sub.refund .part_refund_list h6, section.sub.refund .part_refund_list li p {
+
+    margin: 0;
+  }
+  section.sub.refund .part_refund_list h6 {
+
+    font-size: 1.25rem;
+  }
+  section.sub.refund .part_refund_list h6 small {
+    font-size:1rem;
+  }
+
+  section.sub.refund .part_refund_list li p {
+    color: #0066cc;
+    display:inline-block;
+    margin-left: 10px;
+  }
+  section.sub.refund .part_refund_list li p.day {
+    margin-left:0;
+    font-weight:600;
+  }
+  section.sub.refund .part_refund_list .total {
+    display: inline-block;
+    width: 100%;
+    background: #efefef;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: #0066cc;
+    font-size: 18px;
+  }
+
+
+
+
   section.sub.refund .refund_info ul {
     padding: 0;
     margin: 0 0 20px;
