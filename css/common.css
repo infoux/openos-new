@@ -2354,6 +2354,7 @@ html {
     text-align: left;
     font-size: 1rem;
   }
+
   section.sub .aside_content .tabs {
     margin-bottom: 0;
     text-align: center;
@@ -4406,6 +4407,13 @@ html {
     font-size: 1rem;
     line-height: 1.6;
   }
+
+
+  section.sub .aside_content.full {
+    width:100%;
+    margin:0;
+  }
+
   section.sub .aside_content .tabs {
     margin-bottom: 0;
   }
