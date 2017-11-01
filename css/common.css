@@ -1,7 +1,5 @@
 @charset "utf-8";
-
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
+@import "//fonts.googleapis.com/earlyaccess/nanumgothic.css";
 /* CDN으로 대체
 @font-face {
   font-family: 'Nanum Gothic';
@@ -127,7 +125,6 @@ html {
   margin: 40px 0 30px;
   color: #ff9900;
 }
-
 
 /* Mobile-layout */
 
@@ -351,7 +348,6 @@ html {
     color: #ccc;
   }
 }
-
 
 /* PC-layout */
 
@@ -590,7 +586,6 @@ html {
   }
 }
 
-
 /* Mobile-main */
 
 @media (max-width:1023px) {
@@ -713,7 +708,6 @@ html {
     z-index: 10;
   }
 }
-
 
 /* PC-main */
 
@@ -864,7 +858,6 @@ html {
     display: inline-block;
   }
 }
-
 
 /* Mobile-sub */
 
@@ -1097,7 +1090,6 @@ html {
   .lodge_div.popup .infomation p.wheelchair {
     color: #339900;
   }
-
   .lodge_div.popup .infomation i {
     margin-right: 0.25rem;
   }
@@ -1234,7 +1226,7 @@ html {
   }
   .lodge_div.popup td p.wheelchair {
     color: #339900;
-    background:#eee;
+    background: #eee;
   }
   .lodge_div.popup td i {
     font-size: 1rem;
@@ -1637,8 +1629,6 @@ html {
     width: 100%;
     border-radius: 0.375rem;
   }
-
-
   section.sub.detail .ticket .infoBox {
     display: inline-block;
     width: calc(100% - 1.25rem);
@@ -2016,11 +2006,10 @@ html {
     font-style: normal;
     color: #ff3300;
   }
-  section.sub .product .price,priceCan,priceCan2 {
+  section.sub .product .price, priceCan, priceCan2 {
     font-weight: 600;
     color: #0066cc;
   }
-
   section.sub .product .total {
     border-top: 1px solid #ccc;
     position: relative;
@@ -2354,7 +2343,6 @@ html {
     text-align: left;
     font-size: 1rem;
   }
-
   section.sub .aside_content .tabs {
     margin-bottom: 0;
     text-align: center;
@@ -2419,9 +2407,6 @@ html {
     min-height: 7.5rem;
     padding: 0.625rem;
   }
-
-
-
   section.sub.refund .refund_list ul {
     display: inline-block;
     width: 100%;
@@ -2459,9 +2444,6 @@ html {
     color: #0066cc;
     font-size: 1.125rem;
   }
-
-
-
   section.sub.refund .part_refund_list ul {
     display: inline-block;
     width: 100%;
@@ -2499,10 +2481,6 @@ html {
     color: #0066cc;
     font-size: 1.125rem;
   }
-
-
-
-
   section.sub.refund .refund_info ul {
     padding: 0;
     margin: 0 0 1.25rem;
@@ -2832,7 +2810,6 @@ html {
   }
 }
 
-
 /*PC-sub*/
 
 @media (min-width:1024px) {
@@ -3098,7 +3075,6 @@ html {
   .lodge_div.popup .infomation p.wheelchair {
     color: #339900;
   }
-
   .lodge_div.popup .infomation i {
     margin-right: 4px;
   }
@@ -3189,7 +3165,7 @@ html {
   }
   .lodge_div.popup td p.wheelchair {
     color: #339900;
-    background:#eee;
+    background: #eee;
   }
   .lodge_div.popup td i {
     font-size: 1rem;
@@ -3553,7 +3529,6 @@ html {
     vertical-align: top;
     padding: 10px 0 0 10px;
   }
-
   section.sub.detail .ticket .submit .btn {
     background: #0066cc;
     color: #fff;
@@ -3561,22 +3536,13 @@ html {
     width: 142px;
     border-radius: 6px;
   }
-
   section.sub.detail .ticket .submit.full {
-    width:100%;
-    padding:10px 0;
+    width: 100%;
+    padding: 10px 0;
   }
-
-
-
   section.sub.detail .ticket .submit .btn.full {
-    width:100%;
+    width: 100%;
   }
-
-
-
-
-
   section.sub.detail .ticket .infoBox {
     display: inline-block;
     width: 100%;
@@ -4091,8 +4057,6 @@ html {
     font-size: 14px;
     color: #555;
   }
-
-
   section.sub.order.result .container {
     background: #fff;
     padding: 20px;
@@ -4118,8 +4082,6 @@ html {
     display: block;
     margin: 10px 0 10px;
   }
-
-
   section.sub.order.cert .container {
     background: #fff;
     padding: 20px;
@@ -4133,38 +4095,26 @@ html {
     color: #333;
   }
   section.sub.order.cert .container fieldset {
-    text-align:center;
-    border:none;
-    min-height:300px;
+    text-align: center;
+    border: none;
+    min-height: 300px;
   }
-
-
-
   section.sub.order.cert .container fieldset input {
     border: 2px solid #0066cc;
     padding: 14px;
-    border-right:none;
-    font-size:1.5rem;
-    width:300px;
+    border-right: none;
+    font-size: 1.5rem;
+    width: 300px;
   }
-
-
   section.sub.order.cert .container fieldset button {
     border: 1px solid #ccc;
     padding: 14px;
-    border-radius:0;
-    font-size:1.5rem;
-    background:#0066cc;
+    border-radius: 0;
+    font-size: 1.5rem;
+    background: #0066cc;
     border: 2px solid #0066cc;
-    color:white;
+    color: white;
   }
-
-
-
-
-
-
-
   section.sub.order .show_box dl {
     display: inline-block;
     padding: 14px;
@@ -4407,13 +4357,10 @@ html {
     font-size: 1rem;
     line-height: 1.6;
   }
-
-
   section.sub .aside_content.full {
-    width:100%;
-    margin:0;
+    width: 100%;
+    margin: 0;
   }
-
   section.sub .aside_content .tabs {
     margin-bottom: 0;
   }
@@ -4526,9 +4473,6 @@ html {
     color: #0066cc;
     font-size: 18px;
   }
-
-
-
   section.sub.refund .part_refund_list ul {
     display: inline-block;
     width: 100%;
@@ -4546,25 +4490,22 @@ html {
     border-bottom: 1px solid #ccc;
   }
   section.sub.refund .part_refund_list h6, section.sub.refund .part_refund_list li p {
-
     margin: 0;
   }
   section.sub.refund .part_refund_list h6 {
-
     font-size: 1.25rem;
   }
   section.sub.refund .part_refund_list h6 small {
-    font-size:1rem;
+    font-size: 1rem;
   }
-
   section.sub.refund .part_refund_list li p {
     color: #0066cc;
-    display:inline-block;
+    display: inline-block;
     margin-left: 10px;
   }
   section.sub.refund .part_refund_list li p.day {
-    margin-left:0;
-    font-weight:600;
+    margin-left: 0;
+    font-weight: 600;
   }
   section.sub.refund .part_refund_list .total {
     display: inline-block;
@@ -4576,10 +4517,6 @@ html {
     color: #0066cc;
     font-size: 18px;
   }
-
-
-
-
   section.sub.refund .refund_info ul {
     padding: 0;
     margin: 0 0 20px;
@@ -5127,8 +5064,6 @@ html {
   color: #999;
 }
 
-
-
 .ltPop {
   position: fixed;
   display: block;
@@ -5141,34 +5076,29 @@ html {
   text-align: center;
   padding-top: 200px;
   font-weight: normal;
-
   /* 기본 배경색 지정-투명도가 모두 적용되지 않았을 때 색상 */
   background: #000000);
-	/* RGBa 적용 - Firefox, Chrome, Safari, Opera ... */
-	background: rgba(0,0,0,0.8);
-	/* IE에서 Filter적용을 위해 배경을 지움 */
-	background: transparent !ie;
-	/* 정상적인 Filter적용을 위해 zoom:1을 적용 */
-	zoom:1;
+  /* RGBa 적용 - Firefox, Chrome, Safari, Opera ... */
+  background: rgba(0, 0, 0, 0.8);
+  /* IE에서 Filter적용을 위해 배경을 지움 */
+  background: transparent !ie;
+  /* 정상적인 Filter적용을 위해 zoom:1을 적용 */
+  zoom: 1;
   /* IE5.5-7 */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000);
   /* IE8,9 */
-  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000)";
-
-
-
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000)";
 }
 
 .ltPop p {
   margin: -85px 0 0 0;
   display: block;
   height: 170px;
-
 }
 
 .ltPop h2 {
   margin: 0;
-  color:#fff;
+  color: #fff;
 }
 
 .ltPop i {
@@ -5178,62 +5108,53 @@ html {
 }
 
 .ltPop a {
-  display:inline-block;
-  padding:20px 30px;
-  margin:30px 0;
-  background:#0066cc;
-  color:#fff;
-  text-decoration:none;
-
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 30px 0;
+  background: #0066cc;
+  color: #fff;
+  text-decoration: none;
 }
 
-
-
 @media (max-width:400px) {
-    #lodge_div_noti {
-		z-index: 999;
-        position: absolute;
-        left: 0;
-        top: 400px;
-
-        margin: 0;
-        padding: 0.625rem 0.625rem 0.625rem 0.625rem;
-        width: 100%;
-        background-color:#0066cc;
-    }
+  #lodge_div_noti {
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 400px;
+    margin: 0;
+    padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+    width: 100%;
+    background-color: #0066cc;
+  }
 }
 
 @media (min-width:400px) {
-    #lodge_div_noti {
-		z-index: 999;
-        position: absolute;
-        left: calc(50% - 200px);
-        top: 350px;
-
-        margin: 0;
-        padding: 0.625rem 0.625rem 0.625rem 0.625rem;
-        width: 400px;
-        background-color:#0066cc;
-    }
+  #lodge_div_noti {
+    z-index: 999;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 350px;
+    margin: 0;
+    padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+    width: 400px;
+    background-color: #0066cc;
+  }
 }
 
+#lodge_div_noti .title {
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+}
 
+.close_bt {
+  float: right;
+}
 
-    #lodge_div_noti .title {
-    	font-size: 15px;
-    	color: #ffffff;
-    	text-align: center;
-    }
-
-
-
-    .close_bt{
-    	float:right;
-    }
-
-    #lodge_div_noti .contents {
-        display: block;
-        margin-top:15px;
-        padding: 0.625rem 0.625rem 0.625rem 0.625rem;
-		background-color:#ffffff;
-    }
+#lodge_div_noti .contents {
+  display: block;
+  margin-top: 15px;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+  background-color: #ffffff;
+}

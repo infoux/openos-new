@@ -1,0 +1,144 @@
+// out: ./concert.css, compress: true, sourceMap: false
+
+article#content.concert {
+  section.head {
+    div.title {
+      @media (min-width:1024px) {
+        width: 510px;
+      }
+
+      i.right {
+        background: green;
+        @media (min-width:1024px) {
+          float: right;
+        }
+      }
+    }
+
+    div#selectItemArea {
+      padding: 0 0.625rem;
+      @media (min-width:1024px) {
+        padding: 0;
+      }
+
+      div.select-style {
+        border: 1px solid #ccc;
+        position: relative;
+        font-size: 18px;
+        margin-bottom: 10px;
+
+        select {
+          display: block;
+          width: 100%;
+          height: 3.125rem;
+          opacity: 0;
+          @media (min-width:1024px) {
+            height: 60px;
+          }
+        }
+
+        label {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 0 20px;
+          width: 100%;
+          line-height: 3.125rem;
+          @media (min-width:1024px) {
+            line-height: 60px;
+          }
+        }
+
+        i {
+          position: absolute;
+          right: 10px;
+          top: 20px;
+        }
+      }
+
+      div.audience {
+        font-size: 18px;
+
+        input {
+          width: 80px;
+          height: 40px;
+          border: 1px solid #ccc;
+          margin: 0 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  div.concert_div {
+    div.outline {
+      background: #fff;
+      width: 980px;
+      margin: 100px auto 0;
+
+      div.concert-outline {
+        background: #ccc;
+        width: 100%;
+        padding: 60px 0;
+
+        div#orderContent {
+          font-size: 0;
+          margin: 0 auto;
+          text-align: center;
+
+          &.hall01-2f {
+            width: 960px;
+          }
+
+          .tileview-content {
+            display: inline-block;
+            vertical-align: top;
+            background: #ffffff;
+            font-size: 0.8rem;
+            width: calc(~"(100% - 44px) / 44");
+            height: 36px;
+            line-height: 36px;
+            margin: 0 1px 1px 0;
+
+            &.label {
+              background: transparent;
+              font-weight: 600;
+            }
+
+            &.blank {
+              background: #e4e4e4;
+            }
+
+            &.off {
+              background: #999;
+              font-size: 0;
+              line-height: 42px;
+
+              i {
+                font-size: 0.8rem;
+                color: #fff;
+              }
+            }
+
+            &.complete {
+              background: #ff3300;
+              font-size: 0;
+              line-height: 42px;
+
+              i {
+                font-size: 0.8rem;
+                color: #fff;
+              }
+            }
+
+            &.check {
+              background: #0066cc;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
