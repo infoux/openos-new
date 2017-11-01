@@ -72,15 +72,168 @@ article#content.concert {
   }
 
   div.concert_div {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+
     div.outline {
       background: #fff;
-      width: 980px;
-      margin: 100px auto 0;
+      margin: 0.625rem;
+      @media (min-width:1024px) {
+        width: 980px;
+        margin: 100px auto 0;
+      }
+
+      h4 {
+        position: relative;
+        margin: 0;
+        height: 3.429rem;
+        line-height: 3.429rem;
+        color: #ffffff;
+        background: #0066cc;
+        font-size: 1.143rem;
+        text-align: center;
+        font-weight: 400;
+        @media (min-width:1024px) {
+          height: 58px;
+          line-height: 58px;
+          font-size: 22px;
+        }
+
+        button {
+          position: absolute;
+          right: 14px;
+          top: 14px;
+          color: #fff;
+          border: none;
+          background: none;
+          font-size: 0;
+          cursor: pointer;
+
+          i {
+            font-size: 24px;
+          }
+        }
+      }
+
+      div.concert_info {
+        position: relative;
+        @media (min-width:1024px) {
+          padding: 40px 0 0 240px;
+          min-height: 270px;
+        }
+
+        p.poster {
+          width: 13.75rem;
+          margin: 1.25rem auto;
+          @media (min-width:1024px) {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        h5 {
+          position: relative;
+          text-align: center;
+          font-size: 1.5rem;
+          margin: 0 0 20px;
+          padding: 0 1.25rem 1.25rem;
+          word-break: keep-all;
+          @media (min-width:1024px) {
+            text-align: left;
+            font-size: 26px;
+            padding: 0 0 20px;
+          }
+
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 40px;
+            height: 2px;
+            background: #0066cc;
+            margin-left: -20px;
+            @media (min-width:1024px) {
+              left: 0;
+              margin: 0;
+            }
+          }
+        }
+
+        dl.concert_data {
+          padding: 0 1.25rem;
+          @media (min-width:1024px) {
+            padding: 0;
+            font-size: 16px;
+          }
+
+          dt {
+            float: left;
+            width: 6.5rem;
+            color: #0066cc;
+          }
+
+          dd {
+            margin-bottom: 0.625rem;
+            @media (min-width:1024px) {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+
+      div.infomation {
+        text-align: center;
+        @media (min-width:1024px) {
+          font-size: 16px;
+        }
+
+        p {
+          display: inline-block;
+          margin: 0 0 1.25;
+          padding-right: 0.625rem;
+
+          &:last-of-type {
+            padding-right: 0;
+          }
+
+          &.complete {
+            color: #ff3300;
+          }
+
+          &.off {
+            color: #999;
+          }
+
+          &.on {
+            color: #0066cc;
+          }
+
+          i {
+            margin-right: 0.625rem;
+          }
+        }
+      }
 
       div.concert-outline {
         background: #ccc;
         width: 100%;
-        padding: 60px 0;
+        padding: 1.25rem 0;
+        text-align: center;
+        overflow: scroll;
 
         div#orderContent {
           font-size: 0;
@@ -88,7 +241,20 @@ article#content.concert {
           text-align: center;
 
           &.hall01-2f {
-            width: 960px;
+            width: 85.714rem;
+            @media (min-width:1024px) {
+              width: 960px;
+            }
+          }
+
+          div.stage {
+            display: block;
+            width: 35.714rem;
+            height: 2.286rem;
+            line-height: 2.286rem;
+            background: #999;
+            margin: 0 auto 1.5rem;
+            font-size: 1rem;
           }
 
           .tileview-content {
@@ -137,6 +303,21 @@ article#content.concert {
               color: #fff;
             }
           }
+        }
+      }
+
+      div.btn-area {
+        background: #ccc;
+        text-align: center;
+        padding: 0 0 2.375rem;
+
+        button {
+          display: inline-block;
+          background: #0066cc;
+          border-color: transparent;
+          color: #fff;
+          padding: 0 1.5rem;
+          height: 2.375rem;
         }
       }
     }

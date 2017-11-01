@@ -698,268 +698,541 @@
     </div>
 
 
-
-
-
-
-
-
-
-
+    <!-- 1층 -->
     <div class="concert_div bg popup" style="display: block;">
       <div class="outline">
-        <button class="close">창닫기<i class="fa fa-times" aria-hidden="true"></i></button>
 
-        <ul class="tabs">
-          <li>
-            <a class="active" producttype="PT009" data="tab01">좌석 선택</a>
-          </li>
-        </ul>
+        <h4>
+          서귀포 예술의전당 대극장 2F
+          <button class="close">창닫기<i class="fa fa-times" aria-hidden="true"></i></button>
+        </h4>
 
-        <div>
-          <p>
-            <img src="http://devosweb.infomind.co.kr:6101/openos/concert/concertImage.do?cno=21&fcd=39&pcd=C390000021&ptp=PT009&dtp=M" alt="기획공연 뮤지컬 총각네 야채가게" height="50px;" hspace="5" style="vertical-align: middle;"> 기획공연 뮤지컬 총각네 야채가게
+
+
+        <div class="concert_info">
+          <p class="poster">
+            <img src="http://devosweb.infomind.co.kr:6101/openos/concert/concertImage.do?cno=21&fcd=39&pcd=C390000021&ptp=PT009&dtp=M" alt="기획공연 뮤지컬 총각네 야채가게">
           </p>
+          <h5>기획공연 뮤지컬 총각네 야채가게</h5>
+
+          <dl class="concert_data">
+            <dt>관람일시</dt>
+            <dd class="date-time">2017-11-10 19:30</dd>
+            <dt>관람인원</dt>
+            <dd class="count">3명</dd>
+            <dt>관람좌석</dt>
+            <dd id="selectYourSeats">S24, S25, S26</dd>
+          </dl>
+
         </div>
-        <h5>서귀포 예술의전당 대극장 2F</h5>
         <div class="infomation">
           <p class="complete"><i class="fa fa-lock" aria-hidden="true"></i>예약됨</p>
           <p class="off"><i class="fa fa-times" aria-hidden="true"></i>예약불가</p>
-          <p class="on" style="color:#333333;"><i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+          <p class="on"><i class="fa fa-stop" aria-hidden="true"></i>선택됨</p>
         </div>
-        <div class="tab-data active">
-          <div class="tileview-title">무대</div>
-          <div class="tileview-sub-title"><strong>2017-11-10 19:30 (5명)</strong> <strong id="selectYourSeats"></strong></div>
+        <div class="concert-outline">
 
-          <div class="concert-outline">
-            <div id="orderContent" class="table-cover hall01-2f">
-              <div id="concert_seat_Q42" class="tileview-content Q42" onclick="">42</div>
-              <div id="concert_seat_Q41" class="tileview-content Q41" onclick="">41</div>
-              <div id="concert_seat_Q40" class="tileview-content Q40" onclick="">40</div>
-              <div id="concert_seat_Q39" class="tileview-content Q39" onclick="">39</div>
-              <div id="concert_seat_Q38" class="tileview-content Q38" onclick="">38</div>
-              <div id="concert_seat_Q37" class="tileview-content Q37" onclick="">37</div>
-              <div id="concert_seat_Q36" class="tileview-content Q36 off" onclick="">36<i class="fa fa-times" aria-hidden="true"></i></div>
-              <div id="concert_seat_Q35" class="tileview-content Q35" onclick="">35</div>
-              <div id="concert_seat_Q34" class="tileview-content Q34" onclick="">34</div>
-              <div id="concert_seat_Q33" class="tileview-content Q33 complete" onclick="">33<i class="fa fa-lock" aria-hidden="true"></i></div>
-              <div id="concert_seat_Q32" class="tileview-content Q32" onclick="">32</div>
-              <div id="concert_seat_Q31" class="tileview-content Q31" onclick="">31</div>
-              <div id="concert_seat_Q30" class="tileview-content Q30" onclick="">30</div>
-              <div id="concert_seat_Q" class="tileview-content label">Q</div>
-              <div id="concert_seat_Q29" class="tileview-content Q29" onclick="">29</div>
-              <div id="concert_seat_Q28" class="tileview-content Q28" onclick="">28</div>
-              <div id="concert_seat_Q27" class="tileview-content Q27" onclick="">27</div>
-              <div id="concert_seat_Q26" class="tileview-content Q26" onclick="">26</div>
-              <div id="concert_seat_Q25" class="tileview-content Q25" onclick="">25</div>
-              <div id="concert_seat_Q24" class="tileview-content Q24" onclick="">24</div>
-              <div id="concert_seat_Q23" class="tileview-content Q23" onclick="">23</div>
-              <div id="concert_seat_Q22" class="tileview-content Q22 check" onclick="">22</div>
-              <div id="concert_seat_Q21" class="tileview-content Q21 check" onclick="">21</div>
-              <div id="concert_seat_Q20" class="tileview-content Q20" onclick="">20</div>
-              <div id="concert_seat_Q19" class="tileview-content Q19 check" onclick="">19</div>
-              <div id="concert_seat_Q18" class="tileview-content Q18" onclick="">18</div>
-              <div id="concert_seat_Q17" class="tileview-content Q17" onclick="">17</div>
-              <div id="concert_seat_Q16" class="tileview-content Q16" onclick="">16</div>
-              <div id="concert_seat_Q15" class="tileview-content Q15" onclick="">15</div>
-              <div id="concert_seat_Q14" class="tileview-content Q14" onclick="">14</div>
-              <div id="concert_seat_Q" class="tileview-content label">Q</div>
-              <div id="concert_seat_Q13" class="tileview-content Q13" onclick="">13</div>
-              <div id="concert_seat_Q12" class="tileview-content Q12" onclick="">12</div>
-              <div id="concert_seat_Q11" class="tileview-content Q11" onclick="">11</div>
-              <div id="concert_seat_Q10" class="tileview-content Q10" onclick="">10</div>
-              <div id="concert_seat_Q9" class="tileview-content Q9" onclick="">9</div>
-              <div id="concert_seat_Q8" class="tileview-content Q8" onclick="">8</div>
-              <div id="concert_seat_Q7" class="tileview-content Q7" onclick="">7</div>
-              <div id="concert_seat_Q6" class="tileview-content Q6" onclick="">6</div>
-              <div id="concert_seat_Q5" class="tileview-content Q5" onclick="">5</div>
-              <div id="concert_seat_Q4" class="tileview-content Q4" onclick="">4</div>
-              <div id="concert_seat_Q3" class="tileview-content Q3" onclick="">3</div>
-              <div id="concert_seat_Q2" class="tileview-content Q2" onclick="">2</div>
-              <div id="concert_seat_Q1" class="tileview-content Q1" onclick="">1</div>
-              <div id="concert_seat_R40" class="tileview-content blank"></div>
-              <div id="concert_seat_R40" class="tileview-content R40" onclick="">40</div>
-              <div id="concert_seat_R39" class="tileview-content R39" onclick="">39</div>
-              <div id="concert_seat_R38" class="tileview-content R38" onclick="">38</div>
-              <div id="concert_seat_R37" class="tileview-content R37" onclick="">37</div>
-              <div id="concert_seat_R36" class="tileview-content R36" onclick="">36</div>
-              <div id="concert_seat_R35" class="tileview-content R35" onclick="">35</div>
-              <div id="concert_seat_R34" class="tileview-content R34" onclick="">34</div>
-              <div id="concert_seat_R33" class="tileview-content R33" onclick="">33</div>
-              <div id="concert_seat_R32" class="tileview-content R32" onclick="">32</div>
-              <div id="concert_seat_R31" class="tileview-content R31" onclick="">31</div>
-              <div id="concert_seat_R30" class="tileview-content R30" onclick="">30</div>
-              <div id="concert_seat_R29" class="tileview-content R29" onclick="">29</div>
-              <div id="concert_seat_R" class="tileview-content label">R</div>
-              <div id="concert_seat_R28" class="tileview-content R28" onclick="">28</div>
-              <div id="concert_seat_R27" class="tileview-content R27" onclick="">27</div>
-              <div id="concert_seat_R26" class="tileview-content R26" onclick="">26</div>
-              <div id="concert_seat_R25" class="tileview-content R25" onclick="">25</div>
-              <div id="concert_seat_R24" class="tileview-content R24" onclick="">24</div>
-              <div id="concert_seat_R23" class="tileview-content R23" onclick="">23</div>
-              <div id="concert_seat_R22" class="tileview-content R22" onclick="">22</div>
-              <div id="concert_seat_R21" class="tileview-content R21" onclick="">21</div>
-              <div id="concert_seat_R20" class="tileview-content R20" onclick="">20</div>
-              <div id="concert_seat_R19" class="tileview-content R19" onclick="">19</div>
-              <div id="concert_seat_R18" class="tileview-content R18" onclick="">18</div>
-              <div id="concert_seat_R17" class="tileview-content R17" onclick="">17</div>
-              <div id="concert_seat_R16" class="tileview-content R16" onclick="">16</div>
-              <div id="concert_seat_R15" class="tileview-content R15" onclick="">15</div>
-              <div id="concert_seat_R14" class="tileview-content R14" onclick="">14</div>
-              <div id="concert_seat_R13" class="tileview-content R13" onclick="">13</div>
-              <div id="concert_seat_R" class="tileview-content label">R</div>
-              <div id="concert_seat_R12" class="tileview-content R12" onclick="">12</div>
-              <div id="concert_seat_R11" class="tileview-content R11" onclick="">11</div>
-              <div id="concert_seat_R10" class="tileview-content R10" onclick="">10</div>
-              <div id="concert_seat_R9" class="tileview-content R9" onclick="">9</div>
-              <div id="concert_seat_R8" class="tileview-content R8" onclick="">8</div>
-              <div id="concert_seat_R7" class="tileview-content R7" onclick="">7</div>
-              <div id="concert_seat_R6" class="tileview-content R6" onclick="">6</div>
-              <div id="concert_seat_R5" class="tileview-content R5" onclick="">5</div>
-              <div id="concert_seat_R4" class="tileview-content R4" onclick="">4</div>
-              <div id="concert_seat_R3" class="tileview-content R3" onclick="">3</div>
-              <div id="concert_seat_R2" class="tileview-content R2" onclick="">2</div>
-              <div id="concert_seat_R1" class="tileview-content R1" onclick="">1</div>
-              <div id="concert_seat_R0" class="tileview-content blank"></div>
-              <div id="concert_seat_S38" class="tileview-content blank"></div>
-              <div id="concert_seat_S38" class="tileview-content blank"></div>
-              <div id="concert_seat_S38" class="tileview-content S38" onclick="">38</div>
-              <div id="concert_seat_S37" class="tileview-content S37" onclick="">37</div>
-              <div id="concert_seat_S36" class="tileview-content S36" onclick="">36</div>
-              <div id="concert_seat_S35" class="tileview-content S35" onclick="">35</div>
-              <div id="concert_seat_S34" class="tileview-content S34" onclick="">34</div>
-              <div id="concert_seat_S33" class="tileview-content S33" onclick="">33</div>
-              <div id="concert_seat_S32" class="tileview-content S32" onclick="">32</div>
-              <div id="concert_seat_S31" class="tileview-content S31" onclick="">31</div>
-              <div id="concert_seat_S30" class="tileview-content S30" onclick="">30</div>
-              <div id="concert_seat_S29" class="tileview-content S29" onclick="">29</div>
-              <div id="concert_seat_S28" class="tileview-content S28" onclick="">28</div>
-              <div id="concert_seat_S" class="tileview-content label">S</div>
-              <div id="concert_seat_S27" class="tileview-content S27" onclick="">27</div>
-              <div id="concert_seat_S26" class="tileview-content S26" onclick="">26</div>
-              <div id="concert_seat_S25" class="tileview-content S25" onclick="">25</div>
-              <div id="concert_seat_S24" class="tileview-content S24" onclick="">24</div>
-              <div id="concert_seat_S23" class="tileview-content S23" onclick="">23</div>
-              <div id="concert_seat_S22" class="tileview-content S22" onclick="">22</div>
-              <div id="concert_seat_S21" class="tileview-content S21" onclick="">21</div>
-              <div id="concert_seat_S20" class="tileview-content S20" onclick="">20</div>
-              <div id="concert_seat_S19" class="tileview-content S19" onclick="">19</div>
-              <div id="concert_seat_S18" class="tileview-content S18" onclick="">18</div>
-              <div id="concert_seat_S17" class="tileview-content S17" onclick="">17</div>
-              <div id="concert_seat_S16" class="tileview-content S16" onclick="">16</div>
-              <div id="concert_seat_S15" class="tileview-content S15" onclick="">15</div>
-              <div id="concert_seat_S14" class="tileview-content S14" onclick="">14</div>
-              <div id="concert_seat_S13" class="tileview-content S13" onclick="">13</div>
-              <div id="concert_seat_S12" class="tileview-content S12" onclick="">12</div>
-              <div id="concert_seat_S" class="tileview-content label">S</div>
-              <div id="concert_seat_S11" class="tileview-content S11" onclick="">11</div>
-              <div id="concert_seat_S10" class="tileview-content S10" onclick="">10</div>
-              <div id="concert_seat_S9" class="tileview-content S9" onclick="">9</div>
-              <div id="concert_seat_S8" class="tileview-content S8" onclick="">8</div>
-              <div id="concert_seat_S7" class="tileview-content S7" onclick="">7</div>
-              <div id="concert_seat_S6" class="tileview-content S6" onclick="">6</div>
-              <div id="concert_seat_S5" class="tileview-content S5" onclick="">5</div>
-              <div id="concert_seat_S4" class="tileview-content S4" onclick="">4</div>
-              <div id="concert_seat_S3" class="tileview-content S3" onclick="">3</div>
-              <div id="concert_seat_S2" class="tileview-content S2" onclick="">2</div>
-              <div id="concert_seat_S1" class="tileview-content S1" onclick="">1</div>
-              <div id="concert_seat_S0" class="tileview-content blank"></div>
-              <div id="concert_seat_S0" class="tileview-content blank"></div>
-              <div id="concert_seat_T36" class="tileview-content blank"></div>
-              <div id="concert_seat_T36" class="tileview-content blank"></div>
-              <div id="concert_seat_T36" class="tileview-content blank"></div>
-              <div id="concert_seat_T36" class="tileview-content T36" onclick="">36</div>
-              <div id="concert_seat_T35" class="tileview-content T35" onclick="">35</div>
-              <div id="concert_seat_T34" class="tileview-content T34" onclick="">34</div>
-              <div id="concert_seat_T33" class="tileview-content T33" onclick="">33</div>
-              <div id="concert_seat_T32" class="tileview-content T32" onclick="">32</div>
-              <div id="concert_seat_T31" class="tileview-content T31" onclick="">31</div>
-              <div id="concert_seat_T30" class="tileview-content T30" onclick="">30</div>
-              <div id="concert_seat_T29" class="tileview-content T29" onclick="">29</div>
-              <div id="concert_seat_T28" class="tileview-content T28" onclick="">28</div>
-              <div id="concert_seat_T27" class="tileview-content T27" onclick="">27</div>
-              <div id="concert_seat_T" class="tileview-content label">T</div>
-              <div id="concert_seat_T26" class="tileview-content T26" onclick="">26</div>
-              <div id="concert_seat_T25" class="tileview-content T25" onclick="">25</div>
-              <div id="concert_seat_T24" class="tileview-content T24" onclick="">24</div>
-              <div id="concert_seat_T23" class="tileview-content T23" onclick="">23</div>
-              <div id="concert_seat_T22" class="tileview-content T22" onclick="">22</div>
-              <div id="concert_seat_T21" class="tileview-content T21" onclick="">21</div>
-              <div id="concert_seat_T20" class="tileview-content T20" onclick="">20</div>
-              <div id="concert_seat_T19" class="tileview-content T19" onclick="">19</div>
-              <div id="concert_seat_T18" class="tileview-content T18" onclick="">18</div>
-              <div id="concert_seat_T17" class="tileview-content T17" onclick="">17</div>
-              <div id="concert_seat_T16" class="tileview-content T16" onclick="">16</div>
-              <div id="concert_seat_T15" class="tileview-content T15" onclick="">15</div>
-              <div id="concert_seat_T14" class="tileview-content T14" onclick="">14</div>
-              <div id="concert_seat_T13" class="tileview-content T13" onclick="">13</div>
-              <div id="concert_seat_T12" class="tileview-content T12" onclick="">12</div>
-              <div id="concert_seat_T11" class="tileview-content T11" onclick="">11</div>
-              <div id="concert_seat_T" class="tileview-content label">T</div>
-              <div id="concert_seat_T10" class="tileview-content T10" onclick="">10</div>
-              <div id="concert_seat_T9" class="tileview-content T9" onclick="">9</div>
-              <div id="concert_seat_T8" class="tileview-content T8" onclick="">8</div>
-              <div id="concert_seat_T7" class="tileview-content T7" onclick="">7</div>
-              <div id="concert_seat_T6" class="tileview-content T6" onclick="">6</div>
-              <div id="concert_seat_T5" class="tileview-content T5" onclick="">5</div>
-              <div id="concert_seat_T4" class="tileview-content T4" onclick="">4</div>
-              <div id="concert_seat_T3" class="tileview-content T3" onclick="">3</div>
-              <div id="concert_seat_T2" class="tileview-content T2" onclick="">2</div>
-              <div id="concert_seat_T1" class="tileview-content T1" onclick="">1</div>
-              <div id="concert_seat_T0" class="tileview-content blank"></div>
-              <div id="concert_seat_T0" class="tileview-content blank"></div>
-              <div id="concert_seat_T0" class="tileview-content blank"></div>
-              <div id="concert_seat_U34" class="tileview-content blank"></div>
-              <div id="concert_seat_U34" class="tileview-content blank"></div>
-              <div id="concert_seat_U34" class="tileview-content blank"></div>
-              <div id="concert_seat_U34" class="tileview-content blank"></div>
-              <div id="concert_seat_U34" class="tileview-content U34" onclick="">34</div>
-              <div id="concert_seat_U33" class="tileview-content U33" onclick="">33</div>
-              <div id="concert_seat_U32" class="tileview-content U32" onclick="">32</div>
-              <div id="concert_seat_U31" class="tileview-content U31" onclick="">31</div>
-              <div id="concert_seat_U30" class="tileview-content U30" onclick="">30</div>
-              <div id="concert_seat_U29" class="tileview-content U29" onclick="">29</div>
-              <div id="concert_seat_U28" class="tileview-content U28" onclick="">28</div>
-              <div id="concert_seat_U27" class="tileview-content U27" onclick="">27</div>
-              <div id="concert_seat_U26" class="tileview-content U26" onclick="">26</div>
-              <div id="concert_seat_U" class="tileview-content label">U</div>
-              <div id="concert_seat_U25" class="tileview-content U25" onclick="">25</div>
-              <div id="concert_seat_U24" class="tileview-content U24" onclick="">24</div>
-              <div id="concert_seat_U23" class="tileview-content U23" onclick="">23</div>
-              <div id="concert_seat_U22" class="tileview-content U22" onclick="">22</div>
-              <div id="concert_seat_U21" class="tileview-content U21" onclick="">21</div>
-              <div id="concert_seat_U20" class="tileview-content U20" onclick="">20</div>
-              <div id="concert_seat_U19" class="tileview-content U19" onclick="">19</div>
-              <div id="concert_seat_U18" class="tileview-content U18" onclick="">18</div>
-              <div id="concert_seat_U17" class="tileview-content U17" onclick="">17</div>
-              <div id="concert_seat_U16" class="tileview-content U16" onclick="">16</div>
-              <div id="concert_seat_U15" class="tileview-content U15" onclick="">15</div>
-              <div id="concert_seat_U14" class="tileview-content U14" onclick="">14</div>
-              <div id="concert_seat_U13" class="tileview-content U13" onclick="">13</div>
-              <div id="concert_seat_U12" class="tileview-content U12" onclick="">12</div>
-              <div id="concert_seat_U11" class="tileview-content U11" onclick="">11</div>
-              <div id="concert_seat_U10" class="tileview-content U10" onclick="">10</div>
-              <div id="concert_seat_U" class="tileview-content label">U</div>
-              <div id="concert_seat_U9" class="tileview-content U9" onclick="">9</div>
-              <div id="concert_seat_U8" class="tileview-content U8" onclick="">8</div>
-              <div id="concert_seat_U7" class="tileview-content U7" onclick="">7</div>
-              <div id="concert_seat_U6" class="tileview-content U6" onclick="">6</div>
-              <div id="concert_seat_U5" class="tileview-content U5" onclick="">5</div>
-              <div id="concert_seat_U4" class="tileview-content U4" onclick="">4</div>
-              <div id="concert_seat_U3" class="tileview-content U3" onclick="">3</div>
-              <div id="concert_seat_U2" class="tileview-content U2" onclick="">2</div>
-              <div id="concert_seat_U1" class="tileview-content U1" onclick="">1</div>
-              <div id="concert_seat_U0" class="tileview-content blank"></div>
-              <div id="concert_seat_U0" class="tileview-content blank"></div>
-              <div id="concert_seat_U0" class="tileview-content blank"></div>
-              <div id="concert_seat_U0" class="tileview-content blank"></div>
-            </div>
+
+          <div id="orderContent" class="table-cover hall01-2f">
+            <div class="stage">무대</div>
+
+
+            <div id="concert_seat_Q42" class="tileview-content Q42" onclick="">42</div>
+            <div id="concert_seat_Q41" class="tileview-content Q41" onclick="">41</div>
+            <div id="concert_seat_Q40" class="tileview-content Q40" onclick="">40</div>
+            <div id="concert_seat_Q39" class="tileview-content Q39" onclick="">39</div>
+            <div id="concert_seat_Q38" class="tileview-content Q38" onclick="">38</div>
+            <div id="concert_seat_Q37" class="tileview-content Q37" onclick="">37</div>
+            <div id="concert_seat_Q36" class="tileview-content Q36 off" onclick="">36<i class="fa fa-times" aria-hidden="true"></i></div>
+            <div id="concert_seat_Q35" class="tileview-content Q35" onclick="">35</div>
+            <div id="concert_seat_Q34" class="tileview-content Q34" onclick="">34</div>
+            <div id="concert_seat_Q33" class="tileview-content Q33 complete" onclick="">33<i class="fa fa-lock" aria-hidden="true"></i></div>
+            <div id="concert_seat_Q32" class="tileview-content Q32" onclick="">32</div>
+            <div id="concert_seat_Q31" class="tileview-content Q31" onclick="">31</div>
+            <div id="concert_seat_Q30" class="tileview-content Q30" onclick="">30</div>
+            <div id="concert_seat_Q" class="tileview-content label">Q</div>
+            <div id="concert_seat_Q29" class="tileview-content Q29" onclick="">29</div>
+            <div id="concert_seat_Q28" class="tileview-content Q28" onclick="">28</div>
+            <div id="concert_seat_Q27" class="tileview-content Q27" onclick="">27</div>
+            <div id="concert_seat_Q26" class="tileview-content Q26" onclick="">26</div>
+            <div id="concert_seat_Q25" class="tileview-content Q25" onclick="">25</div>
+            <div id="concert_seat_Q24" class="tileview-content Q24" onclick="">24</div>
+            <div id="concert_seat_Q23" class="tileview-content Q23" onclick="">23</div>
+            <div id="concert_seat_Q22" class="tileview-content Q22 check" onclick="">22</div>
+            <div id="concert_seat_Q21" class="tileview-content Q21 check" onclick="">21</div>
+            <div id="concert_seat_Q20" class="tileview-content Q20" onclick="">20</div>
+            <div id="concert_seat_Q19" class="tileview-content Q19 check" onclick="">19</div>
+            <div id="concert_seat_Q18" class="tileview-content Q18" onclick="">18</div>
+            <div id="concert_seat_Q17" class="tileview-content Q17" onclick="">17</div>
+            <div id="concert_seat_Q16" class="tileview-content Q16" onclick="">16</div>
+            <div id="concert_seat_Q15" class="tileview-content Q15" onclick="">15</div>
+            <div id="concert_seat_Q14" class="tileview-content Q14" onclick="">14</div>
+            <div id="concert_seat_Q" class="tileview-content label">Q</div>
+            <div id="concert_seat_Q13" class="tileview-content Q13" onclick="">13</div>
+            <div id="concert_seat_Q12" class="tileview-content Q12" onclick="">12</div>
+            <div id="concert_seat_Q11" class="tileview-content Q11" onclick="">11</div>
+            <div id="concert_seat_Q10" class="tileview-content Q10" onclick="">10</div>
+            <div id="concert_seat_Q9" class="tileview-content Q9" onclick="">9</div>
+            <div id="concert_seat_Q8" class="tileview-content Q8" onclick="">8</div>
+            <div id="concert_seat_Q7" class="tileview-content Q7" onclick="">7</div>
+            <div id="concert_seat_Q6" class="tileview-content Q6" onclick="">6</div>
+            <div id="concert_seat_Q5" class="tileview-content Q5" onclick="">5</div>
+            <div id="concert_seat_Q4" class="tileview-content Q4" onclick="">4</div>
+            <div id="concert_seat_Q3" class="tileview-content Q3" onclick="">3</div>
+            <div id="concert_seat_Q2" class="tileview-content Q2" onclick="">2</div>
+            <div id="concert_seat_Q1" class="tileview-content Q1" onclick="">1</div>
+            <div id="concert_seat_R40" class="tileview-content blank"></div>
+            <div id="concert_seat_R40" class="tileview-content R40" onclick="">40</div>
+            <div id="concert_seat_R39" class="tileview-content R39" onclick="">39</div>
+            <div id="concert_seat_R38" class="tileview-content R38" onclick="">38</div>
+            <div id="concert_seat_R37" class="tileview-content R37" onclick="">37</div>
+            <div id="concert_seat_R36" class="tileview-content R36" onclick="">36</div>
+            <div id="concert_seat_R35" class="tileview-content R35" onclick="">35</div>
+            <div id="concert_seat_R34" class="tileview-content R34" onclick="">34</div>
+            <div id="concert_seat_R33" class="tileview-content R33" onclick="">33</div>
+            <div id="concert_seat_R32" class="tileview-content R32" onclick="">32</div>
+            <div id="concert_seat_R31" class="tileview-content R31" onclick="">31</div>
+            <div id="concert_seat_R30" class="tileview-content R30" onclick="">30</div>
+            <div id="concert_seat_R29" class="tileview-content R29" onclick="">29</div>
+            <div id="concert_seat_R" class="tileview-content label">R</div>
+            <div id="concert_seat_R28" class="tileview-content R28" onclick="">28</div>
+            <div id="concert_seat_R27" class="tileview-content R27" onclick="">27</div>
+            <div id="concert_seat_R26" class="tileview-content R26" onclick="">26</div>
+            <div id="concert_seat_R25" class="tileview-content R25" onclick="">25</div>
+            <div id="concert_seat_R24" class="tileview-content R24" onclick="">24</div>
+            <div id="concert_seat_R23" class="tileview-content R23" onclick="">23</div>
+            <div id="concert_seat_R22" class="tileview-content R22" onclick="">22</div>
+            <div id="concert_seat_R21" class="tileview-content R21" onclick="">21</div>
+            <div id="concert_seat_R20" class="tileview-content R20" onclick="">20</div>
+            <div id="concert_seat_R19" class="tileview-content R19" onclick="">19</div>
+            <div id="concert_seat_R18" class="tileview-content R18" onclick="">18</div>
+            <div id="concert_seat_R17" class="tileview-content R17" onclick="">17</div>
+            <div id="concert_seat_R16" class="tileview-content R16" onclick="">16</div>
+            <div id="concert_seat_R15" class="tileview-content R15" onclick="">15</div>
+            <div id="concert_seat_R14" class="tileview-content R14" onclick="">14</div>
+            <div id="concert_seat_R13" class="tileview-content R13" onclick="">13</div>
+            <div id="concert_seat_R" class="tileview-content label">R</div>
+            <div id="concert_seat_R12" class="tileview-content R12" onclick="">12</div>
+            <div id="concert_seat_R11" class="tileview-content R11" onclick="">11</div>
+            <div id="concert_seat_R10" class="tileview-content R10" onclick="">10</div>
+            <div id="concert_seat_R9" class="tileview-content R9" onclick="">9</div>
+            <div id="concert_seat_R8" class="tileview-content R8" onclick="">8</div>
+            <div id="concert_seat_R7" class="tileview-content R7" onclick="">7</div>
+            <div id="concert_seat_R6" class="tileview-content R6" onclick="">6</div>
+            <div id="concert_seat_R5" class="tileview-content R5" onclick="">5</div>
+            <div id="concert_seat_R4" class="tileview-content R4" onclick="">4</div>
+            <div id="concert_seat_R3" class="tileview-content R3" onclick="">3</div>
+            <div id="concert_seat_R2" class="tileview-content R2" onclick="">2</div>
+            <div id="concert_seat_R1" class="tileview-content R1" onclick="">1</div>
+            <div id="concert_seat_R0" class="tileview-content blank"></div>
+            <div id="concert_seat_S38" class="tileview-content blank"></div>
+            <div id="concert_seat_S38" class="tileview-content blank"></div>
+            <div id="concert_seat_S38" class="tileview-content S38" onclick="">38</div>
+            <div id="concert_seat_S37" class="tileview-content S37" onclick="">37</div>
+            <div id="concert_seat_S36" class="tileview-content S36" onclick="">36</div>
+            <div id="concert_seat_S35" class="tileview-content S35" onclick="">35</div>
+            <div id="concert_seat_S34" class="tileview-content S34" onclick="">34</div>
+            <div id="concert_seat_S33" class="tileview-content S33" onclick="">33</div>
+            <div id="concert_seat_S32" class="tileview-content S32" onclick="">32</div>
+            <div id="concert_seat_S31" class="tileview-content S31" onclick="">31</div>
+            <div id="concert_seat_S30" class="tileview-content S30" onclick="">30</div>
+            <div id="concert_seat_S29" class="tileview-content S29" onclick="">29</div>
+            <div id="concert_seat_S28" class="tileview-content S28" onclick="">28</div>
+            <div id="concert_seat_S" class="tileview-content label">S</div>
+            <div id="concert_seat_S27" class="tileview-content S27" onclick="">27</div>
+            <div id="concert_seat_S26" class="tileview-content S26" onclick="">26</div>
+            <div id="concert_seat_S25" class="tileview-content S25" onclick="">25</div>
+            <div id="concert_seat_S24" class="tileview-content S24" onclick="">24</div>
+            <div id="concert_seat_S23" class="tileview-content S23" onclick="">23</div>
+            <div id="concert_seat_S22" class="tileview-content S22" onclick="">22</div>
+            <div id="concert_seat_S21" class="tileview-content S21" onclick="">21</div>
+            <div id="concert_seat_S20" class="tileview-content S20" onclick="">20</div>
+            <div id="concert_seat_S19" class="tileview-content S19" onclick="">19</div>
+            <div id="concert_seat_S18" class="tileview-content S18" onclick="">18</div>
+            <div id="concert_seat_S17" class="tileview-content S17" onclick="">17</div>
+            <div id="concert_seat_S16" class="tileview-content S16" onclick="">16</div>
+            <div id="concert_seat_S15" class="tileview-content S15" onclick="">15</div>
+            <div id="concert_seat_S14" class="tileview-content S14" onclick="">14</div>
+            <div id="concert_seat_S13" class="tileview-content S13" onclick="">13</div>
+            <div id="concert_seat_S12" class="tileview-content S12" onclick="">12</div>
+            <div id="concert_seat_S" class="tileview-content label">S</div>
+            <div id="concert_seat_S11" class="tileview-content S11" onclick="">11</div>
+            <div id="concert_seat_S10" class="tileview-content S10" onclick="">10</div>
+            <div id="concert_seat_S9" class="tileview-content S9" onclick="">9</div>
+            <div id="concert_seat_S8" class="tileview-content S8" onclick="">8</div>
+            <div id="concert_seat_S7" class="tileview-content S7" onclick="">7</div>
+            <div id="concert_seat_S6" class="tileview-content S6" onclick="">6</div>
+            <div id="concert_seat_S5" class="tileview-content S5" onclick="">5</div>
+            <div id="concert_seat_S4" class="tileview-content S4" onclick="">4</div>
+            <div id="concert_seat_S3" class="tileview-content S3" onclick="">3</div>
+            <div id="concert_seat_S2" class="tileview-content S2" onclick="">2</div>
+            <div id="concert_seat_S1" class="tileview-content S1" onclick="">1</div>
+            <div id="concert_seat_S0" class="tileview-content blank"></div>
+            <div id="concert_seat_S0" class="tileview-content blank"></div>
+            <div id="concert_seat_T36" class="tileview-content blank"></div>
+            <div id="concert_seat_T36" class="tileview-content blank"></div>
+            <div id="concert_seat_T36" class="tileview-content blank"></div>
+            <div id="concert_seat_T36" class="tileview-content T36" onclick="">36</div>
+            <div id="concert_seat_T35" class="tileview-content T35" onclick="">35</div>
+            <div id="concert_seat_T34" class="tileview-content T34" onclick="">34</div>
+            <div id="concert_seat_T33" class="tileview-content T33" onclick="">33</div>
+            <div id="concert_seat_T32" class="tileview-content T32" onclick="">32</div>
+            <div id="concert_seat_T31" class="tileview-content T31" onclick="">31</div>
+            <div id="concert_seat_T30" class="tileview-content T30" onclick="">30</div>
+            <div id="concert_seat_T29" class="tileview-content T29" onclick="">29</div>
+            <div id="concert_seat_T28" class="tileview-content T28" onclick="">28</div>
+            <div id="concert_seat_T27" class="tileview-content T27" onclick="">27</div>
+            <div id="concert_seat_T" class="tileview-content label">T</div>
+            <div id="concert_seat_T26" class="tileview-content T26" onclick="">26</div>
+            <div id="concert_seat_T25" class="tileview-content T25" onclick="">25</div>
+            <div id="concert_seat_T24" class="tileview-content T24" onclick="">24</div>
+            <div id="concert_seat_T23" class="tileview-content T23" onclick="">23</div>
+            <div id="concert_seat_T22" class="tileview-content T22" onclick="">22</div>
+            <div id="concert_seat_T21" class="tileview-content T21" onclick="">21</div>
+            <div id="concert_seat_T20" class="tileview-content T20" onclick="">20</div>
+            <div id="concert_seat_T19" class="tileview-content T19" onclick="">19</div>
+            <div id="concert_seat_T18" class="tileview-content T18" onclick="">18</div>
+            <div id="concert_seat_T17" class="tileview-content T17" onclick="">17</div>
+            <div id="concert_seat_T16" class="tileview-content T16" onclick="">16</div>
+            <div id="concert_seat_T15" class="tileview-content T15" onclick="">15</div>
+            <div id="concert_seat_T14" class="tileview-content T14" onclick="">14</div>
+            <div id="concert_seat_T13" class="tileview-content T13" onclick="">13</div>
+            <div id="concert_seat_T12" class="tileview-content T12" onclick="">12</div>
+            <div id="concert_seat_T11" class="tileview-content T11" onclick="">11</div>
+            <div id="concert_seat_T" class="tileview-content label">T</div>
+            <div id="concert_seat_T10" class="tileview-content T10" onclick="">10</div>
+            <div id="concert_seat_T9" class="tileview-content T9" onclick="">9</div>
+            <div id="concert_seat_T8" class="tileview-content T8" onclick="">8</div>
+            <div id="concert_seat_T7" class="tileview-content T7" onclick="">7</div>
+            <div id="concert_seat_T6" class="tileview-content T6" onclick="">6</div>
+            <div id="concert_seat_T5" class="tileview-content T5" onclick="">5</div>
+            <div id="concert_seat_T4" class="tileview-content T4" onclick="">4</div>
+            <div id="concert_seat_T3" class="tileview-content T3" onclick="">3</div>
+            <div id="concert_seat_T2" class="tileview-content T2" onclick="">2</div>
+            <div id="concert_seat_T1" class="tileview-content T1" onclick="">1</div>
+            <div id="concert_seat_T0" class="tileview-content blank"></div>
+            <div id="concert_seat_T0" class="tileview-content blank"></div>
+            <div id="concert_seat_T0" class="tileview-content blank"></div>
+            <div id="concert_seat_U34" class="tileview-content blank"></div>
+            <div id="concert_seat_U34" class="tileview-content blank"></div>
+            <div id="concert_seat_U34" class="tileview-content blank"></div>
+            <div id="concert_seat_U34" class="tileview-content blank"></div>
+            <div id="concert_seat_U34" class="tileview-content U34" onclick="">34</div>
+            <div id="concert_seat_U33" class="tileview-content U33" onclick="">33</div>
+            <div id="concert_seat_U32" class="tileview-content U32" onclick="">32</div>
+            <div id="concert_seat_U31" class="tileview-content U31" onclick="">31</div>
+            <div id="concert_seat_U30" class="tileview-content U30" onclick="">30</div>
+            <div id="concert_seat_U29" class="tileview-content U29" onclick="">29</div>
+            <div id="concert_seat_U28" class="tileview-content U28" onclick="">28</div>
+            <div id="concert_seat_U27" class="tileview-content U27" onclick="">27</div>
+            <div id="concert_seat_U26" class="tileview-content U26" onclick="">26</div>
+            <div id="concert_seat_U" class="tileview-content label">U</div>
+            <div id="concert_seat_U25" class="tileview-content U25" onclick="">25</div>
+            <div id="concert_seat_U24" class="tileview-content U24" onclick="">24</div>
+            <div id="concert_seat_U23" class="tileview-content U23" onclick="">23</div>
+            <div id="concert_seat_U22" class="tileview-content U22" onclick="">22</div>
+            <div id="concert_seat_U21" class="tileview-content U21" onclick="">21</div>
+            <div id="concert_seat_U20" class="tileview-content U20" onclick="">20</div>
+            <div id="concert_seat_U19" class="tileview-content U19" onclick="">19</div>
+            <div id="concert_seat_U18" class="tileview-content U18" onclick="">18</div>
+            <div id="concert_seat_U17" class="tileview-content U17" onclick="">17</div>
+            <div id="concert_seat_U16" class="tileview-content U16" onclick="">16</div>
+            <div id="concert_seat_U15" class="tileview-content U15" onclick="">15</div>
+            <div id="concert_seat_U14" class="tileview-content U14" onclick="">14</div>
+            <div id="concert_seat_U13" class="tileview-content U13" onclick="">13</div>
+            <div id="concert_seat_U12" class="tileview-content U12" onclick="">12</div>
+            <div id="concert_seat_U11" class="tileview-content U11" onclick="">11</div>
+            <div id="concert_seat_U10" class="tileview-content U10" onclick="">10</div>
+            <div id="concert_seat_U" class="tileview-content label">U</div>
+            <div id="concert_seat_U9" class="tileview-content U9" onclick="">9</div>
+            <div id="concert_seat_U8" class="tileview-content U8" onclick="">8</div>
+            <div id="concert_seat_U7" class="tileview-content U7" onclick="">7</div>
+            <div id="concert_seat_U6" class="tileview-content U6" onclick="">6</div>
+            <div id="concert_seat_U5" class="tileview-content U5" onclick="">5</div>
+            <div id="concert_seat_U4" class="tileview-content U4" onclick="">4</div>
+            <div id="concert_seat_U3" class="tileview-content U3" onclick="">3</div>
+            <div id="concert_seat_U2" class="tileview-content U2" onclick="">2</div>
+            <div id="concert_seat_U1" class="tileview-content U1" onclick="">1</div>
+            <div id="concert_seat_U0" class="tileview-content blank"></div>
+            <div id="concert_seat_U0" class="tileview-content blank"></div>
+            <div id="concert_seat_U0" class="tileview-content blank"></div>
+            <div id="concert_seat_U0" class="tileview-content blank"></div>
           </div>
         </div>
-        <div class="btn-area submit" style="position:absolute;bottom:30px;width:100%;text-align:center;"><a href="javascript:void(0);" onclick="javascript:selectedItemSave(1);" class="btn tileview-submit-button">좌석 선택 완료</a></div>
+        <div class="btn-area submit"><button onclick="javascript:selectedItemSave(1);">좌석 선택 완료</button>
+        </div>
       </div>
     </div>
+    <!--// 1층 -->
 
+    <!-- 2층 -->
+    <!--
+    <div class="concert_div bg popup" style="display: block;">
+      <div class="outline">
+
+        <h4>
+          서귀포 예술의전당 대극장 2F
+          <button class="close">창닫기<i class="fa fa-times" aria-hidden="true"></i></button>
+        </h4>
+
+
+
+        <div class="concert_info">
+          <p class="poster">
+            <img src="http://devosweb.infomind.co.kr:6101/openos/concert/concertImage.do?cno=21&fcd=39&pcd=C390000021&ptp=PT009&dtp=M" alt="기획공연 뮤지컬 총각네 야채가게">
+          </p>
+          <h5>기획공연 뮤지컬 총각네 야채가게</h5>
+
+          <dl class="concert_data">
+            <dt>관람일시</dt>
+            <dd class="date-time">2017-11-10 19:30</dd>
+            <dt>관람인원</dt>
+            <dd class="count">3명</dd>
+            <dt>관람좌석</dt>
+            <dd id="selectYourSeats">S24, S25, S26</dd>
+          </dl>
+
+        </div>
+        <div class="infomation">
+          <p class="complete"><i class="fa fa-lock" aria-hidden="true"></i>예약됨</p>
+          <p class="off"><i class="fa fa-times" aria-hidden="true"></i>예약불가</p>
+          <p class="on"><i class="fa fa-stop" aria-hidden="true"></i>선택됨</p>
+        </div>
+        <div class="concert-outline">
+
+
+          <div id="orderContent" class="table-cover hall01-2f">
+            <div class="stage">무대</div>
+
+
+            <div id="concert_seat_Q42" class="tileview-content Q42" onclick="">42</div>
+            <div id="concert_seat_Q41" class="tileview-content Q41" onclick="">41</div>
+            <div id="concert_seat_Q40" class="tileview-content Q40" onclick="">40</div>
+            <div id="concert_seat_Q39" class="tileview-content Q39" onclick="">39</div>
+            <div id="concert_seat_Q38" class="tileview-content Q38" onclick="">38</div>
+            <div id="concert_seat_Q37" class="tileview-content Q37" onclick="">37</div>
+            <div id="concert_seat_Q36" class="tileview-content Q36 off" onclick="">36<i class="fa fa-times" aria-hidden="true"></i></div>
+            <div id="concert_seat_Q35" class="tileview-content Q35" onclick="">35</div>
+            <div id="concert_seat_Q34" class="tileview-content Q34" onclick="">34</div>
+            <div id="concert_seat_Q33" class="tileview-content Q33 complete" onclick="">33<i class="fa fa-lock" aria-hidden="true"></i></div>
+            <div id="concert_seat_Q32" class="tileview-content Q32" onclick="">32</div>
+            <div id="concert_seat_Q31" class="tileview-content Q31" onclick="">31</div>
+            <div id="concert_seat_Q30" class="tileview-content Q30" onclick="">30</div>
+            <div id="concert_seat_Q" class="tileview-content label">Q</div>
+            <div id="concert_seat_Q29" class="tileview-content Q29" onclick="">29</div>
+            <div id="concert_seat_Q28" class="tileview-content Q28" onclick="">28</div>
+            <div id="concert_seat_Q27" class="tileview-content Q27" onclick="">27</div>
+            <div id="concert_seat_Q26" class="tileview-content Q26" onclick="">26</div>
+            <div id="concert_seat_Q25" class="tileview-content Q25" onclick="">25</div>
+            <div id="concert_seat_Q24" class="tileview-content Q24" onclick="">24</div>
+            <div id="concert_seat_Q23" class="tileview-content Q23" onclick="">23</div>
+            <div id="concert_seat_Q22" class="tileview-content Q22 check" onclick="">22</div>
+            <div id="concert_seat_Q21" class="tileview-content Q21 check" onclick="">21</div>
+            <div id="concert_seat_Q20" class="tileview-content Q20" onclick="">20</div>
+            <div id="concert_seat_Q19" class="tileview-content Q19 check" onclick="">19</div>
+            <div id="concert_seat_Q18" class="tileview-content Q18" onclick="">18</div>
+            <div id="concert_seat_Q17" class="tileview-content Q17" onclick="">17</div>
+            <div id="concert_seat_Q16" class="tileview-content Q16" onclick="">16</div>
+            <div id="concert_seat_Q15" class="tileview-content Q15" onclick="">15</div>
+            <div id="concert_seat_Q14" class="tileview-content Q14" onclick="">14</div>
+            <div id="concert_seat_Q" class="tileview-content label">Q</div>
+            <div id="concert_seat_Q13" class="tileview-content Q13" onclick="">13</div>
+            <div id="concert_seat_Q12" class="tileview-content Q12" onclick="">12</div>
+            <div id="concert_seat_Q11" class="tileview-content Q11" onclick="">11</div>
+            <div id="concert_seat_Q10" class="tileview-content Q10" onclick="">10</div>
+            <div id="concert_seat_Q9" class="tileview-content Q9" onclick="">9</div>
+            <div id="concert_seat_Q8" class="tileview-content Q8" onclick="">8</div>
+            <div id="concert_seat_Q7" class="tileview-content Q7" onclick="">7</div>
+            <div id="concert_seat_Q6" class="tileview-content Q6" onclick="">6</div>
+            <div id="concert_seat_Q5" class="tileview-content Q5" onclick="">5</div>
+            <div id="concert_seat_Q4" class="tileview-content Q4" onclick="">4</div>
+            <div id="concert_seat_Q3" class="tileview-content Q3" onclick="">3</div>
+            <div id="concert_seat_Q2" class="tileview-content Q2" onclick="">2</div>
+            <div id="concert_seat_Q1" class="tileview-content Q1" onclick="">1</div>
+            <div id="concert_seat_R40" class="tileview-content blank"></div>
+            <div id="concert_seat_R40" class="tileview-content R40" onclick="">40</div>
+            <div id="concert_seat_R39" class="tileview-content R39" onclick="">39</div>
+            <div id="concert_seat_R38" class="tileview-content R38" onclick="">38</div>
+            <div id="concert_seat_R37" class="tileview-content R37" onclick="">37</div>
+            <div id="concert_seat_R36" class="tileview-content R36" onclick="">36</div>
+            <div id="concert_seat_R35" class="tileview-content R35" onclick="">35</div>
+            <div id="concert_seat_R34" class="tileview-content R34" onclick="">34</div>
+            <div id="concert_seat_R33" class="tileview-content R33" onclick="">33</div>
+            <div id="concert_seat_R32" class="tileview-content R32" onclick="">32</div>
+            <div id="concert_seat_R31" class="tileview-content R31" onclick="">31</div>
+            <div id="concert_seat_R30" class="tileview-content R30" onclick="">30</div>
+            <div id="concert_seat_R29" class="tileview-content R29" onclick="">29</div>
+            <div id="concert_seat_R" class="tileview-content label">R</div>
+            <div id="concert_seat_R28" class="tileview-content R28" onclick="">28</div>
+            <div id="concert_seat_R27" class="tileview-content R27" onclick="">27</div>
+            <div id="concert_seat_R26" class="tileview-content R26" onclick="">26</div>
+            <div id="concert_seat_R25" class="tileview-content R25" onclick="">25</div>
+            <div id="concert_seat_R24" class="tileview-content R24" onclick="">24</div>
+            <div id="concert_seat_R23" class="tileview-content R23" onclick="">23</div>
+            <div id="concert_seat_R22" class="tileview-content R22" onclick="">22</div>
+            <div id="concert_seat_R21" class="tileview-content R21" onclick="">21</div>
+            <div id="concert_seat_R20" class="tileview-content R20" onclick="">20</div>
+            <div id="concert_seat_R19" class="tileview-content R19" onclick="">19</div>
+            <div id="concert_seat_R18" class="tileview-content R18" onclick="">18</div>
+            <div id="concert_seat_R17" class="tileview-content R17" onclick="">17</div>
+            <div id="concert_seat_R16" class="tileview-content R16" onclick="">16</div>
+            <div id="concert_seat_R15" class="tileview-content R15" onclick="">15</div>
+            <div id="concert_seat_R14" class="tileview-content R14" onclick="">14</div>
+            <div id="concert_seat_R13" class="tileview-content R13" onclick="">13</div>
+            <div id="concert_seat_R" class="tileview-content label">R</div>
+            <div id="concert_seat_R12" class="tileview-content R12" onclick="">12</div>
+            <div id="concert_seat_R11" class="tileview-content R11" onclick="">11</div>
+            <div id="concert_seat_R10" class="tileview-content R10" onclick="">10</div>
+            <div id="concert_seat_R9" class="tileview-content R9" onclick="">9</div>
+            <div id="concert_seat_R8" class="tileview-content R8" onclick="">8</div>
+            <div id="concert_seat_R7" class="tileview-content R7" onclick="">7</div>
+            <div id="concert_seat_R6" class="tileview-content R6" onclick="">6</div>
+            <div id="concert_seat_R5" class="tileview-content R5" onclick="">5</div>
+            <div id="concert_seat_R4" class="tileview-content R4" onclick="">4</div>
+            <div id="concert_seat_R3" class="tileview-content R3" onclick="">3</div>
+            <div id="concert_seat_R2" class="tileview-content R2" onclick="">2</div>
+            <div id="concert_seat_R1" class="tileview-content R1" onclick="">1</div>
+            <div id="concert_seat_R0" class="tileview-content blank"></div>
+            <div id="concert_seat_S38" class="tileview-content blank"></div>
+            <div id="concert_seat_S38" class="tileview-content blank"></div>
+            <div id="concert_seat_S38" class="tileview-content S38" onclick="">38</div>
+            <div id="concert_seat_S37" class="tileview-content S37" onclick="">37</div>
+            <div id="concert_seat_S36" class="tileview-content S36" onclick="">36</div>
+            <div id="concert_seat_S35" class="tileview-content S35" onclick="">35</div>
+            <div id="concert_seat_S34" class="tileview-content S34" onclick="">34</div>
+            <div id="concert_seat_S33" class="tileview-content S33" onclick="">33</div>
+            <div id="concert_seat_S32" class="tileview-content S32" onclick="">32</div>
+            <div id="concert_seat_S31" class="tileview-content S31" onclick="">31</div>
+            <div id="concert_seat_S30" class="tileview-content S30" onclick="">30</div>
+            <div id="concert_seat_S29" class="tileview-content S29" onclick="">29</div>
+            <div id="concert_seat_S28" class="tileview-content S28" onclick="">28</div>
+            <div id="concert_seat_S" class="tileview-content label">S</div>
+            <div id="concert_seat_S27" class="tileview-content S27" onclick="">27</div>
+            <div id="concert_seat_S26" class="tileview-content S26" onclick="">26</div>
+            <div id="concert_seat_S25" class="tileview-content S25" onclick="">25</div>
+            <div id="concert_seat_S24" class="tileview-content S24" onclick="">24</div>
+            <div id="concert_seat_S23" class="tileview-content S23" onclick="">23</div>
+            <div id="concert_seat_S22" class="tileview-content S22" onclick="">22</div>
+            <div id="concert_seat_S21" class="tileview-content S21" onclick="">21</div>
+            <div id="concert_seat_S20" class="tileview-content S20" onclick="">20</div>
+            <div id="concert_seat_S19" class="tileview-content S19" onclick="">19</div>
+            <div id="concert_seat_S18" class="tileview-content S18" onclick="">18</div>
+            <div id="concert_seat_S17" class="tileview-content S17" onclick="">17</div>
+            <div id="concert_seat_S16" class="tileview-content S16" onclick="">16</div>
+            <div id="concert_seat_S15" class="tileview-content S15" onclick="">15</div>
+            <div id="concert_seat_S14" class="tileview-content S14" onclick="">14</div>
+            <div id="concert_seat_S13" class="tileview-content S13" onclick="">13</div>
+            <div id="concert_seat_S12" class="tileview-content S12" onclick="">12</div>
+            <div id="concert_seat_S" class="tileview-content label">S</div>
+            <div id="concert_seat_S11" class="tileview-content S11" onclick="">11</div>
+            <div id="concert_seat_S10" class="tileview-content S10" onclick="">10</div>
+            <div id="concert_seat_S9" class="tileview-content S9" onclick="">9</div>
+            <div id="concert_seat_S8" class="tileview-content S8" onclick="">8</div>
+            <div id="concert_seat_S7" class="tileview-content S7" onclick="">7</div>
+            <div id="concert_seat_S6" class="tileview-content S6" onclick="">6</div>
+            <div id="concert_seat_S5" class="tileview-content S5" onclick="">5</div>
+            <div id="concert_seat_S4" class="tileview-content S4" onclick="">4</div>
+            <div id="concert_seat_S3" class="tileview-content S3" onclick="">3</div>
+            <div id="concert_seat_S2" class="tileview-content S2" onclick="">2</div>
+            <div id="concert_seat_S1" class="tileview-content S1" onclick="">1</div>
+            <div id="concert_seat_S0" class="tileview-content blank"></div>
+            <div id="concert_seat_S0" class="tileview-content blank"></div>
+            <div id="concert_seat_T36" class="tileview-content blank"></div>
+            <div id="concert_seat_T36" class="tileview-content blank"></div>
+            <div id="concert_seat_T36" class="tileview-content blank"></div>
+            <div id="concert_seat_T36" class="tileview-content T36" onclick="">36</div>
+            <div id="concert_seat_T35" class="tileview-content T35" onclick="">35</div>
+            <div id="concert_seat_T34" class="tileview-content T34" onclick="">34</div>
+            <div id="concert_seat_T33" class="tileview-content T33" onclick="">33</div>
+            <div id="concert_seat_T32" class="tileview-content T32" onclick="">32</div>
+            <div id="concert_seat_T31" class="tileview-content T31" onclick="">31</div>
+            <div id="concert_seat_T30" class="tileview-content T30" onclick="">30</div>
+            <div id="concert_seat_T29" class="tileview-content T29" onclick="">29</div>
+            <div id="concert_seat_T28" class="tileview-content T28" onclick="">28</div>
+            <div id="concert_seat_T27" class="tileview-content T27" onclick="">27</div>
+            <div id="concert_seat_T" class="tileview-content label">T</div>
+            <div id="concert_seat_T26" class="tileview-content T26" onclick="">26</div>
+            <div id="concert_seat_T25" class="tileview-content T25" onclick="">25</div>
+            <div id="concert_seat_T24" class="tileview-content T24" onclick="">24</div>
+            <div id="concert_seat_T23" class="tileview-content T23" onclick="">23</div>
+            <div id="concert_seat_T22" class="tileview-content T22" onclick="">22</div>
+            <div id="concert_seat_T21" class="tileview-content T21" onclick="">21</div>
+            <div id="concert_seat_T20" class="tileview-content T20" onclick="">20</div>
+            <div id="concert_seat_T19" class="tileview-content T19" onclick="">19</div>
+            <div id="concert_seat_T18" class="tileview-content T18" onclick="">18</div>
+            <div id="concert_seat_T17" class="tileview-content T17" onclick="">17</div>
+            <div id="concert_seat_T16" class="tileview-content T16" onclick="">16</div>
+            <div id="concert_seat_T15" class="tileview-content T15" onclick="">15</div>
+            <div id="concert_seat_T14" class="tileview-content T14" onclick="">14</div>
+            <div id="concert_seat_T13" class="tileview-content T13" onclick="">13</div>
+            <div id="concert_seat_T12" class="tileview-content T12" onclick="">12</div>
+            <div id="concert_seat_T11" class="tileview-content T11" onclick="">11</div>
+            <div id="concert_seat_T" class="tileview-content label">T</div>
+            <div id="concert_seat_T10" class="tileview-content T10" onclick="">10</div>
+            <div id="concert_seat_T9" class="tileview-content T9" onclick="">9</div>
+            <div id="concert_seat_T8" class="tileview-content T8" onclick="">8</div>
+            <div id="concert_seat_T7" class="tileview-content T7" onclick="">7</div>
+            <div id="concert_seat_T6" class="tileview-content T6" onclick="">6</div>
+            <div id="concert_seat_T5" class="tileview-content T5" onclick="">5</div>
+            <div id="concert_seat_T4" class="tileview-content T4" onclick="">4</div>
+            <div id="concert_seat_T3" class="tileview-content T3" onclick="">3</div>
+            <div id="concert_seat_T2" class="tileview-content T2" onclick="">2</div>
+            <div id="concert_seat_T1" class="tileview-content T1" onclick="">1</div>
+            <div id="concert_seat_T0" class="tileview-content blank"></div>
+            <div id="concert_seat_T0" class="tileview-content blank"></div>
+            <div id="concert_seat_T0" class="tileview-content blank"></div>
+            <div id="concert_seat_U34" class="tileview-content blank"></div>
+            <div id="concert_seat_U34" class="tileview-content blank"></div>
+            <div id="concert_seat_U34" class="tileview-content blank"></div>
+            <div id="concert_seat_U34" class="tileview-content blank"></div>
+            <div id="concert_seat_U34" class="tileview-content U34" onclick="">34</div>
+            <div id="concert_seat_U33" class="tileview-content U33" onclick="">33</div>
+            <div id="concert_seat_U32" class="tileview-content U32" onclick="">32</div>
+            <div id="concert_seat_U31" class="tileview-content U31" onclick="">31</div>
+            <div id="concert_seat_U30" class="tileview-content U30" onclick="">30</div>
+            <div id="concert_seat_U29" class="tileview-content U29" onclick="">29</div>
+            <div id="concert_seat_U28" class="tileview-content U28" onclick="">28</div>
+            <div id="concert_seat_U27" class="tileview-content U27" onclick="">27</div>
+            <div id="concert_seat_U26" class="tileview-content U26" onclick="">26</div>
+            <div id="concert_seat_U" class="tileview-content label">U</div>
+            <div id="concert_seat_U25" class="tileview-content U25" onclick="">25</div>
+            <div id="concert_seat_U24" class="tileview-content U24" onclick="">24</div>
+            <div id="concert_seat_U23" class="tileview-content U23" onclick="">23</div>
+            <div id="concert_seat_U22" class="tileview-content U22" onclick="">22</div>
+            <div id="concert_seat_U21" class="tileview-content U21" onclick="">21</div>
+            <div id="concert_seat_U20" class="tileview-content U20" onclick="">20</div>
+            <div id="concert_seat_U19" class="tileview-content U19" onclick="">19</div>
+            <div id="concert_seat_U18" class="tileview-content U18" onclick="">18</div>
+            <div id="concert_seat_U17" class="tileview-content U17" onclick="">17</div>
+            <div id="concert_seat_U16" class="tileview-content U16" onclick="">16</div>
+            <div id="concert_seat_U15" class="tileview-content U15" onclick="">15</div>
+            <div id="concert_seat_U14" class="tileview-content U14" onclick="">14</div>
+            <div id="concert_seat_U13" class="tileview-content U13" onclick="">13</div>
+            <div id="concert_seat_U12" class="tileview-content U12" onclick="">12</div>
+            <div id="concert_seat_U11" class="tileview-content U11" onclick="">11</div>
+            <div id="concert_seat_U10" class="tileview-content U10" onclick="">10</div>
+            <div id="concert_seat_U" class="tileview-content label">U</div>
+            <div id="concert_seat_U9" class="tileview-content U9" onclick="">9</div>
+            <div id="concert_seat_U8" class="tileview-content U8" onclick="">8</div>
+            <div id="concert_seat_U7" class="tileview-content U7" onclick="">7</div>
+            <div id="concert_seat_U6" class="tileview-content U6" onclick="">6</div>
+            <div id="concert_seat_U5" class="tileview-content U5" onclick="">5</div>
+            <div id="concert_seat_U4" class="tileview-content U4" onclick="">4</div>
+            <div id="concert_seat_U3" class="tileview-content U3" onclick="">3</div>
+            <div id="concert_seat_U2" class="tileview-content U2" onclick="">2</div>
+            <div id="concert_seat_U1" class="tileview-content U1" onclick="">1</div>
+            <div id="concert_seat_U0" class="tileview-content blank"></div>
+            <div id="concert_seat_U0" class="tileview-content blank"></div>
+            <div id="concert_seat_U0" class="tileview-content blank"></div>
+            <div id="concert_seat_U0" class="tileview-content blank"></div>
+          </div>
+        </div>
+        <div class="btn-area submit"><button onclick="javascript:selectedItemSave(1);">좌석 선택 완료</button>
+        </div>
+      </div>
+    </div>
+    -->
+    <!--// 2층 -->
 
 
 
