@@ -234,18 +234,14 @@ article#content.concert {
         padding: 1.25rem 0;
         text-align: center;
         overflow: scroll;
+        @media (min-width:1024px) {
+          overflow: hidden;
+        }
 
         div#orderContent {
           font-size: 0;
           margin: 0 auto;
           text-align: center;
-
-          &.hall01-2f {
-            width: 85.714rem;
-            @media (min-width:1024px) {
-              width: 960px;
-            }
-          }
 
           div.stage {
             display: block;
@@ -262,7 +258,6 @@ article#content.concert {
             vertical-align: top;
             background: #ffffff;
             font-size: 0.8rem;
-            width: calc(~"(100% - 44px) / 44");
             height: 36px;
             line-height: 36px;
             margin: 0 1px 1px 0;
@@ -274,6 +269,11 @@ article#content.concert {
 
             &.blank {
               background: #e4e4e4;
+            }
+
+            &.blanks {
+              background: #e4e4e4;
+              height: 6px;
             }
 
             &.off {
@@ -301,6 +301,33 @@ article#content.concert {
             &.check {
               background: #0066cc;
               color: #fff;
+            }
+          }
+
+          &.hall01-2f {
+            width: 85.714rem;
+            @media (min-width:1024px) {
+              width: 960px;
+            }
+
+            .tileview-content {
+              width: calc(~"(100% - 44px) / 44");
+            }
+          }
+
+          &.hall01-1f {
+            width: 85.714rem;
+            @media (min-width:1024px) {
+              width: 960px;
+            }
+
+            .tileview-content {
+              width: calc(~"(100% - 45px) / 45");
+
+              &.disabled {
+                width: calc(~"(100% - 45px) / 45 * 2 + 1px");
+                background: #d0f9c5;
+              }
             }
           }
         }
