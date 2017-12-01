@@ -2065,6 +2065,59 @@ html {
     margin: 0.625rem 0 0.625rem;
     font-weight: 600;
   }
+
+
+
+
+
+
+  section.sub.order.cert .container {
+    background: #fff;
+    padding: 1.25rem;
+    text-align: left;
+    margin: 0 0 1.25rem 0;
+  }
+  section.sub.order.cert .container h4 {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #333;
+    word-break:keep-all;
+  }
+  section.sub.order.cert .container fieldset {
+    text-align: center;
+    border: none;
+  }
+  section.sub.order.cert .container fieldset input {
+    border: 2px solid #0066cc;
+    padding: 0 1rem;
+    height:3.25rem;
+    border-right: none;
+    font-size: 1.25rem;
+    width: calc(100% - 120px);
+    vertical-align:top;
+  }
+  section.sub.order.cert .container fieldset button {
+    border: 1px solid #ccc;
+    padding: 0;
+    width:120px;
+    height:3.25rem;
+    border-radius: 0;
+    font-size: 1.5rem;
+    background: #0066cc;
+    border: 2px solid #0066cc;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
   section.sub.result .order_list ul {
     display: inline-block;
     width: 100%;
@@ -4082,6 +4135,8 @@ html {
     display: block;
     margin: 10px 0 10px;
   }
+
+
   section.sub.order.cert .container {
     background: #fff;
     padding: 20px;
@@ -4115,6 +4170,9 @@ html {
     border: 2px solid #0066cc;
     color: white;
   }
+
+
+
   section.sub.order .show_box dl {
     display: inline-block;
     padding: 14px;
